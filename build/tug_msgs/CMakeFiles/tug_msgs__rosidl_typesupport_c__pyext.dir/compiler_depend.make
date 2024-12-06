@@ -251,8 +251,13 @@ CMakeFiles/tug_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/tug_msg
   rosidl_generator_c/tug_msgs/msg/detail/movement__functions.h \
   rosidl_generator_c/tug_msgs/msg/detail/robot_pose__type_support.h \
   rosidl_generator_c/tug_msgs/msg/detail/robot_pose__struct.h \
-  rosidl_generator_c/tug_msgs/msg/detail/robot_pose__functions.h
+  rosidl_generator_c/tug_msgs/msg/detail/robot_pose__functions.h \
+  rosidl_generator_c/tug_msgs/msg/detail/wheel_encoder__type_support.h \
+  rosidl_generator_c/tug_msgs/msg/detail/wheel_encoder__struct.h \
+  rosidl_generator_c/tug_msgs/msg/detail/wheel_encoder__functions.h
 
+
+rosidl_generator_c/tug_msgs/msg/detail/wheel_encoder__functions.h:
 
 rosidl_generator_c/tug_msgs/msg/detail/robot_pose__functions.h:
 
@@ -518,6 +523,8 @@ rosidl_generator_c/tug_msgs/msg/detail/bicycle__type_support.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
 
+rosidl_generator_c/tug_msgs/msg/detail/wheel_encoder__type_support.h:
+
 /usr/include/x86_64-linux-gnu/bits/wordsize.h:
 
 /usr/include/python3.10/cpython/traceback.h:
@@ -627,6 +634,8 @@ rosidl_generator_c/tug_msgs/msg/detail/movement__struct.h:
 /usr/include/x86_64-linux-gnu/bits/fp-logb.h:
 
 /usr/include/x86_64-linux-gnu/bits/environments.h:
+
+rosidl_generator_c/tug_msgs/msg/detail/wheel_encoder__struct.h:
 
 /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
 

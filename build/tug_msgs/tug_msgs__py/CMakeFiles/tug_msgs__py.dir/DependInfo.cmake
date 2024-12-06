@@ -21,6 +21,8 @@ set(CMAKE_MULTIPLE_OUTPUT_PAIRS
   "/home/bobo/ros2_ws/build/tug_msgs/rosidl_generator_py/tug_msgs/msg/_movement_s.c" "/home/bobo/ros2_ws/build/tug_msgs/rosidl_generator_py/tug_msgs/_tug_msgs_s.ep.rosidl_typesupport_fastrtps_c.c"
   "/home/bobo/ros2_ws/build/tug_msgs/rosidl_generator_py/tug_msgs/msg/_robot_pose.py" "/home/bobo/ros2_ws/build/tug_msgs/rosidl_generator_py/tug_msgs/_tug_msgs_s.ep.rosidl_typesupport_fastrtps_c.c"
   "/home/bobo/ros2_ws/build/tug_msgs/rosidl_generator_py/tug_msgs/msg/_robot_pose_s.c" "/home/bobo/ros2_ws/build/tug_msgs/rosidl_generator_py/tug_msgs/_tug_msgs_s.ep.rosidl_typesupport_fastrtps_c.c"
+  "/home/bobo/ros2_ws/build/tug_msgs/rosidl_generator_py/tug_msgs/msg/_wheel_encoder.py" "/home/bobo/ros2_ws/build/tug_msgs/rosidl_generator_py/tug_msgs/_tug_msgs_s.ep.rosidl_typesupport_fastrtps_c.c"
+  "/home/bobo/ros2_ws/build/tug_msgs/rosidl_generator_py/tug_msgs/msg/_wheel_encoder_s.c" "/home/bobo/ros2_ws/build/tug_msgs/rosidl_generator_py/tug_msgs/_tug_msgs_s.ep.rosidl_typesupport_fastrtps_c.c"
   )
 
 

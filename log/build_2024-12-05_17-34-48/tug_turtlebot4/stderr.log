@@ -1,0 +1,28 @@
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:40[m[K,
+                 from [01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/include/tug_turtlebot4/SimpleTurtleNode.hpp:7[m[K,
+                 from [01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SimpleTurtleNode.cpp:1[m[K:
+[01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SimpleTurtleNode.cpp:[m[K In member function ‘[01m[Kvoid tug_turtlebot4::SimpleTurtleNode::wheelEncoderCallback(const ConstSharedPtr&)[m[K’:
+[01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SimpleTurtleNode.cpp:97:124:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[KxT[m[K’
+   97 |     RCLCPP_INFO(this->get_logger(), "xT = %f + %f*cos(%f*%f/2) = %f", odom_state.x, deltaDist,odom_state.theta, deltaTheta [01;31m[KxT[m[K);
+      |                                                                                                                            [01;31m[K^~[m[K
+[01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SimpleTurtleNode.cpp:97:5:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K([m[K’
+   97 |     [01;36m[KRCLCPP_INFO[m[K(this->get_logger(), "xT = %f + %f*cos(%f*%f/2) = %f", odom_state.x, deltaDist,odom_state.theta, deltaTheta xT);
+      |     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SimpleTurtleNode.cpp:97:37:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%f[m[K’ expects a matching ‘[01m[Kdouble[m[K’ argument [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+   97 |     RCLCPP_INFO(this->get_logger(), [01;35m[K"xT = %f + %f*cos(%f*%f/2) = %f"[m[K, odom_state.x, deltaDist,odom_state.theta, deltaTheta xT);
+      |                                     [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SimpleTurtleNode.cpp:97:67:[m[K [01;36m[Knote: [m[Kformat string is defined here
+   97 |     RCLCPP_INFO(this->get_logger(), "xT = %f + %f*cos(%f*%f/2) = [01;36m[K%f[m[K", odom_state.x, deltaDist,odom_state.theta, deltaTheta xT);
+      |                                                                  [01;36m[K~^[m[K
+      |                                                                   [01;36m[K|[m[K
+      |                                                                   [01;36m[Kdouble[m[K
+[01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SimpleTurtleNode.cpp:[m[K In member function ‘[01m[Kvoid tug_turtlebot4::SimpleTurtleNode::poseCallback(const Pose&)[m[K’:
+[01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SimpleTurtleNode.cpp:116:49:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  116 | void SimpleTurtleNode::poseCallback([01;35m[Kconst Pose& msg[m[K)
+      |                                     [01;35m[K~~~~~~~~~~~~^~~[m[K
+gmake[2]: *** [CMakeFiles/simple_turtle.dir/build.make:90: CMakeFiles/simple_turtle.dir/src/SimpleTurtleNode.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:167: CMakeFiles/simple_turtle.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

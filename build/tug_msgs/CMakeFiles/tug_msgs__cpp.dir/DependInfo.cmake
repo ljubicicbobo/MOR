@@ -21,8 +21,12 @@ set(CMAKE_MULTIPLE_OUTPUT_PAIRS
   "/home/bobo/ros2_ws/build/tug_msgs/rosidl_generator_cpp/tug_msgs/msg/detail/robot_pose__builder.hpp" "/home/bobo/ros2_ws/build/tug_msgs/rosidl_generator_cpp/tug_msgs/msg/bicycle.hpp"
   "/home/bobo/ros2_ws/build/tug_msgs/rosidl_generator_cpp/tug_msgs/msg/detail/robot_pose__struct.hpp" "/home/bobo/ros2_ws/build/tug_msgs/rosidl_generator_cpp/tug_msgs/msg/bicycle.hpp"
   "/home/bobo/ros2_ws/build/tug_msgs/rosidl_generator_cpp/tug_msgs/msg/detail/robot_pose__traits.hpp" "/home/bobo/ros2_ws/build/tug_msgs/rosidl_generator_cpp/tug_msgs/msg/bicycle.hpp"
+  "/home/bobo/ros2_ws/build/tug_msgs/rosidl_generator_cpp/tug_msgs/msg/detail/wheel_encoder__builder.hpp" "/home/bobo/ros2_ws/build/tug_msgs/rosidl_generator_cpp/tug_msgs/msg/bicycle.hpp"
+  "/home/bobo/ros2_ws/build/tug_msgs/rosidl_generator_cpp/tug_msgs/msg/detail/wheel_encoder__struct.hpp" "/home/bobo/ros2_ws/build/tug_msgs/rosidl_generator_cpp/tug_msgs/msg/bicycle.hpp"
+  "/home/bobo/ros2_ws/build/tug_msgs/rosidl_generator_cpp/tug_msgs/msg/detail/wheel_encoder__traits.hpp" "/home/bobo/ros2_ws/build/tug_msgs/rosidl_generator_cpp/tug_msgs/msg/bicycle.hpp"
   "/home/bobo/ros2_ws/build/tug_msgs/rosidl_generator_cpp/tug_msgs/msg/movement.hpp" "/home/bobo/ros2_ws/build/tug_msgs/rosidl_generator_cpp/tug_msgs/msg/bicycle.hpp"
   "/home/bobo/ros2_ws/build/tug_msgs/rosidl_generator_cpp/tug_msgs/msg/robot_pose.hpp" "/home/bobo/ros2_ws/build/tug_msgs/rosidl_generator_cpp/tug_msgs/msg/bicycle.hpp"
+  "/home/bobo/ros2_ws/build/tug_msgs/rosidl_generator_cpp/tug_msgs/msg/wheel_encoder.hpp" "/home/bobo/ros2_ws/build/tug_msgs/rosidl_generator_cpp/tug_msgs/msg/bicycle.hpp"
   )
 
 

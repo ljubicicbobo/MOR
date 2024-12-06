@@ -92,8 +92,32 @@ test_sparseLU_EXTERNAL_OBJECTS =
 
 bench/spbench/test_sparseLU: bench/spbench/CMakeFiles/test_sparseLU.dir/test_sparseLU.cpp.o
 bench/spbench/test_sparseLU: bench/spbench/CMakeFiles/test_sparseLU.dir/build.make
+bench/spbench/test_sparseLU: /usr/lib/x86_64-linux-gnu/libcholmod.so
+bench/spbench/test_sparseLU: /usr/lib/x86_64-linux-gnu/libamd.so
+bench/spbench/test_sparseLU: /usr/lib/x86_64-linux-gnu/libcolamd.so
+bench/spbench/test_sparseLU: /usr/lib/x86_64-linux-gnu/libcamd.so
+bench/spbench/test_sparseLU: /usr/lib/x86_64-linux-gnu/libccolamd.so
+bench/spbench/test_sparseLU: blas/libeigen_blas_static.a
+bench/spbench/test_sparseLU: lapack/libeigen_lapack_static.a
+bench/spbench/test_sparseLU: /usr/lib/x86_64-linux-gnu/libumfpack.so
+bench/spbench/test_sparseLU: /usr/lib/x86_64-linux-gnu/libcolamd.so
+bench/spbench/test_sparseLU: /usr/lib/x86_64-linux-gnu/libamd.so
+bench/spbench/test_sparseLU: /usr/lib/x86_64-linux-gnu/libcholmod.so
+bench/spbench/test_sparseLU: blas/libeigen_blas_static.a
+bench/spbench/test_sparseLU: /usr/lib/x86_64-linux-gnu/libklu.so
+bench/spbench/test_sparseLU: /usr/lib/x86_64-linux-gnu/libcolamd.so
+bench/spbench/test_sparseLU: /usr/lib/x86_64-linux-gnu/libamd.so
+bench/spbench/test_sparseLU: /usr/lib/x86_64-linux-gnu/libbtf.so
 bench/spbench/test_sparseLU: /usr/lib/x86_64-linux-gnu/libsuperlu.so
 bench/spbench/test_sparseLU: blas/libeigen_blas_static.a
+bench/spbench/test_sparseLU: /usr/lib/x86_64-linux-gnu/librt.a
+bench/spbench/test_sparseLU: /usr/lib/x86_64-linux-gnu/libcholmod.so
+bench/spbench/test_sparseLU: /usr/lib/x86_64-linux-gnu/libcamd.so
+bench/spbench/test_sparseLU: /usr/lib/x86_64-linux-gnu/libccolamd.so
+bench/spbench/test_sparseLU: /usr/lib/x86_64-linux-gnu/libumfpack.so
+bench/spbench/test_sparseLU: /usr/lib/x86_64-linux-gnu/libklu.so
+bench/spbench/test_sparseLU: /usr/lib/x86_64-linux-gnu/libbtf.so
+bench/spbench/test_sparseLU: /usr/lib/x86_64-linux-gnu/libsuperlu.so
 bench/spbench/test_sparseLU: /usr/lib/x86_64-linux-gnu/librt.a
 bench/spbench/test_sparseLU: bench/spbench/CMakeFiles/test_sparseLU.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/bobo/ros2_ws/build/Eigen3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable test_sparseLU"

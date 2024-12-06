@@ -21,6 +21,9 @@ ADOLC_INCLUDES:PATH=ADOLC_INCLUDES-NOTFOUND
 ADOLC_LIBRARIES:FILEPATH=ADOLC_LIBRARIES-NOTFOUND
 
 //Path to a library.
+AMD_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libamd.so
+
+//Path to a library.
 BLAS_Accelerate_LIBRARY:FILEPATH=BLAS_Accelerate_LIBRARY-NOTFOUND
 
 //Installation directory of BLAS library
@@ -113,6 +116,9 @@ BLAS_vecLib_LIBRARY:FILEPATH=BLAS_vecLib_LIBRARY-NOTFOUND
 //\n    ACML, ACML_MP, ACML_GPU, Apple, NAS, Generic
 BLA_VENDOR:STRING=
 
+//Path to a library.
+BTF_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libbtf.so
+
 //Build the testing tree.
 BUILD_TESTING:BOOL=ON
 
@@ -122,11 +128,23 @@ Boost_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0
 //Path to a file.
 Boost_INCLUDE_DIR:PATH=/usr/include
 
-//Path to a file.
-CHOLMOD_INCLUDES:PATH=CHOLMOD_INCLUDES-NOTFOUND
+//Path to a library.
+CAMD_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libcamd.so
 
 //Path to a library.
-CHOLMOD_LIBRARIES:FILEPATH=CHOLMOD_LIBRARIES-NOTFOUND
+CCOLAMD_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libccolamd.so
+
+//Path to a file.
+CHOLMOD_INCLUDES:PATH=/usr/include/suitesparse
+
+//Path to a library.
+CHOLMOD_LIBRARIES:FILEPATH=/usr/lib/x86_64-linux-gnu/libcholmod.so
+
+//Path to a library.
+CHOLMOD_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libcholmod.so
+
+//Path to a library.
+CHOLMOD_METIS_LIBRARY:FILEPATH=CHOLMOD_METIS_LIBRARY-NOTFOUND
 
 //The directory relative to CMAKE_INSTALL_PREFIX where Eigen3Config.cmake
 // is installed
@@ -401,8 +419,8 @@ CMAKE_STRIP:FILEPATH=/usr/bin/strip
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
-//Test COMPILER_SUPPORT_std=cpp03
-COMPILER_SUPPORT_std:UNINITIALIZED=cpp03:INTERNAL=1
+//Path to a library.
+COLAMD_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libcolamd.so
 
 //Path to the coverage program that CTest uses for performing coverage
 // inspection
@@ -737,10 +755,10 @@ HWLOC_DIR_FOUND:PATH=/usr/lib/x86_64-linux-gnu
 INCLUDE_INSTALL_DIR:PATH=include/eigen3
 
 //Path to a file.
-KLU_INCLUDES:PATH=KLU_INCLUDES-NOTFOUND
+KLU_INCLUDES:PATH=/usr/include/suitesparse
 
 //Path to a library.
-KLU_LIBRARIES:FILEPATH=KLU_LIBRARIES-NOTFOUND
+KLU_LIBRARIES:FILEPATH=/usr/lib/x86_64-linux-gnu/libklu.so
 
 //Command to build the project
 MAKECOMMAND:STRING=/usr/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}"
@@ -764,7 +782,7 @@ M_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libm.so
 OMP_gomp_LIBRARY:FILEPATH=/usr/lib/gcc/x86_64-linux-gnu/11/libgomp.so
 
 //Path to a library.
-OMP_iomp5_LIBRARY:FILEPATH=OMP_iomp5_LIBRARY-NOTFOUND
+OMP_iomp5_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libiomp5.so
 
 //Installation directory of PASTIX library
 PASTIX_DIR:PATH=
@@ -809,10 +827,13 @@ SCOTCH_scotcherrexit_LIBRARY:FILEPATH=SCOTCH_scotcherrexit_LIBRARY-NOTFOUND
 SITE:STRING=bobo-HP-EliteBook-x360-1030-G3
 
 //Path to a file.
-SPQR_INCLUDES:PATH=SPQR_INCLUDES-NOTFOUND
+SPQR_INCLUDES:PATH=/usr/include/suitesparse
 
 //Path to a library.
-SPQR_LIBRARIES:FILEPATH=SPQR_LIBRARIES-NOTFOUND
+SPQR_LIBRARIES:FILEPATH=/usr/lib/x86_64-linux-gnu/libspqr.so
+
+//Path to a library.
+SUITESPARSE_LIBRARY:FILEPATH=SUITESPARSE_LIBRARY-NOTFOUND
 
 //Path to a file.
 SUPERLU_INCLUDES:PATH=/usr/include/superlu
@@ -821,10 +842,10 @@ SUPERLU_INCLUDES:PATH=/usr/include/superlu
 SUPERLU_LIBRARIES:FILEPATH=/usr/lib/x86_64-linux-gnu/libsuperlu.so
 
 //Path to a file.
-UMFPACK_INCLUDES:PATH=UMFPACK_INCLUDES-NOTFOUND
+UMFPACK_INCLUDES:PATH=/usr/include/suitesparse
 
 //Path to a library.
-UMFPACK_LIBRARIES:FILEPATH=UMFPACK_LIBRARIES-NOTFOUND
+UMFPACK_LIBRARIES:FILEPATH=/usr/lib/x86_64-linux-gnu/libumfpack.so
 
 //The directory containing a CMake configuration file for boost_headers.
 boost_headers_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/boost_headers-1.74.0
@@ -844,6 +865,8 @@ pkgcfg_lib_HWLOC_hwloc:FILEPATH=/usr/lib/x86_64-linux-gnu/libhwloc.so
 ADOLC_INCLUDES-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: ADOLC_LIBRARIES
 ADOLC_LIBRARIES-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: AMD_LIBRARY
+AMD_LIBRARY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: BLAS_Accelerate_LIBRARY
 BLAS_Accelerate_LIBRARY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: BLAS_DIR
@@ -902,12 +925,22 @@ BLAS_sgemm_LIBRARY-ADVANCED:INTERNAL=1
 BLAS_sunperf_LIBRARY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: BLAS_vecLib_LIBRARY
 BLAS_vecLib_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: BTF_LIBRARY
+BTF_LIBRARY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: Boost_DIR
 Boost_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CAMD_LIBRARY
+CAMD_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CCOLAMD_LIBRARY
+CCOLAMD_LIBRARY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CHOLMOD_INCLUDES
 CHOLMOD_INCLUDES-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CHOLMOD_LIBRARIES
 CHOLMOD_LIBRARIES-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CHOLMOD_LIBRARY
+CHOLMOD_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CHOLMOD_METIS_LIBRARY
+CHOLMOD_METIS_LIBRARY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_ADDR2LINE
 CMAKE_ADDR2LINE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_AR
@@ -1105,6 +1138,8 @@ CMAKE_STRIP-ADVANCED:INTERNAL=1
 CMAKE_UNAME:INTERNAL=/usr/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: COLAMD_LIBRARY
+COLAMD_LIBRARY-ADVANCED:INTERNAL=1
 //Test COMPILER_SUPPORT_FASTMATH
 COMPILER_SUPPORT_FASTMATH:INTERNAL=1
 //Test COMPILER_SUPPORT_OPENMP
@@ -1253,12 +1288,20 @@ FFTW_INCLUDES-ADVANCED:INTERNAL=1
 FFTW_LIB-ADVANCED:INTERNAL=1
 //Details about finding Boost
 FIND_PACKAGE_MESSAGE_DETAILS_Boost:INTERNAL=[/usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake][c ][v1.74.0(1.53.0)]
+//Details about finding CHOLMOD
+FIND_PACKAGE_MESSAGE_DETAILS_CHOLMOD:INTERNAL=[/usr/include/suitesparse][/usr/lib/x86_64-linux-gnu/libcholmod.so;/usr/lib/x86_64-linux-gnu/libamd.so;/usr/lib/x86_64-linux-gnu/libcolamd.so;/usr/lib/x86_64-linux-gnu/libcamd.so;/usr/lib/x86_64-linux-gnu/libccolamd.so][v()]
+//Details about finding KLU
+FIND_PACKAGE_MESSAGE_DETAILS_KLU:INTERNAL=[/usr/include/suitesparse][/usr/lib/x86_64-linux-gnu/libklu.so;/usr/lib/x86_64-linux-gnu/libcolamd.so;/usr/lib/x86_64-linux-gnu/libamd.so;/usr/lib/x86_64-linux-gnu/libbtf.so][v()]
 //Details about finding PkgConfig
 FIND_PACKAGE_MESSAGE_DETAILS_PkgConfig:INTERNAL=[/usr/bin/pkg-config][v0.29.2()]
+//Details about finding SPQR
+FIND_PACKAGE_MESSAGE_DETAILS_SPQR:INTERNAL=[/usr/include/suitesparse][/usr/lib/x86_64-linux-gnu/libspqr.so;/usr/lib/x86_64-linux-gnu/libcholmod.so][v()]
 //Details about finding SuperLU
 FIND_PACKAGE_MESSAGE_DETAILS_SuperLU:INTERNAL=[/usr/include/superlu][/usr/lib/x86_64-linux-gnu/libsuperlu.so][TRUE][v5.0(4.0)]
 //Details about finding Threads
 FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
+//Details about finding UMFPACK
+FIND_PACKAGE_MESSAGE_DETAILS_UMFPACK:INTERNAL=[/usr/include/suitesparse][/usr/lib/x86_64-linux-gnu/libumfpack.so;/usr/lib/x86_64-linux-gnu/libcolamd.so;/usr/lib/x86_64-linux-gnu/libamd.so;/usr/lib/x86_64-linux-gnu/libcholmod.so][v()]
 //ADVANCED property for variable: FORTRAN_gfortran_LIBRARY
 FORTRAN_gfortran_LIBRARY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: GOOGLEHASH_INCLUDES
@@ -1385,6 +1428,8 @@ SITE-ADVANCED:INTERNAL=1
 SPQR_INCLUDES-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: SPQR_LIBRARIES
 SPQR_LIBRARIES-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: SUITESPARSE_LIBRARY
+SUITESPARSE_LIBRARY-ADVANCED:INTERNAL=1
 //Test SUPERLU_HAS_CLEAN_ENUMS
 SUPERLU_HAS_CLEAN_ENUMS:INTERNAL=1
 //Test SUPERLU_HAS_GLOBALLU_T

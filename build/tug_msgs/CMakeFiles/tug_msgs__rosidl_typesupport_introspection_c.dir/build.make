@@ -80,6 +80,7 @@ rosidl_typesupport_introspection_c/tug_msgs/msg/detail/bicycle__rosidl_typesuppo
 rosidl_typesupport_introspection_c/tug_msgs/msg/detail/bicycle__rosidl_typesupport_introspection_c.h: rosidl_adapter/tug_msgs/msg/Bicycle.idl
 rosidl_typesupport_introspection_c/tug_msgs/msg/detail/bicycle__rosidl_typesupport_introspection_c.h: rosidl_adapter/tug_msgs/msg/Movement.idl
 rosidl_typesupport_introspection_c/tug_msgs/msg/detail/bicycle__rosidl_typesupport_introspection_c.h: rosidl_adapter/tug_msgs/msg/RobotPose.idl
+rosidl_typesupport_introspection_c/tug_msgs/msg/detail/bicycle__rosidl_typesupport_introspection_c.h: rosidl_adapter/tug_msgs/msg/WheelEncoder.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/bobo/ros2_ws/build/tug_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C introspection for ROS interfaces"
 	/usr/bin/python3 /opt/ros/humble/lib/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c --generator-arguments-file /home/bobo/ros2_ws/build/tug_msgs/rosidl_typesupport_introspection_c__arguments.json
 
@@ -89,6 +90,9 @@ rosidl_typesupport_introspection_c/tug_msgs/msg/detail/movement__rosidl_typesupp
 rosidl_typesupport_introspection_c/tug_msgs/msg/detail/robot_pose__rosidl_typesupport_introspection_c.h: rosidl_typesupport_introspection_c/tug_msgs/msg/detail/bicycle__rosidl_typesupport_introspection_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/tug_msgs/msg/detail/robot_pose__rosidl_typesupport_introspection_c.h
 
+rosidl_typesupport_introspection_c/tug_msgs/msg/detail/wheel_encoder__rosidl_typesupport_introspection_c.h: rosidl_typesupport_introspection_c/tug_msgs/msg/detail/bicycle__rosidl_typesupport_introspection_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/tug_msgs/msg/detail/wheel_encoder__rosidl_typesupport_introspection_c.h
+
 rosidl_typesupport_introspection_c/tug_msgs/msg/detail/bicycle__type_support.c: rosidl_typesupport_introspection_c/tug_msgs/msg/detail/bicycle__rosidl_typesupport_introspection_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/tug_msgs/msg/detail/bicycle__type_support.c
 
@@ -97,6 +101,9 @@ rosidl_typesupport_introspection_c/tug_msgs/msg/detail/movement__type_support.c:
 
 rosidl_typesupport_introspection_c/tug_msgs/msg/detail/robot_pose__type_support.c: rosidl_typesupport_introspection_c/tug_msgs/msg/detail/bicycle__rosidl_typesupport_introspection_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/tug_msgs/msg/detail/robot_pose__type_support.c
+
+rosidl_typesupport_introspection_c/tug_msgs/msg/detail/wheel_encoder__type_support.c: rosidl_typesupport_introspection_c/tug_msgs/msg/detail/bicycle__rosidl_typesupport_introspection_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/tug_msgs/msg/detail/wheel_encoder__type_support.c
 
 CMakeFiles/tug_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tug_msgs/msg/detail/bicycle__type_support.c.o: CMakeFiles/tug_msgs__rosidl_typesupport_introspection_c.dir/flags.make
 CMakeFiles/tug_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tug_msgs/msg/detail/bicycle__type_support.c.o: rosidl_typesupport_introspection_c/tug_msgs/msg/detail/bicycle__type_support.c
@@ -140,11 +147,26 @@ CMakeFiles/tug_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_i
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/tug_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tug_msgs/msg/detail/robot_pose__type_support.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/bobo/ros2_ws/build/tug_msgs/rosidl_typesupport_introspection_c/tug_msgs/msg/detail/robot_pose__type_support.c -o CMakeFiles/tug_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tug_msgs/msg/detail/robot_pose__type_support.c.s
 
+CMakeFiles/tug_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tug_msgs/msg/detail/wheel_encoder__type_support.c.o: CMakeFiles/tug_msgs__rosidl_typesupport_introspection_c.dir/flags.make
+CMakeFiles/tug_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tug_msgs/msg/detail/wheel_encoder__type_support.c.o: rosidl_typesupport_introspection_c/tug_msgs/msg/detail/wheel_encoder__type_support.c
+CMakeFiles/tug_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tug_msgs/msg/detail/wheel_encoder__type_support.c.o: CMakeFiles/tug_msgs__rosidl_typesupport_introspection_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bobo/ros2_ws/build/tug_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/tug_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tug_msgs/msg/detail/wheel_encoder__type_support.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/tug_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tug_msgs/msg/detail/wheel_encoder__type_support.c.o -MF CMakeFiles/tug_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tug_msgs/msg/detail/wheel_encoder__type_support.c.o.d -o CMakeFiles/tug_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tug_msgs/msg/detail/wheel_encoder__type_support.c.o -c /home/bobo/ros2_ws/build/tug_msgs/rosidl_typesupport_introspection_c/tug_msgs/msg/detail/wheel_encoder__type_support.c
+
+CMakeFiles/tug_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tug_msgs/msg/detail/wheel_encoder__type_support.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/tug_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tug_msgs/msg/detail/wheel_encoder__type_support.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/bobo/ros2_ws/build/tug_msgs/rosidl_typesupport_introspection_c/tug_msgs/msg/detail/wheel_encoder__type_support.c > CMakeFiles/tug_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tug_msgs/msg/detail/wheel_encoder__type_support.c.i
+
+CMakeFiles/tug_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tug_msgs/msg/detail/wheel_encoder__type_support.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/tug_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tug_msgs/msg/detail/wheel_encoder__type_support.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/bobo/ros2_ws/build/tug_msgs/rosidl_typesupport_introspection_c/tug_msgs/msg/detail/wheel_encoder__type_support.c -o CMakeFiles/tug_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tug_msgs/msg/detail/wheel_encoder__type_support.c.s
+
 # Object files for target tug_msgs__rosidl_typesupport_introspection_c
 tug_msgs__rosidl_typesupport_introspection_c_OBJECTS = \
 "CMakeFiles/tug_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tug_msgs/msg/detail/bicycle__type_support.c.o" \
 "CMakeFiles/tug_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tug_msgs/msg/detail/movement__type_support.c.o" \
-"CMakeFiles/tug_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tug_msgs/msg/detail/robot_pose__type_support.c.o"
+"CMakeFiles/tug_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tug_msgs/msg/detail/robot_pose__type_support.c.o" \
+"CMakeFiles/tug_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tug_msgs/msg/detail/wheel_encoder__type_support.c.o"
 
 # External object files for target tug_msgs__rosidl_typesupport_introspection_c
 tug_msgs__rosidl_typesupport_introspection_c_EXTERNAL_OBJECTS =
@@ -152,13 +174,14 @@ tug_msgs__rosidl_typesupport_introspection_c_EXTERNAL_OBJECTS =
 libtug_msgs__rosidl_typesupport_introspection_c.so: CMakeFiles/tug_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tug_msgs/msg/detail/bicycle__type_support.c.o
 libtug_msgs__rosidl_typesupport_introspection_c.so: CMakeFiles/tug_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tug_msgs/msg/detail/movement__type_support.c.o
 libtug_msgs__rosidl_typesupport_introspection_c.so: CMakeFiles/tug_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tug_msgs/msg/detail/robot_pose__type_support.c.o
+libtug_msgs__rosidl_typesupport_introspection_c.so: CMakeFiles/tug_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tug_msgs/msg/detail/wheel_encoder__type_support.c.o
 libtug_msgs__rosidl_typesupport_introspection_c.so: CMakeFiles/tug_msgs__rosidl_typesupport_introspection_c.dir/build.make
 libtug_msgs__rosidl_typesupport_introspection_c.so: libtug_msgs__rosidl_generator_c.so
 libtug_msgs__rosidl_typesupport_introspection_c.so: /opt/ros/humble/lib/librosidl_typesupport_introspection_c.so
 libtug_msgs__rosidl_typesupport_introspection_c.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 libtug_msgs__rosidl_typesupport_introspection_c.so: /opt/ros/humble/lib/librcutils.so
 libtug_msgs__rosidl_typesupport_introspection_c.so: CMakeFiles/tug_msgs__rosidl_typesupport_introspection_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/bobo/ros2_ws/build/tug_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C shared library libtug_msgs__rosidl_typesupport_introspection_c.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/bobo/ros2_ws/build/tug_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C shared library libtug_msgs__rosidl_typesupport_introspection_c.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/tug_msgs__rosidl_typesupport_introspection_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -175,6 +198,8 @@ CMakeFiles/tug_msgs__rosidl_typesupport_introspection_c.dir/depend: rosidl_types
 CMakeFiles/tug_msgs__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/tug_msgs/msg/detail/movement__type_support.c
 CMakeFiles/tug_msgs__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/tug_msgs/msg/detail/robot_pose__rosidl_typesupport_introspection_c.h
 CMakeFiles/tug_msgs__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/tug_msgs/msg/detail/robot_pose__type_support.c
+CMakeFiles/tug_msgs__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/tug_msgs/msg/detail/wheel_encoder__rosidl_typesupport_introspection_c.h
+CMakeFiles/tug_msgs__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/tug_msgs/msg/detail/wheel_encoder__type_support.c
 	cd /home/bobo/ros2_ws/build/tug_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/bobo/ros2_ws/src/mr2_public/tug_msgs /home/bobo/ros2_ws/src/mr2_public/tug_msgs /home/bobo/ros2_ws/build/tug_msgs /home/bobo/ros2_ws/build/tug_msgs /home/bobo/ros2_ws/build/tug_msgs/CMakeFiles/tug_msgs__rosidl_typesupport_introspection_c.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/tug_msgs__rosidl_typesupport_introspection_c.dir/depend
 

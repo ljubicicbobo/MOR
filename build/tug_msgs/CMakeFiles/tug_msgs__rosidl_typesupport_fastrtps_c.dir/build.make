@@ -80,6 +80,7 @@ rosidl_typesupport_fastrtps_c/tug_msgs/msg/detail/bicycle__rosidl_typesupport_fa
 rosidl_typesupport_fastrtps_c/tug_msgs/msg/detail/bicycle__rosidl_typesupport_fastrtps_c.h: rosidl_adapter/tug_msgs/msg/Bicycle.idl
 rosidl_typesupport_fastrtps_c/tug_msgs/msg/detail/bicycle__rosidl_typesupport_fastrtps_c.h: rosidl_adapter/tug_msgs/msg/Movement.idl
 rosidl_typesupport_fastrtps_c/tug_msgs/msg/detail/bicycle__rosidl_typesupport_fastrtps_c.h: rosidl_adapter/tug_msgs/msg/RobotPose.idl
+rosidl_typesupport_fastrtps_c/tug_msgs/msg/detail/bicycle__rosidl_typesupport_fastrtps_c.h: rosidl_adapter/tug_msgs/msg/WheelEncoder.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/bobo/ros2_ws/build/tug_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C type support for eProsima Fast-RTPS"
 	/usr/bin/python3 /opt/ros/humble/lib/rosidl_typesupport_fastrtps_c/rosidl_typesupport_fastrtps_c --generator-arguments-file /home/bobo/ros2_ws/build/tug_msgs/rosidl_typesupport_fastrtps_c__arguments.json
 
@@ -97,6 +98,12 @@ rosidl_typesupport_fastrtps_c/tug_msgs/msg/detail/robot_pose__rosidl_typesupport
 
 rosidl_typesupport_fastrtps_c/tug_msgs/msg/detail/robot_pose__type_support_c.cpp: rosidl_typesupport_fastrtps_c/tug_msgs/msg/detail/bicycle__rosidl_typesupport_fastrtps_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_c/tug_msgs/msg/detail/robot_pose__type_support_c.cpp
+
+rosidl_typesupport_fastrtps_c/tug_msgs/msg/detail/wheel_encoder__rosidl_typesupport_fastrtps_c.h: rosidl_typesupport_fastrtps_c/tug_msgs/msg/detail/bicycle__rosidl_typesupport_fastrtps_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_c/tug_msgs/msg/detail/wheel_encoder__rosidl_typesupport_fastrtps_c.h
+
+rosidl_typesupport_fastrtps_c/tug_msgs/msg/detail/wheel_encoder__type_support_c.cpp: rosidl_typesupport_fastrtps_c/tug_msgs/msg/detail/bicycle__rosidl_typesupport_fastrtps_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_c/tug_msgs/msg/detail/wheel_encoder__type_support_c.cpp
 
 CMakeFiles/tug_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tug_msgs/msg/detail/bicycle__type_support_c.cpp.o: CMakeFiles/tug_msgs__rosidl_typesupport_fastrtps_c.dir/flags.make
 CMakeFiles/tug_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tug_msgs/msg/detail/bicycle__type_support_c.cpp.o: rosidl_typesupport_fastrtps_c/tug_msgs/msg/detail/bicycle__type_support_c.cpp
@@ -140,11 +147,26 @@ CMakeFiles/tug_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tug_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tug_msgs/msg/detail/robot_pose__type_support_c.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bobo/ros2_ws/build/tug_msgs/rosidl_typesupport_fastrtps_c/tug_msgs/msg/detail/robot_pose__type_support_c.cpp -o CMakeFiles/tug_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tug_msgs/msg/detail/robot_pose__type_support_c.cpp.s
 
+CMakeFiles/tug_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tug_msgs/msg/detail/wheel_encoder__type_support_c.cpp.o: CMakeFiles/tug_msgs__rosidl_typesupport_fastrtps_c.dir/flags.make
+CMakeFiles/tug_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tug_msgs/msg/detail/wheel_encoder__type_support_c.cpp.o: rosidl_typesupport_fastrtps_c/tug_msgs/msg/detail/wheel_encoder__type_support_c.cpp
+CMakeFiles/tug_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tug_msgs/msg/detail/wheel_encoder__type_support_c.cpp.o: CMakeFiles/tug_msgs__rosidl_typesupport_fastrtps_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bobo/ros2_ws/build/tug_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/tug_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tug_msgs/msg/detail/wheel_encoder__type_support_c.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tug_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tug_msgs/msg/detail/wheel_encoder__type_support_c.cpp.o -MF CMakeFiles/tug_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tug_msgs/msg/detail/wheel_encoder__type_support_c.cpp.o.d -o CMakeFiles/tug_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tug_msgs/msg/detail/wheel_encoder__type_support_c.cpp.o -c /home/bobo/ros2_ws/build/tug_msgs/rosidl_typesupport_fastrtps_c/tug_msgs/msg/detail/wheel_encoder__type_support_c.cpp
+
+CMakeFiles/tug_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tug_msgs/msg/detail/wheel_encoder__type_support_c.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tug_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tug_msgs/msg/detail/wheel_encoder__type_support_c.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bobo/ros2_ws/build/tug_msgs/rosidl_typesupport_fastrtps_c/tug_msgs/msg/detail/wheel_encoder__type_support_c.cpp > CMakeFiles/tug_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tug_msgs/msg/detail/wheel_encoder__type_support_c.cpp.i
+
+CMakeFiles/tug_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tug_msgs/msg/detail/wheel_encoder__type_support_c.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tug_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tug_msgs/msg/detail/wheel_encoder__type_support_c.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bobo/ros2_ws/build/tug_msgs/rosidl_typesupport_fastrtps_c/tug_msgs/msg/detail/wheel_encoder__type_support_c.cpp -o CMakeFiles/tug_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tug_msgs/msg/detail/wheel_encoder__type_support_c.cpp.s
+
 # Object files for target tug_msgs__rosidl_typesupport_fastrtps_c
 tug_msgs__rosidl_typesupport_fastrtps_c_OBJECTS = \
 "CMakeFiles/tug_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tug_msgs/msg/detail/bicycle__type_support_c.cpp.o" \
 "CMakeFiles/tug_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tug_msgs/msg/detail/movement__type_support_c.cpp.o" \
-"CMakeFiles/tug_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tug_msgs/msg/detail/robot_pose__type_support_c.cpp.o"
+"CMakeFiles/tug_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tug_msgs/msg/detail/robot_pose__type_support_c.cpp.o" \
+"CMakeFiles/tug_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tug_msgs/msg/detail/wheel_encoder__type_support_c.cpp.o"
 
 # External object files for target tug_msgs__rosidl_typesupport_fastrtps_c
 tug_msgs__rosidl_typesupport_fastrtps_c_EXTERNAL_OBJECTS =
@@ -152,6 +174,7 @@ tug_msgs__rosidl_typesupport_fastrtps_c_EXTERNAL_OBJECTS =
 libtug_msgs__rosidl_typesupport_fastrtps_c.so: CMakeFiles/tug_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tug_msgs/msg/detail/bicycle__type_support_c.cpp.o
 libtug_msgs__rosidl_typesupport_fastrtps_c.so: CMakeFiles/tug_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tug_msgs/msg/detail/movement__type_support_c.cpp.o
 libtug_msgs__rosidl_typesupport_fastrtps_c.so: CMakeFiles/tug_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tug_msgs/msg/detail/robot_pose__type_support_c.cpp.o
+libtug_msgs__rosidl_typesupport_fastrtps_c.so: CMakeFiles/tug_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tug_msgs/msg/detail/wheel_encoder__type_support_c.cpp.o
 libtug_msgs__rosidl_typesupport_fastrtps_c.so: CMakeFiles/tug_msgs__rosidl_typesupport_fastrtps_c.dir/build.make
 libtug_msgs__rosidl_typesupport_fastrtps_c.so: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_cpp.so
 libtug_msgs__rosidl_typesupport_fastrtps_c.so: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_c.so
@@ -161,7 +184,7 @@ libtug_msgs__rosidl_typesupport_fastrtps_c.so: /opt/ros/humble/lib/librmw.so
 libtug_msgs__rosidl_typesupport_fastrtps_c.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 libtug_msgs__rosidl_typesupport_fastrtps_c.so: /opt/ros/humble/lib/librcutils.so
 libtug_msgs__rosidl_typesupport_fastrtps_c.so: CMakeFiles/tug_msgs__rosidl_typesupport_fastrtps_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/bobo/ros2_ws/build/tug_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX shared library libtug_msgs__rosidl_typesupport_fastrtps_c.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/bobo/ros2_ws/build/tug_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX shared library libtug_msgs__rosidl_typesupport_fastrtps_c.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/tug_msgs__rosidl_typesupport_fastrtps_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -178,6 +201,8 @@ CMakeFiles/tug_msgs__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesuppor
 CMakeFiles/tug_msgs__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/tug_msgs/msg/detail/movement__type_support_c.cpp
 CMakeFiles/tug_msgs__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/tug_msgs/msg/detail/robot_pose__rosidl_typesupport_fastrtps_c.h
 CMakeFiles/tug_msgs__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/tug_msgs/msg/detail/robot_pose__type_support_c.cpp
+CMakeFiles/tug_msgs__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/tug_msgs/msg/detail/wheel_encoder__rosidl_typesupport_fastrtps_c.h
+CMakeFiles/tug_msgs__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/tug_msgs/msg/detail/wheel_encoder__type_support_c.cpp
 	cd /home/bobo/ros2_ws/build/tug_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/bobo/ros2_ws/src/mr2_public/tug_msgs /home/bobo/ros2_ws/src/mr2_public/tug_msgs /home/bobo/ros2_ws/build/tug_msgs /home/bobo/ros2_ws/build/tug_msgs /home/bobo/ros2_ws/build/tug_msgs/CMakeFiles/tug_msgs__rosidl_typesupport_fastrtps_c.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/tug_msgs__rosidl_typesupport_fastrtps_c.dir/depend
 

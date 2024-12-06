@@ -92,8 +92,32 @@ spbenchsolver_EXTERNAL_OBJECTS =
 
 bench/spbench/spbenchsolver: bench/spbench/CMakeFiles/spbenchsolver.dir/spbenchsolver.cpp.o
 bench/spbench/spbenchsolver: bench/spbench/CMakeFiles/spbenchsolver.dir/build.make
+bench/spbench/spbenchsolver: /usr/lib/x86_64-linux-gnu/libcholmod.so
+bench/spbench/spbenchsolver: /usr/lib/x86_64-linux-gnu/libamd.so
+bench/spbench/spbenchsolver: /usr/lib/x86_64-linux-gnu/libcolamd.so
+bench/spbench/spbenchsolver: /usr/lib/x86_64-linux-gnu/libcamd.so
+bench/spbench/spbenchsolver: /usr/lib/x86_64-linux-gnu/libccolamd.so
+bench/spbench/spbenchsolver: blas/libeigen_blas_static.a
+bench/spbench/spbenchsolver: lapack/libeigen_lapack_static.a
+bench/spbench/spbenchsolver: /usr/lib/x86_64-linux-gnu/libumfpack.so
+bench/spbench/spbenchsolver: /usr/lib/x86_64-linux-gnu/libcolamd.so
+bench/spbench/spbenchsolver: /usr/lib/x86_64-linux-gnu/libamd.so
+bench/spbench/spbenchsolver: /usr/lib/x86_64-linux-gnu/libcholmod.so
+bench/spbench/spbenchsolver: blas/libeigen_blas_static.a
+bench/spbench/spbenchsolver: /usr/lib/x86_64-linux-gnu/libklu.so
+bench/spbench/spbenchsolver: /usr/lib/x86_64-linux-gnu/libcolamd.so
+bench/spbench/spbenchsolver: /usr/lib/x86_64-linux-gnu/libamd.so
+bench/spbench/spbenchsolver: /usr/lib/x86_64-linux-gnu/libbtf.so
 bench/spbench/spbenchsolver: /usr/lib/x86_64-linux-gnu/libsuperlu.so
 bench/spbench/spbenchsolver: blas/libeigen_blas_static.a
+bench/spbench/spbenchsolver: /usr/lib/x86_64-linux-gnu/librt.a
+bench/spbench/spbenchsolver: /usr/lib/x86_64-linux-gnu/libcholmod.so
+bench/spbench/spbenchsolver: /usr/lib/x86_64-linux-gnu/libcamd.so
+bench/spbench/spbenchsolver: /usr/lib/x86_64-linux-gnu/libccolamd.so
+bench/spbench/spbenchsolver: /usr/lib/x86_64-linux-gnu/libumfpack.so
+bench/spbench/spbenchsolver: /usr/lib/x86_64-linux-gnu/libklu.so
+bench/spbench/spbenchsolver: /usr/lib/x86_64-linux-gnu/libbtf.so
+bench/spbench/spbenchsolver: /usr/lib/x86_64-linux-gnu/libsuperlu.so
 bench/spbench/spbenchsolver: /usr/lib/x86_64-linux-gnu/librt.a
 bench/spbench/spbenchsolver: bench/spbench/CMakeFiles/spbenchsolver.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/bobo/ros2_ws/build/Eigen3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable spbenchsolver"

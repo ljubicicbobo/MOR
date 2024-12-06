@@ -1,0 +1,28 @@
+[0.022s] Invoking command in '/home/bobo/ros2_ws/build/tug_turtlebot4': CMAKE_PREFIX_PATH=/home/bobo/ros2_ws/install/tug_msgs:/home/bobo/ros2_ws/install/tug_turtlebot4:/home/bobo/ros2_ws/install/tug_stage_ros2:/home/bobo/ros2_ws/install/tug_mr2:/home/bobo/ros2_ws/install/ros2cpp_tutorials_service:/home/bobo/ros2_ws/install/ros2cpp_tutorials_publisher_subscriber:/home/bobo/ros2_ws/install/ros2cpp_tutorials_parameter:/home/bobo/ros2_ws/install/ros2cpp_tutorials_action:/home/bobo/ros2_ws/install/Eigen3:/opt/ros/humble LD_LIBRARY_PATH=/home/bobo/ros2_ws/install/tug_msgs/lib:/home/bobo/stg/lib:/home/bobo/ros2_ws/install/ros2cpp_tutorials_service/lib:/home/bobo/ros2_ws/install/ros2cpp_tutorials_action/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/bobo/ros2_ws/build/tug_turtlebot4 -- -j8 -l8
+[0.089s] [35m[1mConsolidate compiler generated dependencies of target simple_turtle[0m
+[0.108s] [ 28%] Built target static_transform_publisher
+[0.114s] [ 57%] Built target tug_wheel_encoder-system
+[0.122s] [ 71%] [32mBuilding CXX object CMakeFiles/simple_turtle.dir/src/SimpleTurtleNode.cpp.o[0m
+[3.081s] [01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SimpleTurtleNode.cpp:116:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid tug_turtlebot4::SimpleTurtleNode::wheelEncoderCallback2(const ConstSharedPtr&)[m[K’
+[3.081s]   116 | void [01;31m[KSimpleTurtleNode[m[K::wheelEncoderCallback2(
+[3.081s]       |      [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[3.081s] [01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SimpleTurtleNode.cpp:116:6:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Kvoid tug_turtlebot4::SimpleTurtleNode::wheelEncoderCallback2(const ConstSharedPtr&)[m[K’
+[3.081s] In file included from [01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SimpleTurtleNode.cpp:1[m[K:
+[3.082s] [01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/include/tug_turtlebot4/SimpleTurtleNode.hpp:22:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass tug_turtlebot4::SimpleTurtleNode[m[K’ defined here
+[3.082s]    22 | class [01;36m[KSimpleTurtleNode[m[K : public rclcpp::Node
+[3.082s]       |       [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[3.082s] [01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SimpleTurtleNode.cpp:117:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing WheelEncoder = using WheelEncoder = struct tug_msgs::msg::WheelEncoder_<std::allocator<void> >[m[K’ is private within this context
+[3.082s]   117 |   const [01;31m[KWheelEncoder[m[K::ConstSharedPtr& msg
+[3.082s]       |         [01;31m[K^~~~~~~~~~~~[m[K
+[3.082s] In file included from [01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SimpleTurtleNode.cpp:1[m[K:
+[3.082s] [01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/include/tug_turtlebot4/SimpleTurtleNode.hpp:29:11:[m[K [01;36m[Knote: [m[Kdeclared private here
+[3.082s]    29 |     using [01;36m[KWheelEncoder[m[K = tug_msgs::msg::WheelEncoder;
+[3.083s]       |           [01;36m[K^~~~~~~~~~~~[m[K
+[3.083s] [01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SimpleTurtleNode.cpp:[m[K In member function ‘[01m[Kvoid tug_turtlebot4::SimpleTurtleNode::poseCallback(const Pose&)[m[K’:
+[3.083s] [01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SimpleTurtleNode.cpp:179:49:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[3.083s]   179 | void SimpleTurtleNode::poseCallback([01;35m[Kconst Pose& msg[m[K)
+[3.083s]       |                                     [01;35m[K~~~~~~~~~~~~^~~[m[K
+[6.732s] gmake[2]: *** [CMakeFiles/simple_turtle.dir/build.make:90: CMakeFiles/simple_turtle.dir/src/SimpleTurtleNode.cpp.o] Error 1
+[6.733s] gmake[1]: *** [CMakeFiles/Makefile2:167: CMakeFiles/simple_turtle.dir/all] Error 2
+[6.733s] gmake: *** [Makefile:146: all] Error 2
+[6.735s] Invoked command in '/home/bobo/ros2_ws/build/tug_turtlebot4' returned '2': CMAKE_PREFIX_PATH=/home/bobo/ros2_ws/install/tug_msgs:/home/bobo/ros2_ws/install/tug_turtlebot4:/home/bobo/ros2_ws/install/tug_stage_ros2:/home/bobo/ros2_ws/install/tug_mr2:/home/bobo/ros2_ws/install/ros2cpp_tutorials_service:/home/bobo/ros2_ws/install/ros2cpp_tutorials_publisher_subscriber:/home/bobo/ros2_ws/install/ros2cpp_tutorials_parameter:/home/bobo/ros2_ws/install/ros2cpp_tutorials_action:/home/bobo/ros2_ws/install/Eigen3:/opt/ros/humble LD_LIBRARY_PATH=/home/bobo/ros2_ws/install/tug_msgs/lib:/home/bobo/stg/lib:/home/bobo/ros2_ws/install/ros2cpp_tutorials_service/lib:/home/bobo/ros2_ws/install/ros2cpp_tutorials_action/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/bobo/ros2_ws/build/tug_turtlebot4 -- -j8 -l8

@@ -15967,6 +15967,110 @@ fastmath/fast:
 .PHONY : fastmath/fast
 
 #=============================================================================
+# Target rules for targets named umfpack_support
+
+# Build rule for target.
+umfpack_support: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 umfpack_support
+.PHONY : umfpack_support
+
+# fast build rule for target.
+umfpack_support/fast:
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/umfpack_support.dir/build.make test/CMakeFiles/umfpack_support.dir/build
+.PHONY : umfpack_support/fast
+
+#=============================================================================
+# Target rules for targets named umfpack_support_1
+
+# Build rule for target.
+umfpack_support_1: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 umfpack_support_1
+.PHONY : umfpack_support_1
+
+# fast build rule for target.
+umfpack_support_1/fast:
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/umfpack_support_1.dir/build.make test/CMakeFiles/umfpack_support_1.dir/build
+.PHONY : umfpack_support_1/fast
+
+#=============================================================================
+# Target rules for targets named umfpack_support_2
+
+# Build rule for target.
+umfpack_support_2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 umfpack_support_2
+.PHONY : umfpack_support_2
+
+# fast build rule for target.
+umfpack_support_2/fast:
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/umfpack_support_2.dir/build.make test/CMakeFiles/umfpack_support_2.dir/build
+.PHONY : umfpack_support_2/fast
+
+#=============================================================================
+# Target rules for targets named umfpack_support_3
+
+# Build rule for target.
+umfpack_support_3: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 umfpack_support_3
+.PHONY : umfpack_support_3
+
+# fast build rule for target.
+umfpack_support_3/fast:
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/umfpack_support_3.dir/build.make test/CMakeFiles/umfpack_support_3.dir/build
+.PHONY : umfpack_support_3/fast
+
+#=============================================================================
+# Target rules for targets named umfpack_support_4
+
+# Build rule for target.
+umfpack_support_4: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 umfpack_support_4
+.PHONY : umfpack_support_4
+
+# fast build rule for target.
+umfpack_support_4/fast:
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/umfpack_support_4.dir/build.make test/CMakeFiles/umfpack_support_4.dir/build
+.PHONY : umfpack_support_4/fast
+
+#=============================================================================
+# Target rules for targets named klu_support
+
+# Build rule for target.
+klu_support: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 klu_support
+.PHONY : klu_support
+
+# fast build rule for target.
+klu_support/fast:
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/klu_support.dir/build.make test/CMakeFiles/klu_support.dir/build
+.PHONY : klu_support/fast
+
+#=============================================================================
+# Target rules for targets named klu_support_1
+
+# Build rule for target.
+klu_support_1: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 klu_support_1
+.PHONY : klu_support_1
+
+# fast build rule for target.
+klu_support_1/fast:
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/klu_support_1.dir/build.make test/CMakeFiles/klu_support_1.dir/build
+.PHONY : klu_support_1/fast
+
+#=============================================================================
+# Target rules for targets named klu_support_2
+
+# Build rule for target.
+klu_support_2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 klu_support_2
+.PHONY : klu_support_2
+
+# fast build rule for target.
+klu_support_2/fast:
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/klu_support_2.dir/build.make test/CMakeFiles/klu_support_2.dir/build
+.PHONY : klu_support_2/fast
+
+#=============================================================================
 # Target rules for targets named superlu_support
 
 # Build rule for target.
@@ -16004,6 +16108,162 @@ superlu_support_2: cmake_check_build_system
 superlu_support_2/fast:
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/superlu_support_2.dir/build.make test/CMakeFiles/superlu_support_2.dir/build
 .PHONY : superlu_support_2/fast
+
+#=============================================================================
+# Target rules for targets named cholmod_support
+
+# Build rule for target.
+cholmod_support: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cholmod_support
+.PHONY : cholmod_support
+
+# fast build rule for target.
+cholmod_support/fast:
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/cholmod_support.dir/build.make test/CMakeFiles/cholmod_support.dir/build
+.PHONY : cholmod_support/fast
+
+#=============================================================================
+# Target rules for targets named cholmod_support_11
+
+# Build rule for target.
+cholmod_support_11: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cholmod_support_11
+.PHONY : cholmod_support_11
+
+# fast build rule for target.
+cholmod_support_11/fast:
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/cholmod_support_11.dir/build.make test/CMakeFiles/cholmod_support_11.dir/build
+.PHONY : cholmod_support_11/fast
+
+#=============================================================================
+# Target rules for targets named cholmod_support_12
+
+# Build rule for target.
+cholmod_support_12: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cholmod_support_12
+.PHONY : cholmod_support_12
+
+# fast build rule for target.
+cholmod_support_12/fast:
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/cholmod_support_12.dir/build.make test/CMakeFiles/cholmod_support_12.dir/build
+.PHONY : cholmod_support_12/fast
+
+#=============================================================================
+# Target rules for targets named cholmod_support_13
+
+# Build rule for target.
+cholmod_support_13: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cholmod_support_13
+.PHONY : cholmod_support_13
+
+# fast build rule for target.
+cholmod_support_13/fast:
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/cholmod_support_13.dir/build.make test/CMakeFiles/cholmod_support_13.dir/build
+.PHONY : cholmod_support_13/fast
+
+#=============================================================================
+# Target rules for targets named cholmod_support_14
+
+# Build rule for target.
+cholmod_support_14: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cholmod_support_14
+.PHONY : cholmod_support_14
+
+# fast build rule for target.
+cholmod_support_14/fast:
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/cholmod_support_14.dir/build.make test/CMakeFiles/cholmod_support_14.dir/build
+.PHONY : cholmod_support_14/fast
+
+#=============================================================================
+# Target rules for targets named cholmod_support_21
+
+# Build rule for target.
+cholmod_support_21: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cholmod_support_21
+.PHONY : cholmod_support_21
+
+# fast build rule for target.
+cholmod_support_21/fast:
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/cholmod_support_21.dir/build.make test/CMakeFiles/cholmod_support_21.dir/build
+.PHONY : cholmod_support_21/fast
+
+#=============================================================================
+# Target rules for targets named cholmod_support_22
+
+# Build rule for target.
+cholmod_support_22: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cholmod_support_22
+.PHONY : cholmod_support_22
+
+# fast build rule for target.
+cholmod_support_22/fast:
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/cholmod_support_22.dir/build.make test/CMakeFiles/cholmod_support_22.dir/build
+.PHONY : cholmod_support_22/fast
+
+#=============================================================================
+# Target rules for targets named cholmod_support_23
+
+# Build rule for target.
+cholmod_support_23: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cholmod_support_23
+.PHONY : cholmod_support_23
+
+# fast build rule for target.
+cholmod_support_23/fast:
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/cholmod_support_23.dir/build.make test/CMakeFiles/cholmod_support_23.dir/build
+.PHONY : cholmod_support_23/fast
+
+#=============================================================================
+# Target rules for targets named cholmod_support_24
+
+# Build rule for target.
+cholmod_support_24: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cholmod_support_24
+.PHONY : cholmod_support_24
+
+# fast build rule for target.
+cholmod_support_24/fast:
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/cholmod_support_24.dir/build.make test/CMakeFiles/cholmod_support_24.dir/build
+.PHONY : cholmod_support_24/fast
+
+#=============================================================================
+# Target rules for targets named spqr_support
+
+# Build rule for target.
+spqr_support: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 spqr_support
+.PHONY : spqr_support
+
+# fast build rule for target.
+spqr_support/fast:
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/spqr_support.dir/build.make test/CMakeFiles/spqr_support.dir/build
+.PHONY : spqr_support/fast
+
+#=============================================================================
+# Target rules for targets named spqr_support_1
+
+# Build rule for target.
+spqr_support_1: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 spqr_support_1
+.PHONY : spqr_support_1
+
+# fast build rule for target.
+spqr_support_1/fast:
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/spqr_support_1.dir/build.make test/CMakeFiles/spqr_support_1.dir/build
+.PHONY : spqr_support_1/fast
+
+#=============================================================================
+# Target rules for targets named spqr_support_2
+
+# Build rule for target.
+spqr_support_2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 spqr_support_2
+.PHONY : spqr_support_2
+
+# fast build rule for target.
+spqr_support_2/fast:
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/spqr_support_2.dir/build.make test/CMakeFiles/spqr_support_2.dir/build
+.PHONY : spqr_support_2/fast
 
 #=============================================================================
 # Target rules for targets named boostmultiprec
@@ -19672,6 +19932,7 @@ help:
 	@echo "... buildtests"
 	@echo "... check"
 	@echo "... cholesky"
+	@echo "... cholmod_support"
 	@echo "... commainitializer"
 	@echo "... conjugate_gradient"
 	@echo "... conservative_resize"
@@ -19709,6 +19970,7 @@ help:
 	@echo "... inverse"
 	@echo "... jacobi"
 	@echo "... jacobisvd"
+	@echo "... klu_support"
 	@echo "... kronecker_product"
 	@echo "... lapack"
 	@echo "... linearstructure"
@@ -19767,6 +20029,7 @@ help:
 	@echo "... special_functions"
 	@echo "... special_numbers"
 	@echo "... special_packetmath"
+	@echo "... spqr_support"
 	@echo "... stable_norm"
 	@echo "... stddeque"
 	@echo "... stddeque_overload"
@@ -19780,6 +20043,7 @@ help:
 	@echo "... symbolic_index"
 	@echo "... triangular"
 	@echo "... umeyama"
+	@echo "... umfpack_support"
 	@echo "... uninstall"
 	@echo "... unsupported_examples"
 	@echo "... unsupported_snippets"
@@ -19979,6 +20243,14 @@ help:
 	@echo "... cholesky_7"
 	@echo "... cholesky_8"
 	@echo "... cholesky_9"
+	@echo "... cholmod_support_11"
+	@echo "... cholmod_support_12"
+	@echo "... cholmod_support_13"
+	@echo "... cholmod_support_14"
+	@echo "... cholmod_support_21"
+	@echo "... cholmod_support_22"
+	@echo "... cholmod_support_23"
+	@echo "... cholmod_support_24"
 	@echo "... class_Block"
 	@echo "... class_CwiseBinaryOp"
 	@echo "... class_CwiseUnaryOp"
@@ -20529,6 +20801,8 @@ help:
 	@echo "... jacobisvd_9"
 	@echo "... jacobisvd_int_ko"
 	@echo "... jacobisvd_int_ok"
+	@echo "... klu_support_1"
+	@echo "... klu_support_2"
 	@echo "... kronecker_product_1"
 	@echo "... kronecker_product_2"
 	@echo "... ldlt_int_ko"
@@ -20993,6 +21267,8 @@ help:
 	@echo "... special_packetmath_3"
 	@echo "... special_packetmath_4"
 	@echo "... splines"
+	@echo "... spqr_support_1"
+	@echo "... spqr_support_2"
 	@echo "... spsolver"
 	@echo "... stable_norm_1"
 	@echo "... stable_norm_2"
@@ -21083,6 +21359,10 @@ help:
 	@echo "... umeyama_6"
 	@echo "... umeyama_7"
 	@echo "... umeyama_8"
+	@echo "... umfpack_support_1"
+	@echo "... umfpack_support_2"
+	@echo "... umfpack_support_3"
+	@echo "... umfpack_support_4"
 	@echo "... unalignedcount"
 	@echo "... upperbidiagonalization_1"
 	@echo "... upperbidiagonalization_2"

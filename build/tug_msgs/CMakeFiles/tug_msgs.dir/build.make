@@ -69,6 +69,7 @@ include CMakeFiles/tug_msgs.dir/progress.make
 CMakeFiles/tug_msgs: /home/bobo/ros2_ws/src/mr2_public/tug_msgs/msg/Bicycle.msg
 CMakeFiles/tug_msgs: /home/bobo/ros2_ws/src/mr2_public/tug_msgs/msg/Movement.msg
 CMakeFiles/tug_msgs: /home/bobo/ros2_ws/src/mr2_public/tug_msgs/msg/RobotPose.msg
+CMakeFiles/tug_msgs: /home/bobo/ros2_ws/src/mr2_public/tug_msgs/msg/WheelEncoder.msg
 
 tug_msgs: CMakeFiles/tug_msgs
 tug_msgs: CMakeFiles/tug_msgs.dir/build.make

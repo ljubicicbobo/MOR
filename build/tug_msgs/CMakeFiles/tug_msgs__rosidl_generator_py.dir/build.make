@@ -111,11 +111,26 @@ CMakeFiles/tug_msgs__rosidl_generator_py.dir/rosidl_generator_py/tug_msgs/msg/_r
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/tug_msgs__rosidl_generator_py.dir/rosidl_generator_py/tug_msgs/msg/_robot_pose_s.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/bobo/ros2_ws/build/tug_msgs/rosidl_generator_py/tug_msgs/msg/_robot_pose_s.c -o CMakeFiles/tug_msgs__rosidl_generator_py.dir/rosidl_generator_py/tug_msgs/msg/_robot_pose_s.c.s
 
+CMakeFiles/tug_msgs__rosidl_generator_py.dir/rosidl_generator_py/tug_msgs/msg/_wheel_encoder_s.c.o: CMakeFiles/tug_msgs__rosidl_generator_py.dir/flags.make
+CMakeFiles/tug_msgs__rosidl_generator_py.dir/rosidl_generator_py/tug_msgs/msg/_wheel_encoder_s.c.o: rosidl_generator_py/tug_msgs/msg/_wheel_encoder_s.c
+CMakeFiles/tug_msgs__rosidl_generator_py.dir/rosidl_generator_py/tug_msgs/msg/_wheel_encoder_s.c.o: CMakeFiles/tug_msgs__rosidl_generator_py.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bobo/ros2_ws/build/tug_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/tug_msgs__rosidl_generator_py.dir/rosidl_generator_py/tug_msgs/msg/_wheel_encoder_s.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/tug_msgs__rosidl_generator_py.dir/rosidl_generator_py/tug_msgs/msg/_wheel_encoder_s.c.o -MF CMakeFiles/tug_msgs__rosidl_generator_py.dir/rosidl_generator_py/tug_msgs/msg/_wheel_encoder_s.c.o.d -o CMakeFiles/tug_msgs__rosidl_generator_py.dir/rosidl_generator_py/tug_msgs/msg/_wheel_encoder_s.c.o -c /home/bobo/ros2_ws/build/tug_msgs/rosidl_generator_py/tug_msgs/msg/_wheel_encoder_s.c
+
+CMakeFiles/tug_msgs__rosidl_generator_py.dir/rosidl_generator_py/tug_msgs/msg/_wheel_encoder_s.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/tug_msgs__rosidl_generator_py.dir/rosidl_generator_py/tug_msgs/msg/_wheel_encoder_s.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/bobo/ros2_ws/build/tug_msgs/rosidl_generator_py/tug_msgs/msg/_wheel_encoder_s.c > CMakeFiles/tug_msgs__rosidl_generator_py.dir/rosidl_generator_py/tug_msgs/msg/_wheel_encoder_s.c.i
+
+CMakeFiles/tug_msgs__rosidl_generator_py.dir/rosidl_generator_py/tug_msgs/msg/_wheel_encoder_s.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/tug_msgs__rosidl_generator_py.dir/rosidl_generator_py/tug_msgs/msg/_wheel_encoder_s.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/bobo/ros2_ws/build/tug_msgs/rosidl_generator_py/tug_msgs/msg/_wheel_encoder_s.c -o CMakeFiles/tug_msgs__rosidl_generator_py.dir/rosidl_generator_py/tug_msgs/msg/_wheel_encoder_s.c.s
+
 # Object files for target tug_msgs__rosidl_generator_py
 tug_msgs__rosidl_generator_py_OBJECTS = \
 "CMakeFiles/tug_msgs__rosidl_generator_py.dir/rosidl_generator_py/tug_msgs/msg/_bicycle_s.c.o" \
 "CMakeFiles/tug_msgs__rosidl_generator_py.dir/rosidl_generator_py/tug_msgs/msg/_movement_s.c.o" \
-"CMakeFiles/tug_msgs__rosidl_generator_py.dir/rosidl_generator_py/tug_msgs/msg/_robot_pose_s.c.o"
+"CMakeFiles/tug_msgs__rosidl_generator_py.dir/rosidl_generator_py/tug_msgs/msg/_robot_pose_s.c.o" \
+"CMakeFiles/tug_msgs__rosidl_generator_py.dir/rosidl_generator_py/tug_msgs/msg/_wheel_encoder_s.c.o"
 
 # External object files for target tug_msgs__rosidl_generator_py
 tug_msgs__rosidl_generator_py_EXTERNAL_OBJECTS =
@@ -123,6 +138,7 @@ tug_msgs__rosidl_generator_py_EXTERNAL_OBJECTS =
 rosidl_generator_py/tug_msgs/libtug_msgs__rosidl_generator_py.so: CMakeFiles/tug_msgs__rosidl_generator_py.dir/rosidl_generator_py/tug_msgs/msg/_bicycle_s.c.o
 rosidl_generator_py/tug_msgs/libtug_msgs__rosidl_generator_py.so: CMakeFiles/tug_msgs__rosidl_generator_py.dir/rosidl_generator_py/tug_msgs/msg/_movement_s.c.o
 rosidl_generator_py/tug_msgs/libtug_msgs__rosidl_generator_py.so: CMakeFiles/tug_msgs__rosidl_generator_py.dir/rosidl_generator_py/tug_msgs/msg/_robot_pose_s.c.o
+rosidl_generator_py/tug_msgs/libtug_msgs__rosidl_generator_py.so: CMakeFiles/tug_msgs__rosidl_generator_py.dir/rosidl_generator_py/tug_msgs/msg/_wheel_encoder_s.c.o
 rosidl_generator_py/tug_msgs/libtug_msgs__rosidl_generator_py.so: CMakeFiles/tug_msgs__rosidl_generator_py.dir/build.make
 rosidl_generator_py/tug_msgs/libtug_msgs__rosidl_generator_py.so: /usr/lib/x86_64-linux-gnu/libpython3.10.so
 rosidl_generator_py/tug_msgs/libtug_msgs__rosidl_generator_py.so: libtug_msgs__rosidl_typesupport_c.so
@@ -130,7 +146,7 @@ rosidl_generator_py/tug_msgs/libtug_msgs__rosidl_generator_py.so: libtug_msgs__r
 rosidl_generator_py/tug_msgs/libtug_msgs__rosidl_generator_py.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 rosidl_generator_py/tug_msgs/libtug_msgs__rosidl_generator_py.so: /opt/ros/humble/lib/librcutils.so
 rosidl_generator_py/tug_msgs/libtug_msgs__rosidl_generator_py.so: CMakeFiles/tug_msgs__rosidl_generator_py.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/bobo/ros2_ws/build/tug_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C shared library rosidl_generator_py/tug_msgs/libtug_msgs__rosidl_generator_py.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/bobo/ros2_ws/build/tug_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C shared library rosidl_generator_py/tug_msgs/libtug_msgs__rosidl_generator_py.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/tug_msgs__rosidl_generator_py.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -1,0 +1,85 @@
+[0.019s] Invoking command in '/home/bobo/ros2_ws/build/tug_turtlebot4': CMAKE_PREFIX_PATH=/home/bobo/ros2_ws/install/tug_msgs:/home/bobo/ros2_ws/install/tug_turtlebot4:/home/bobo/ros2_ws/install/tug_stage_ros2:/home/bobo/ros2_ws/install/tug_mr2:/home/bobo/ros2_ws/install/ros2cpp_tutorials_service:/home/bobo/ros2_ws/install/ros2cpp_tutorials_publisher_subscriber:/home/bobo/ros2_ws/install/ros2cpp_tutorials_parameter:/home/bobo/ros2_ws/install/ros2cpp_tutorials_action:/home/bobo/ros2_ws/install/Eigen3:/opt/ros/humble LD_LIBRARY_PATH=/home/bobo/ros2_ws/install/tug_msgs/lib:/home/bobo/stg/lib:/home/bobo/ros2_ws/install/ros2cpp_tutorials_service/lib:/home/bobo/ros2_ws/install/ros2cpp_tutorials_action/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/bobo/ros2_ws/build/tug_turtlebot4 -- -j8 -l8
+[0.102s] [ 28%] Built target static_transform_publisher
+[0.104s] [ 42%] [32mBuilding CXX object CMakeFiles/simple_turtle.dir/src/SimpleTurtleNode.cpp.o[0m
+[0.109s] [ 71%] Built target tug_wheel_encoder-system
+[2.923s] [01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SimpleTurtleNode.cpp:122:6:[m[K [01;31m[Kerror: [m[K‘[01m[KSimpleTurtleNode[m[K’ has not been declared
+[2.923s]   122 | void [01;31m[KSimpleTurtleNode[m[K::poseCallback(const Pose& msg)
+[2.923s]       |      [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[2.924s] [01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SimpleTurtleNode.cpp:122:43:[m[K [01;31m[Kerror: [m[K‘[01m[KPose[m[K’ does not name a type
+[2.924s]   122 | void SimpleTurtleNode::poseCallback(const [01;31m[KPose[m[K& msg)
+[2.924s]       |                                           [01;31m[K^~~~[m[K
+[2.924s] [01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SimpleTurtleNode.cpp:[m[K In function ‘[01m[Kvoid poseCallback(const int&)[m[K’:
+[2.924s] [01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SimpleTurtleNode.cpp:122:49:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.924s]   122 | void SimpleTurtleNode::poseCallback([01;35m[Kconst Pose& msg[m[K)
+[2.924s]       |                                     [01;35m[K~~~~~~~~~~~~^~~[m[K
+[2.924s] [01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SimpleTurtleNode.cpp:[m[K At global scope:
+[2.924s] [01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SimpleTurtleNode.cpp:128:6:[m[K [01;31m[Kerror: [m[K‘[01m[KSimpleTurtleNode[m[K’ has not been declared
+[2.924s]   128 | void [01;31m[KSimpleTurtleNode[m[K::publishTransform(
+[2.925s]       |      [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[2.928s] [01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SimpleTurtleNode.cpp:[m[K In function ‘[01m[Kvoid publishTransform(const tf2::Quaternion&, const tf2::Vector3&)[m[K’:
+[2.928s] [01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SimpleTurtleNode.cpp:134:28:[m[K [01;31m[Kerror: [m[K‘[01m[Kget_clock[m[K’ was not declared in this scope
+[2.928s]   134 |   transform.header.stamp = [01;31m[Kget_clock[m[K()->now();
+[2.928s]       |                            [01;31m[K^~~~~~~~~[m[K
+[2.934s] [01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SimpleTurtleNode.cpp:140:3:[m[K [01;31m[Kerror: [m[K‘[01m[Ktf_broadcaster_[m[K’ was not declared in this scope
+[2.934s]   140 |   [01;31m[Ktf_broadcaster_[m[K->sendTransform(transform);
+[2.934s]       |   [01;31m[K^~~~~~~~~~~~~~~[m[K
+[2.934s] [01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SimpleTurtleNode.cpp:[m[K At global scope:
+[2.934s] [01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SimpleTurtleNode.cpp:144:6:[m[K [01;31m[Kerror: [m[K‘[01m[KSimpleTurtleNode[m[K’ has not been declared
+[2.935s]   144 | void [01;31m[KSimpleTurtleNode[m[K::step()
+[2.935s]       |      [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[2.939s] [01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SimpleTurtleNode.cpp:[m[K In function ‘[01m[Kvoid step()[m[K’:
+[2.939s] [01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SimpleTurtleNode.cpp:148:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kcmd_vel_msgs_[m[K’ was not declared in this scope
+[2.939s]   148 |   if (step < [01;31m[Kcmd_vel_msgs_[m[K.size())
+[2.939s]       |              [01;31m[K^~~~~~~~~~~~~[m[K
+[2.944s] [01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SimpleTurtleNode.cpp:149:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kcmd_vel_pub_[m[K’ was not declared in this scope
+[2.944s]   149 |     [01;31m[Kcmd_vel_pub_[m[K->publish(cmd_vel_msgs_[step++]);
+[2.944s]       |     [01;31m[K^~~~~~~~~~~~[m[K
+[2.950s] [01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SimpleTurtleNode.cpp:152:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kcmd_vel_pub_[m[K’ was not declared in this scope
+[2.950s]   152 |     [01;31m[Kcmd_vel_pub_[m[K->publish(Twist());
+[2.950s]       |     [01;31m[K^~~~~~~~~~~~[m[K
+[2.950s] [01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SimpleTurtleNode.cpp:152:27:[m[K [01;31m[Kerror: [m[K‘[01m[KTwist[m[K’ was not declared in this scope
+[2.950s]   152 |     cmd_vel_pub_->publish([01;31m[KTwist[m[K());
+[2.951s]       |                           [01;31m[K^~~~~[m[K
+[2.958s] [01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SimpleTurtleNode.cpp:152:27:[m[K [01;36m[Knote: [m[Ksuggested alternatives:
+[2.959s] In file included from [01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:54[m[K,
+[2.959s]                  from [01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SimpleTurtleNode.cpp:9[m[K:
+[2.959s] [01m[K/usr/include/kdl/frames.hpp:720:7:[m[K [01;36m[Knote: [m[K  ‘[01m[KKDL::Twist[m[K’
+[2.959s]   720 | class [01;36m[KTwist[m[K {
+[2.959s]       |       [01;36m[K^~~~~[m[K
+[2.959s] In file included from [01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/twist.hpp:7[m[K,
+[2.959s]                  from [01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/include/tug_turtlebot4/SimpleTurtleNode.hpp:16[m[K,
+[2.959s]                  from [01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SimpleTurtleNode.cpp:1[m[K:
+[2.959s] [01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__struct.hpp:134:7:[m[K [01;36m[Knote: [m[K  ‘[01m[Kgeometry_msgs::msg::Twist[m[K’
+[2.959s]   134 | using [01;36m[KTwist[m[K =
+[2.960s]       |       [01;36m[K^~~~~[m[K
+[2.960s] [01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SimpleTurtleNode.cpp:[m[K At global scope:
+[2.960s] [01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SimpleTurtleNode.cpp:158:6:[m[K [01;31m[Kerror: [m[K‘[01m[KSimpleTurtleNode[m[K’ has not been declared
+[2.960s]   158 | void [01;31m[KSimpleTurtleNode[m[K::initMotionPattern()
+[2.960s]       |      [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[2.964s] [01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SimpleTurtleNode.cpp:[m[K In function ‘[01m[Kvoid initMotionPattern()[m[K’:
+[2.964s] [01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SimpleTurtleNode.cpp:161:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kcmd_vel_msgs_[m[K’ was not declared in this scope
+[2.964s]   161 |   [01;31m[Kcmd_vel_msgs_[m[K.push_back(Twist());
+[2.964s]       |   [01;31m[K^~~~~~~~~~~~~[m[K
+[2.965s] [01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SimpleTurtleNode.cpp:161:27:[m[K [01;31m[Kerror: [m[K‘[01m[KTwist[m[K’ was not declared in this scope
+[2.965s]   161 |   cmd_vel_msgs_.push_back([01;31m[KTwist[m[K());
+[2.965s]       |                           [01;31m[K^~~~~[m[K
+[2.965s] [01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SimpleTurtleNode.cpp:161:27:[m[K [01;36m[Knote: [m[Ksuggested alternatives:
+[2.965s] In file included from [01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:54[m[K,
+[2.965s]                  from [01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SimpleTurtleNode.cpp:9[m[K:
+[2.965s] [01m[K/usr/include/kdl/frames.hpp:720:7:[m[K [01;36m[Knote: [m[K  ‘[01m[KKDL::Twist[m[K’
+[2.965s]   720 | class [01;36m[KTwist[m[K {
+[2.966s]       |       [01;36m[K^~~~~[m[K
+[2.966s] In file included from [01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/twist.hpp:7[m[K,
+[2.966s]                  from [01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/include/tug_turtlebot4/SimpleTurtleNode.hpp:16[m[K,
+[2.966s]                  from [01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SimpleTurtleNode.cpp:1[m[K:
+[2.966s] [01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__struct.hpp:134:7:[m[K [01;36m[Knote: [m[K  ‘[01m[Kgeometry_msgs::msg::Twist[m[K’
+[2.966s]   134 | using [01;36m[KTwist[m[K =
+[2.966s]       |       [01;36m[K^~~~~[m[K
+[2.966s] [01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SimpleTurtleNode.cpp:[m[K At global scope:
+[2.966s] [01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SimpleTurtleNode.cpp:164:1:[m[K [01;31m[Kerror: [m[Kexpected declaration before ‘[01m[K}[m[K’ token
+[2.967s]   164 | [01;31m[K}[m[K /* namespace tug_turtlebot4 */
+[2.967s]       | [01;31m[K^[m[K
+[6.695s] gmake[2]: *** [CMakeFiles/simple_turtle.dir/build.make:90: CMakeFiles/simple_turtle.dir/src/SimpleTurtleNode.cpp.o] Error 1
+[6.696s] gmake[1]: *** [CMakeFiles/Makefile2:167: CMakeFiles/simple_turtle.dir/all] Error 2
+[6.696s] gmake: *** [Makefile:146: all] Error 2
+[6.699s] Invoked command in '/home/bobo/ros2_ws/build/tug_turtlebot4' returned '2': CMAKE_PREFIX_PATH=/home/bobo/ros2_ws/install/tug_msgs:/home/bobo/ros2_ws/install/tug_turtlebot4:/home/bobo/ros2_ws/install/tug_stage_ros2:/home/bobo/ros2_ws/install/tug_mr2:/home/bobo/ros2_ws/install/ros2cpp_tutorials_service:/home/bobo/ros2_ws/install/ros2cpp_tutorials_publisher_subscriber:/home/bobo/ros2_ws/install/ros2cpp_tutorials_parameter:/home/bobo/ros2_ws/install/ros2cpp_tutorials_action:/home/bobo/ros2_ws/install/Eigen3:/opt/ros/humble LD_LIBRARY_PATH=/home/bobo/ros2_ws/install/tug_msgs/lib:/home/bobo/stg/lib:/home/bobo/ros2_ws/install/ros2cpp_tutorials_service/lib:/home/bobo/ros2_ws/install/ros2cpp_tutorials_action/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/bobo/ros2_ws/build/tug_turtlebot4 -- -j8 -l8

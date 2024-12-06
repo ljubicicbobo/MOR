@@ -78,6 +78,10 @@ CMakeFiles/tug_msgs__cpp: rosidl_generator_cpp/tug_msgs/msg/robot_pose.hpp
 CMakeFiles/tug_msgs__cpp: rosidl_generator_cpp/tug_msgs/msg/detail/robot_pose__builder.hpp
 CMakeFiles/tug_msgs__cpp: rosidl_generator_cpp/tug_msgs/msg/detail/robot_pose__struct.hpp
 CMakeFiles/tug_msgs__cpp: rosidl_generator_cpp/tug_msgs/msg/detail/robot_pose__traits.hpp
+CMakeFiles/tug_msgs__cpp: rosidl_generator_cpp/tug_msgs/msg/wheel_encoder.hpp
+CMakeFiles/tug_msgs__cpp: rosidl_generator_cpp/tug_msgs/msg/detail/wheel_encoder__builder.hpp
+CMakeFiles/tug_msgs__cpp: rosidl_generator_cpp/tug_msgs/msg/detail/wheel_encoder__struct.hpp
+CMakeFiles/tug_msgs__cpp: rosidl_generator_cpp/tug_msgs/msg/detail/wheel_encoder__traits.hpp
 
 rosidl_generator_cpp/tug_msgs/msg/bicycle.hpp: /opt/ros/humble/lib/rosidl_generator_cpp/rosidl_generator_cpp
 rosidl_generator_cpp/tug_msgs/msg/bicycle.hpp: /opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_cpp/__init__.py
@@ -97,6 +101,7 @@ rosidl_generator_cpp/tug_msgs/msg/bicycle.hpp: /opt/ros/humble/share/rosidl_gene
 rosidl_generator_cpp/tug_msgs/msg/bicycle.hpp: rosidl_adapter/tug_msgs/msg/Bicycle.idl
 rosidl_generator_cpp/tug_msgs/msg/bicycle.hpp: rosidl_adapter/tug_msgs/msg/Movement.idl
 rosidl_generator_cpp/tug_msgs/msg/bicycle.hpp: rosidl_adapter/tug_msgs/msg/RobotPose.idl
+rosidl_generator_cpp/tug_msgs/msg/bicycle.hpp: rosidl_adapter/tug_msgs/msg/WheelEncoder.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/bobo/ros2_ws/build/tug_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
 	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /home/bobo/ros2_ws/build/tug_msgs/rosidl_generator_cpp__arguments.json
 
@@ -133,6 +138,18 @@ rosidl_generator_cpp/tug_msgs/msg/detail/robot_pose__struct.hpp: rosidl_generato
 rosidl_generator_cpp/tug_msgs/msg/detail/robot_pose__traits.hpp: rosidl_generator_cpp/tug_msgs/msg/bicycle.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/tug_msgs/msg/detail/robot_pose__traits.hpp
 
+rosidl_generator_cpp/tug_msgs/msg/wheel_encoder.hpp: rosidl_generator_cpp/tug_msgs/msg/bicycle.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/tug_msgs/msg/wheel_encoder.hpp
+
+rosidl_generator_cpp/tug_msgs/msg/detail/wheel_encoder__builder.hpp: rosidl_generator_cpp/tug_msgs/msg/bicycle.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/tug_msgs/msg/detail/wheel_encoder__builder.hpp
+
+rosidl_generator_cpp/tug_msgs/msg/detail/wheel_encoder__struct.hpp: rosidl_generator_cpp/tug_msgs/msg/bicycle.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/tug_msgs/msg/detail/wheel_encoder__struct.hpp
+
+rosidl_generator_cpp/tug_msgs/msg/detail/wheel_encoder__traits.hpp: rosidl_generator_cpp/tug_msgs/msg/bicycle.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/tug_msgs/msg/detail/wheel_encoder__traits.hpp
+
 tug_msgs__cpp: CMakeFiles/tug_msgs__cpp
 tug_msgs__cpp: rosidl_generator_cpp/tug_msgs/msg/bicycle.hpp
 tug_msgs__cpp: rosidl_generator_cpp/tug_msgs/msg/detail/bicycle__builder.hpp
@@ -144,8 +161,12 @@ tug_msgs__cpp: rosidl_generator_cpp/tug_msgs/msg/detail/movement__traits.hpp
 tug_msgs__cpp: rosidl_generator_cpp/tug_msgs/msg/detail/robot_pose__builder.hpp
 tug_msgs__cpp: rosidl_generator_cpp/tug_msgs/msg/detail/robot_pose__struct.hpp
 tug_msgs__cpp: rosidl_generator_cpp/tug_msgs/msg/detail/robot_pose__traits.hpp
+tug_msgs__cpp: rosidl_generator_cpp/tug_msgs/msg/detail/wheel_encoder__builder.hpp
+tug_msgs__cpp: rosidl_generator_cpp/tug_msgs/msg/detail/wheel_encoder__struct.hpp
+tug_msgs__cpp: rosidl_generator_cpp/tug_msgs/msg/detail/wheel_encoder__traits.hpp
 tug_msgs__cpp: rosidl_generator_cpp/tug_msgs/msg/movement.hpp
 tug_msgs__cpp: rosidl_generator_cpp/tug_msgs/msg/robot_pose.hpp
+tug_msgs__cpp: rosidl_generator_cpp/tug_msgs/msg/wheel_encoder.hpp
 tug_msgs__cpp: CMakeFiles/tug_msgs__cpp.dir/build.make
 .PHONY : tug_msgs__cpp
 
