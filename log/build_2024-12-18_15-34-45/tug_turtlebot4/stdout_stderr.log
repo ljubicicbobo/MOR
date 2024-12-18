@@ -1,0 +1,21 @@
+[35m[1mConsolidate compiler generated dependencies of target simple_turtle[0m
+[ 28%] Built target static_transform_publisher
+[ 57%] Built target tug_wheel_encoder-system
+[ 71%] [32mBuilding CXX object CMakeFiles/simple_turtle.dir/src/SimpleTurtleNode.cpp.o[0m
+[01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SimpleTurtleNode.cpp:[m[K In member function ‘[01m[Kvoid tug_turtlebot4::SimpleTurtleNode::poseCallback(const Pose&)[m[K’:
+[01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SimpleTurtleNode.cpp:134:10:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kyaw[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  134 |   double [01;35m[Kyaw[m[K = atan2(2.0 * (q.w * q.z + q.x * q.y), 1.0 - 2.0 * (q.y * q.y + q.z * q.z));
+      |          [01;35m[K^~~[m[K
+[01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SimpleTurtleNode.cpp:[m[K In member function ‘[01m[Kvoid tug_turtlebot4::SimpleTurtleNode::initMotionPattern()[m[K’:
+[01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SimpleTurtleNode.cpp:186:3:[m[K [01;31m[Kerror: [m[K‘[01m[Ktwist_msg[m[K’ was not declared in this scope
+  186 |   [01;31m[Ktwist_msg[m[K.linear.x = 0.0;
+      |   [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SimpleTurtleNode.cpp:194:11:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kx[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  194 |     float [01;35m[Kx[m[K = a*sin(omega * t);
+      |           [01;35m[K^[m[K
+[01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SimpleTurtleNode.cpp:195:11:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ky[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  195 |     float [01;35m[Ky[m[K = b*sin(2*omega*t);
+      |           [01;35m[K^[m[K
+gmake[2]: *** [CMakeFiles/simple_turtle.dir/build.make:90: CMakeFiles/simple_turtle.dir/src/SimpleTurtleNode.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:167: CMakeFiles/simple_turtle.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

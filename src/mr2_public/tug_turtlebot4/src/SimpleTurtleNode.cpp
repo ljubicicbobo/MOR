@@ -5,8 +5,8 @@
 #include <cmath>
 
 #include "geometry_msgs/msg/transform_stamped.hpp"
-
 #include "tf2_geometry_msgs/tf2_geometry_msgs.hpp"
+#include <tf2/LinearMath/Quaternion.h>
 
 namespace tug_turtlebot4
 {
@@ -49,6 +49,9 @@ SimpleTurtleNode::SimpleTurtleNode() :
 
   odom_file_.open("odom.dat", std::ios::out | std::ios::trunc);
   pose_file_.open("pose.dat", std::ios::out | std::ios::trunc);
+  pose_file_ << "x,y,yaw" << "\n";
+  odom_file_ << "x,y,yaw" << "\n";
+
 }
 
 // -----------------------------------------------------------------------------
@@ -88,7 +91,7 @@ void SimpleTurtleNode::wheelEncoderCallback(
     diffLeft -= (maxCounter+1);
   }
 
-  RCLCPP_INFO(this->get_logger(), "left: %d; right: %d", msg->left_counter, msg->right_counter);
+  //RCLCPP_INFO(this->get_logger(), "left: %d; right: %d", msg->left_counter, msg->right_counter);
 
   bool NotRotating = true;
 
@@ -127,10 +130,37 @@ void SimpleTurtleNode::wheelEncoderCallback(
 
 }
 
+struct PoseState {
+  double x = 0;
+  double y = 0;
+  double yaw = 0;
+  int counter = 0;   // Left encoder ticks  // Right encoder ticks
+} pose_state;
+
+
 // -----------------------------------------------------------------------------
 void SimpleTurtleNode::poseCallback(const Pose& msg)
 {
   // TODO: Use pose callback for calibration
+  const auto& q = msg.orientation;
+  // AZRA vidi jel moze kod tebe yaw da se racuna sa tf2::getYaw
+  // meni pise da error not member ? Nez zasto
+  // pa sam racunao ovako kao ispod
+  double yaw = atan2(2.0 * (q.w * q.z + q.x * q.y), 1.0 - 2.0 * (q.y * q.y + q.z * q.z));
+  if (q.x != pose_state.x || q.y != pose_state.y || yaw != pose_state.yaw) {
+    pose_state.x = q.x;
+    pose_state.y = q.y;
+    pose_state.yaw = yaw;
+    ++pose_state.counter;
+    if (pose_state.counter == 10) {
+      // Pose data in CSV foramt: x, y, yaw;
+      //RCLCPP_INFO(this->get_logger(), "POSE: x: %f; y: %f; omega: %f", msg.position.x, msg.position.y, yaw);
+      //RCLCPP_INFO(this->get_logger(), "ENCODER: x: %f; y: %f; omega: %f", odom_state.x, odom_state.y, odom_state.theta);
+      pose_file_ << msg.position.x << "," << msg.position.y << "," << yaw << "\n";
+      odom_file_ << odom_state.x << "," << odom_state.y << "," << odom_state.theta << "\n";
+      pose_state.counter = 0;
+    }
+  }
 }
 
 // -----------------------------------------------------------------------------
@@ -166,8 +196,36 @@ void SimpleTurtleNode::step()
 // -----------------------------------------------------------------------------
 void SimpleTurtleNode::initMotionPattern()
 {
-  //TODO: Add motion pattern
-  cmd_vel_msgs_.push_back(Twist());
-}
+  // Initialize a motion pattern: Stop, move, curve, etc.
+  Twist twist_msg;
 
+  // Stop motion initially (robot doesn't move for 500 steps)
+
+  twist_msg.linear.x = 0.0;
+  twist_msg.angular.z = 0.0;
+  for (int i = 0; i < 100; i++) {  // 500 steps * 50 ms = 25 seconds
+    cmd_vel_msgs_.push_back(twist_msg);
+  }
+
+  // Move forward slowly (straight motion for 50 steps)
+  twist_msg.linear.x = 0.5;
+  twist_msg.angular.z = 0.0;
+  for (int i = 0; i < 100; i++) {  // 50 steps * 50 ms = 2.5 seconds
+    cmd_vel_msgs_.push_back(twist_msg);
+  }
+  twist_msg.linear.x = 0.5;
+  twist_msg.angular.z = 0.5;
+  for (int i = 0; i < 200; i++) {  // 50 steps * 50 ms = 2.5 seconds
+    cmd_vel_msgs_.push_back(twist_msg);
+  }
+
+  // Add a gentle curve (turn while moving forward for 100 steps)
+  twist_msg.linear.x = -0.5;
+  twist_msg.angular.z = 0;  // Curving motion
+  for (int i = 0; i < 100; i++) {  // 100 steps * 50 ms = 5 seconds
+    cmd_vel_msgs_.push_back(twist_msg);
+  }
+
+}
+  // Add a tighter curve (sharp turn while moving forward for 50 steps)
 } /* namespace tug_turtlebot4 */

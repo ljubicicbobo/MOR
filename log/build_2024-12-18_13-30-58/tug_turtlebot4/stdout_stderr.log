@@ -1,0 +1,14 @@
+[35m[1mConsolidate compiler generated dependencies of target simple_turtle[0m
+[ 28%] Built target static_transform_publisher
+[ 57%] Built target tug_wheel_encoder-system
+[ 71%] [32mBuilding CXX object CMakeFiles/simple_turtle.dir/src/SimpleTurtleNode.cpp.o[0m
+[01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SimpleTurtleNode.cpp:[m[K In member function ‘[01m[Kvoid tug_turtlebot4::SimpleTurtleNode::poseCallback(const Pose&)[m[K’:
+[01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SimpleTurtleNode.cpp:134:21:[m[K [01;31m[Kerror: [m[K‘[01m[KgetYaw[m[K’ is not a member of ‘[01m[Ktf2[m[K’
+  134 |   double yaw = tf2::[01;31m[KgetYaw[m[K(msg.position.orientation);
+      |                     [01;31m[K^~~~~~[m[K
+[01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SimpleTurtleNode.cpp:134:41:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst _position_type[m[K’ {aka ‘[01m[Kconst struct geometry_msgs::msg::Point_<std::allocator<void> >[m[K’} has no member named ‘[01m[Korientation[m[K’
+  134 |   double yaw = tf2::getYaw(msg.position.[01;31m[Korientation[m[K);
+      |                                         [01;31m[K^~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/simple_turtle.dir/build.make:90: CMakeFiles/simple_turtle.dir/src/SimpleTurtleNode.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:167: CMakeFiles/simple_turtle.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
