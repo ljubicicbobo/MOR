@@ -49,8 +49,8 @@ SimpleTurtleNode::SimpleTurtleNode() :
 
   odom_file_.open("odom.dat", std::ios::out | std::ios::trunc);
   pose_file_.open("pose.dat", std::ios::out | std::ios::trunc);
-  pose_file_ << "x,y,yaw,t" << "\n";
-  odom_file_ << "x,y,yaw,t" << "\n";
+  pose_file_ << "x_dis,y_diy,yaw,time" << "\n";
+  odom_file_ << "left_encoder,right_encoder,time" << "\n";
 
 }
 
@@ -158,9 +158,13 @@ void SimpleTurtleNode::poseCallback(const Pose& msg)
       //RCLCPP_INFO(this->get_logger(), "POSE: x: %f; y: %f; omega: %f", msg.position.x, msg.position.y, yaw);
       //RCLCPP_INFO(this->get_logger(), "ENCODER: x: %f; y: %f; omega: %f", odom_state.x, odom_state.y, odom_state.theta);
       if (odom_state.x != 0 || odom_state.y != 0) {
+
         pose_file_ << msg.position.x << "," << msg.position.y << "," << yaw << "," << pose_state.time << "\n";
-      	odom_file_ << odom_state.x << "," << odom_state.y << "," << odom_state.theta << "," << pose_state.time << "\n";
-        pose_state.time += 0.1;
+      	//odom_file_ << odom_state.x << "," << odom_state.y << "," << odom_state.theta << "," << pose_state.time << "\n";
+        odom_file_ << odom_state.left << "," << odom_state.right << "," << pose_state.time << "\n";
+
+		pose_state.time += 0.1;
+
       }
       pose_state.counter = 0;
     }
@@ -214,25 +218,20 @@ void SimpleTurtleNode::initMotionPattern()
 
   // Move forward slowly (straight motion for 50 steps)
   twist_msg.linear.x = 0.5;
-  twist_msg.angular.z = 0.0;
-  for (int i = 0; i < 100; i++) {  // 50 steps * 50 ms = 2.5 seconds
-    cmd_vel_msgs_.push_back(twist_msg);
-  }
-  twist_msg.linear.x = 0.5;
   twist_msg.angular.z = 0.5;
   for (int i = 0; i < 200; i++) {  // 50 steps * 50 ms = 2.5 seconds
     cmd_vel_msgs_.push_back(twist_msg);
   }
 
   // Add a gentle curve (turn while moving forward for 100 steps)
-  twist_msg.linear.x = -0.5;
-  twist_msg.angular.z = 0;  // Curving motion
+  twist_msg.linear.x = 0.5;
+  twist_msg.angular.z = -0.5;  // Curving motion
   for (int i = 0; i < 100; i++) {  // 100 steps * 50 ms = 5 seconds
     cmd_vel_msgs_.push_back(twist_msg);
   }
 
-  twist_msg.linear.x = 0.75;
-  twist_msg.angular.z = -0.5;  // Curving motion
+  twist_msg.linear.x = -0.5;
+  twist_msg.angular.z = 0.5;  // Curving motion
   for (int i = 0; i < 100; i++) {  // 100 steps * 50 ms = 5 seconds
     cmd_vel_msgs_.push_back(twist_msg);
   }
