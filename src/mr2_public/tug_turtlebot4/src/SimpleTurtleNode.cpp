@@ -49,8 +49,8 @@ SimpleTurtleNode::SimpleTurtleNode() :
 
   odom_file_.open("odom.dat", std::ios::out | std::ios::trunc);
   pose_file_.open("pose.dat", std::ios::out | std::ios::trunc);
-  pose_file_ << "x,y,yaw" << "\n";
-  odom_file_ << "x,y,yaw" << "\n";
+  pose_file_ << "x,y,yaw,t" << "\n";
+  odom_file_ << "x,y,yaw,t" << "\n";
 
 }
 
@@ -94,7 +94,6 @@ void SimpleTurtleNode::wheelEncoderCallback(
   //RCLCPP_INFO(this->get_logger(), "left: %d; right: %d", msg->left_counter, msg->right_counter);
 
   bool NotRotating = true;
-
   if (diffRight == (-diffLeft)) {
     NotRotating = false;
   }
@@ -134,7 +133,8 @@ struct PoseState {
   double x = 0;
   double y = 0;
   double yaw = 0;
-  int counter = 0;   // Left encoder ticks  // Right encoder ticks
+  int counter = 0; // Left encoder ticks  // Right encoder ticks
+  float time = 0.0;
 } pose_state;
 
 
@@ -147,6 +147,7 @@ void SimpleTurtleNode::poseCallback(const Pose& msg)
   // meni pise da error not member ? Nez zasto
   // pa sam racunao ovako kao ispod
   double yaw = atan2(2.0 * (q.w * q.z + q.x * q.y), 1.0 - 2.0 * (q.y * q.y + q.z * q.z));
+  RCLCPP_INFO(this->get_logger(), "POSE: x: %f; y: %f; omega: %f", msg.position.x, msg.position.y, yaw);
   if (q.x != pose_state.x || q.y != pose_state.y || yaw != pose_state.yaw) {
     pose_state.x = q.x;
     pose_state.y = q.y;
@@ -156,8 +157,11 @@ void SimpleTurtleNode::poseCallback(const Pose& msg)
       // Pose data in CSV foramt: x, y, yaw;
       //RCLCPP_INFO(this->get_logger(), "POSE: x: %f; y: %f; omega: %f", msg.position.x, msg.position.y, yaw);
       //RCLCPP_INFO(this->get_logger(), "ENCODER: x: %f; y: %f; omega: %f", odom_state.x, odom_state.y, odom_state.theta);
-      pose_file_ << msg.position.x << "," << msg.position.y << "," << yaw << "\n";
-      odom_file_ << odom_state.x << "," << odom_state.y << "," << odom_state.theta << "\n";
+      if (odom_state.x != 0 || odom_state.y != 0) {
+        pose_file_ << msg.position.x << "," << msg.position.y << "," << yaw << "," << pose_state.time << "\n";
+      	odom_file_ << odom_state.x << "," << odom_state.y << "," << odom_state.theta << "," << pose_state.time << "\n";
+        pose_state.time += 0.1;
+      }
       pose_state.counter = 0;
     }
   }
@@ -196,6 +200,7 @@ void SimpleTurtleNode::step()
 // -----------------------------------------------------------------------------
 void SimpleTurtleNode::initMotionPattern()
 {
+
   // Initialize a motion pattern: Stop, move, curve, etc.
   Twist twist_msg;
 
@@ -222,6 +227,12 @@ void SimpleTurtleNode::initMotionPattern()
   // Add a gentle curve (turn while moving forward for 100 steps)
   twist_msg.linear.x = -0.5;
   twist_msg.angular.z = 0;  // Curving motion
+  for (int i = 0; i < 100; i++) {  // 100 steps * 50 ms = 5 seconds
+    cmd_vel_msgs_.push_back(twist_msg);
+  }
+
+  twist_msg.linear.x = 0.75;
+  twist_msg.angular.z = -0.5;  // Curving motion
   for (int i = 0; i < 100; i++) {  // 100 steps * 50 ms = 5 seconds
     cmd_vel_msgs_.push_back(twist_msg);
   }

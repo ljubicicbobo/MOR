@@ -11,7 +11,7 @@ BuildDirectory: /home/bobo/ros2_ws/build/Eigen3
 CostDataFile: 
 
 # Site is something like machine.domain, i.e. pragmatic.crd
-Site: bobo-HP-EliteBook-x360-1030-G3
+Site: bobo-hp-elitebook-x360-1030-g3
 
 # Build name is osname-revision-compiler, i.e. Linux-2.4.2-2smp-c++
 BuildName: linux-6.8.0-47-generic-_-11.4.0-sse2-64bit

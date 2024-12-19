@@ -1,0 +1,27 @@
+pose_data = readmatrix('pose.dat');
+odom_data = readmatrix('odom.dat');
+
+% Diff
+delta_theta_scan = diff(pose_data(:, 3));
+delta_theta_odom = diff(odom_data(:, 3));
+
+function error = error_function(b, delta_theta_odom, delta_theta_scan, displacement_left, displacement_right) 
+    % yaw change
+    estimated_theta = (displacement_right - displacement_left) / b;
+    error = sum((delta_theta_odom - delta_theta_scan));
+end
+
+displacement_left = odom_data(:, 1);
+displacement_right = odom_data(:, 2);
+
+b_guess = 0.233;
+b_optimized = fminsearch(@(b) error_function(b, delta_theta_odom, delta_theta_scan, displacement_left, displacement_right), b)
+fprintf('Optimized wheelbase b: %.4f meters\n', b_optimized);
+
+
+estimated_theta = (displacement_right - displacement_left) / b_optimized;
+plot(estimated_theta, 'r'); hold on;
+plot(delta_theta_scan, 'b');
+legend('Optimized Odometry \Delta\theta', 'Scan Matching \Delta\theta');
+xlabel('Time Step'); ylabel('\Delta\theta (rad)');
+title('Comparison of Yaw Changes (\Delta\theta)');
