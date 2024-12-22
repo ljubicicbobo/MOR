@@ -1,0 +1,10 @@
+[01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SimpleTurtleNode.cpp:[m[K In member function ‘[01m[Kvoid tug_turtlebot4::SimpleTurtleNode::poseCallback(const Pose&)[m[K’:
+[01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SimpleTurtleNode.cpp:150:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst Pose[m[K’ {aka ‘[01m[Kconst struct geometry_msgs::msg::Pose_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kheader[m[K’
+  150 |   double current_time = msg.[01;31m[Kheader[m[K.stamp.sec + msg.header.stamp.nanosec * 1e-9;
+      |                             [01;31m[K^~~~~~[m[K
+[01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SimpleTurtleNode.cpp:150:52:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst Pose[m[K’ {aka ‘[01m[Kconst struct geometry_msgs::msg::Pose_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kheader[m[K’
+  150 |   double current_time = msg.header.stamp.sec + msg.[01;31m[Kheader[m[K.stamp.nanosec * 1e-9;
+      |                                                    [01;31m[K^~~~~~[m[K
+gmake[2]: *** [CMakeFiles/simple_turtle.dir/build.make:90: CMakeFiles/simple_turtle.dir/src/SimpleTurtleNode.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:167: CMakeFiles/simple_turtle.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

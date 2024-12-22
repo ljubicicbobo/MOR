@@ -1,0 +1,109 @@
+% first lets read a file and convert ticks to wheel angular velocities
+format long;  % Display numbers with 15 digits of precision
+
+odom_data = readmatrix('odom.dat');
+pose_data = readmatrix('pose.dat');
+
+left_encoder = odom_data(:, 1);
+right_encoder = odom_data(:, 2);
+time = odom_data(:, 3);
+
+x_disp = pose_data(:, 1);
+y_disp = pose_data(:, 2);
+yaw = pose_data(:, 3);
+%pose_time = pose_data(:, 4);
+
+ticks_per_rev = 2573;
+wheel_rad_R = 0.03569598463;
+wheel_rad_L = 0.03594734249;
+
+delta_time = diff(time);
+delta_left_ticks = diff(left_encoder);
+delta_right_ticks = diff(right_encoder);
+
+
+delta_theta_left = (delta_left_ticks/ ticks_per_rev) * 2 * pi;
+delta_theta_right = (delta_right_ticks / ticks_per_rev) * 2 * pi;
+
+omega_L = delta_theta_left ./ delta_time;
+omega_R = delta_theta_right ./ delta_time;
+
+% Calculate Average Wheel Velocity
+T = time(end) - time(1);
+
+avg_omega_L = (1/T)*sum((delta_theta_left));
+avg_omega_R = (1/T)*sum((delta_theta_right));
+
+% Integration of absolute angular velocities
+avg_omega_L_mag_integration = trapz(time(2:end), (omega_L)) / T;
+avg_omega_R_mag_integration = trapz(time(2:end), (omega_R)) / T;
+
+% Display results
+%fprintf('Time (s)    Left Angular Velocity (rad/s)    Right Angular Velocity (rad/s)\n');
+%for i = 1:length(omega_L)
+%    fprintf('%.3f        %.3f                        %.3f\n', time(i+1), omega_L(i), omega_R(i)); 
+%end
+
+%fprintf("\nAverage Angular Vel:\n");
+%fprintf('Left Wheel: %.3f rad/s\n', avg_omega_L);
+%fprintf('Right Wheel: %.3f rad/s\n', avg_omega_R);
+
+%fprintf('Left Wheel: %.3f rad/s\n', avg_omega_L_mag_integration);
+%fprintf('Right Wheel: %.3f rad/s\n', avg_omega_R_mag_integration);
+
+
+% Calculate L, given that velocity is constant between time intervals
+%
+%L_k = zeros(2, length(delta_time));
+%for k = 1:length(delta_time)
+%    T_k = delta_time(k);
+%    L_k(:, k) = [T_k * omega_L(k); T_k * omega_R(k)];
+%end
+L_k = zeros(2, length(delta_time));
+
+for k = 2:length(delta_time)  % Start from k=2 to integrate from k-1 to k
+    % Integrate omega_L from k-1 to k using trapz
+    integral_L = trapz(delta_time(k-1:k), omega_L(k-1:k));
+    
+    % Integrate omega_R from k-1 to k using trapz
+    integral_R = trapz(delta_time(k-1:k), omega_R(k-1:k));
+    
+    % Store the integral results
+    L_k(:, k) = [integral_L; integral_R];
+end
+
+
+
+%disp("Calc L_k");
+%disp(L_k);
+
+% Calculate J21 J22
+
+delta_yaw = diff(yaw); % sk
+delta_pose_time = diff(time);
+s_theta = delta_yaw ./ delta_pose_time;
+
+sigma_theta = 0.01 * ones(size(s_theta)); % const value
+
+weighted_sum_Lk_Lk = zeros(2, 2);
+weighted_sum_Lk_s_theta = zeros(2, 1);
+
+for k=1:length(delta_time)
+    if (k > length(s_theta))
+        break;
+    end
+
+    L_k_curr = L_k(:, k);
+    weight = 1 / (sigma_theta(k)^2);
+    weighted_sum_Lk_Lk = weighted_sum_Lk_Lk + (L_k_curr*L_k_curr');
+    weighted_sum_Lk_s_theta = weighted_sum_Lk_s_theta + (L_k_curr' * s_theta(k));
+end
+
+J_hat = weighted_sum_Lk_Lk \ weighted_sum_Lk_s_theta;
+
+fprintf("J values calculated \n");
+fprintf('J21: %.3f\n', J_hat(1));
+fprintf('J22: %.3f\n', J_hat(2));
+
+
+
