@@ -1,0 +1,185 @@
+function optimization_odom()
+
+    % Load data and enforce double precision
+    pose_data = double(readmatrix('pose.dat')); % Sensor matching data (x, y, theta)
+    odom_data = double(readmatrix('odom.dat')); % Encoder ticks (left, right)
+
+    % Remove the first row and take first 453 rows for both (since odom has
+    % only 453 timestamp-matching rows)
+    pose_data = double(pose_data(2:453, 1:3));
+    odom_data = double(odom_data(2:453, 1:2));
+
+    encoder_resolution = double(2573);
+
+    % Initial guesses for right_wheel_radius, left_wheel_radius, and b
+    initial_guess = double([0.035, 0.0357, 0.233]);
+
+    % Optimization options with double precision
+    options = optimoptions('fmincon', ...
+    'Algorithm', 'sqp', ...
+    'Display', 'iter-detailed', ...
+    'StepTolerance', 1e-10, ...
+    'OptimalityTolerance', 1e-10, ...
+    'FunctionTolerance', 1e-10);
+
+
+    % Define bounds for parameters
+    lb = double([0, 0, 0.1]); % Lower bounds for [r_r, r_l, b]
+    ub = double([1, 1, 1]);   % Upper bounds for [r_r, r_l, b]
+
+    % Perform optimization
+    optimized_params = fmincon(@(p) cost_function(p, odom_data, pose_data, encoder_resolution), ...
+                               initial_guess, [], [], [], [], lb, ub, [], options);
+
+    % Display optimized parameters with high precision
+    fprintf('Optimized Parameters:\n');
+    fprintf('Right Wheel Radius: %.9f\n', optimized_params(1));
+    fprintf('Left Wheel Radius: %.9f\n', optimized_params(2));
+    fprintf('Wheelbase: %.6f\n', optimized_params(3));
+end
+
+% -------------------------------------------------------------------------
+% Subfunction: Cost Function
+% -------------------------------------------------------------------------
+function error = cost_function(params, odom_data, pose_data, encoder_resolution)
+    
+    % Extract parameters with double precision
+    right_wheel_radius = double(params(1));
+    left_wheel_radius = double(params(2));
+    b = double(params(3));
+
+    % Check for invalid parameters
+    if right_wheel_radius <= 0 || left_wheel_radius <= 0 || b <= 0
+        error = inf;
+        return;
+    end
+
+    % Compute predicted poses from encoder data
+    predicted_poses = compute_odometry(odom_data, right_wheel_radius, left_wheel_radius, b, encoder_resolution);
+    disp("Predicted poses");
+    disp(predicted_poses(:, :))
+
+    % Assuming predicted_poses is your matrix
+    nan_rows = find(any(isnan(predicted_poses), 2));
+    
+    % Display the first row with NaN
+    if ~isempty(nan_rows)
+        disp(['First NaN at row: ', num2str(nan_rows(1))]);
+    else
+        disp('No NaN values found.');
+    end
+
+
+    
+
+    % Check for NaN/Inf in predicted poses
+    if any(isnan(predicted_poses), 'all') || any(isinf(predicted_poses), 'all')
+        error = inf; % Assign a high error for invalid predictions
+        return;
+    end
+    
+    % Ensure sizes match
+    if size(predicted_poses, 1) ~= size(pose_data, 1)
+        error = inf; % Assign a high error if there's a mismatch
+        return;
+    end
+
+    % Vectorized error calculation
+    errors = vecnorm(double(pose_data - predicted_poses), 2, 2).^2; % Squared norm for each row
+    error = sum(errors); % Total sum of squared errors
+     % **Early Stopping Condition**
+    if error < 1e-6
+        disp('Early stopping: Error threshold met.');
+        return;
+    end
+
+    % Optional: Debug intermediate values (for monitoring)
+    disp(['Current Error: ', num2str(error)]);
+end
+
+% -------------------------------------------------------------------------
+% Subfunction: Compute Odometry
+% -------------------------------------------------------------------------
+function predicted_poses = compute_odometry(odom_data, right_wheel_radius, left_wheel_radius, b, encoder_resolution)
+    % Constants
+    maxCounter = double(65535); % Maximum encoder value for overflow handling
+
+    % Calculate distance per tick for each wheel
+    distR = double((pi * 2 * right_wheel_radius) / encoder_resolution);
+    distL = double((pi * 2 * left_wheel_radius) / encoder_resolution);
+
+    % Initialize odometry state
+    odom_x = double(0); % Initial x position
+    odom_y = double(0); % Initial y position
+    odom_theta = double(0); % Initial orientation
+    left_ticks_prev = double(odom_data(1, 1)); % Initial left encoder tick
+    right_ticks_prev = double(odom_data(1, 2)); % Initial right encoder tick
+
+    % Matrix to store predicted poses
+    predicted_poses = zeros(size(odom_data, 1), 3, 'double');
+
+    % Store the initial pose
+    predicted_poses(1, :) = [odom_x, odom_y, odom_theta];
+
+    % Iterate through encoder data
+    for i = 2:size(odom_data, 1)
+        % Current encoder ticks
+        left_ticks = double(odom_data(i, 1));
+        right_ticks = double(odom_data(i, 2));
+
+        % Compute tick differences with overflow handling
+        delta_left_ticks = mod((left_ticks - left_ticks_prev + maxCounter + 1), maxCounter + 1);
+        delta_right_ticks = mod((right_ticks - right_ticks_prev + maxCounter + 1), maxCounter + 1);
+        if delta_left_ticks > maxCounter / 2
+            delta_left_ticks = delta_left_ticks - (maxCounter + 1);
+        end
+        if delta_right_ticks > maxCounter / 2
+            delta_right_ticks = delta_right_ticks - (maxCounter + 1);
+        end
+
+        %{
+        Check if robot is not rotating in place
+        NotRotating = true;
+        if delta_right_ticks == -delta_left_ticks
+            NotRotating = false;
+        end
+
+        % Only update if there is actual movement and the robot is not rotating
+        if (delta_right_ticks ~= 0 || delta_left_ticks ~= 0) && NotRotating
+            % Compute wheel displacements dynamically based on current radii
+        %}
+
+        % Skip updates for no movement or rotation in place
+        if delta_left_ticks == 0 && delta_right_ticks == 0
+            predicted_poses(i, :) = predicted_poses(i - 1, :);
+            continue;
+        end
+        if delta_left_ticks == -delta_right_ticks
+            predicted_poses(i, :) = predicted_poses(i - 1, :);
+            continue;
+        end
+        disL = distL * delta_left_ticks; % Distance traveled by left wheel
+        disR = distR * delta_right_ticks; % Distance traveled by right wheel
+
+        % Compute linear and angular displacements
+        delta_dist = (disL + disR) / 2; % Linear displacement
+        delta_theta = (disR - disL) / b; % Angular displacement
+        
+        if isnan(delta_dist) || isnan(delta_theta)
+            warning('NaN values detected at row %d', i);
+            predicted_poses(i, :) = predicted_poses(i - 1, :);
+            continue;
+        end
+        % Update odometry pose
+        odom_x = odom_x + delta_dist * cos(odom_theta + delta_theta / 2);
+        odom_y = odom_y + delta_dist * sin(odom_theta + delta_theta / 2);
+        odom_theta = odom_theta + delta_theta;
+        end
+
+        predicted_poses(i, :) = [odom_x, odom_y, odom_theta];
+
+        % Update previous ticks
+        left_ticks_prev = left_ticks;
+        right_ticks_prev = right_ticks;
+    end
+end
