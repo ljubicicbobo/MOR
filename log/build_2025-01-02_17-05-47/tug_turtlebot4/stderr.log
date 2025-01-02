@@ -1,0 +1,28 @@
+[01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SlamNode.cpp:[m[K In member function ‘[01m[Kvoid tug_turtlebot4::SlamNode::laserScanCallback(const ConstSharedPtr&)[m[K’:
+[01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SlamNode.cpp:188:47:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct geometry_msgs::msg::Vector3_<std::allocator<void> >[m[K’ has no member named ‘[01m[Ktheta[m[K’
+  188 |     float x = robot_pose.x + x*cos(robot_pose.[01;31m[Ktheta[m[K) - y * sin(robot_pose.theta);
+      |                                               [01;31m[K^~~~~[m[K
+[01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SlamNode.cpp:188:56:[m[K [01;31m[Kerror: [m[K‘[01m[Ky[m[K’ was not declared in this scope; did you mean ‘[01m[Kyn[m[K’?
+  188 |     float x = robot_pose.x + x*cos(robot_pose.theta) - [01;31m[Ky[m[K * sin(robot_pose.theta);
+      |                                                        [01;31m[K^[m[K
+      |                                                        [32m[Kyn[m[K
+[01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SlamNode.cpp:188:75:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct geometry_msgs::msg::Vector3_<std::allocator<void> >[m[K’ has no member named ‘[01m[Ktheta[m[K’
+  188 |     float x = robot_pose.x + x*cos(robot_pose.theta) - y * sin(robot_pose.[01;31m[Ktheta[m[K);
+      |                                                                           [01;31m[K^~~~~[m[K
+[01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SlamNode.cpp:189:47:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct geometry_msgs::msg::Vector3_<std::allocator<void> >[m[K’ has no member named ‘[01m[Ktheta[m[K’
+  189 |     float y = robot_pose.y + x*sin(robot_pose.[01;31m[Ktheta[m[K) + y * cos(robot_pose.theta);
+      |                                               [01;31m[K^~~~~[m[K
+[01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SlamNode.cpp:189:75:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct geometry_msgs::msg::Vector3_<std::allocator<void> >[m[K’ has no member named ‘[01m[Ktheta[m[K’
+  189 |     float y = robot_pose.y + x*sin(robot_pose.theta) + y * cos(robot_pose.[01;31m[Ktheta[m[K);
+      |                                                                           [01;31m[K^~~~~[m[K
+[01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SlamNode.cpp:185:11:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kangle[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  185 |     float [01;35m[Kangle[m[K = msg->angle_min + i * msg->angle_increment;
+      |           [01;35m[K^~~~~[m[K
+[01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SlamNode.cpp:176:14:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ki[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  176 |   static int [01;35m[Ki[m[K = 0;
+      |              [01;35m[K^[m[K
+[01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SlamNode.cpp:[m[K At global scope:
+[01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SlamNode.cpp:176:14:[m[K [01;35m[Kwarning: [m[K‘[01m[Ki[m[K’ defined but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+gmake[2]: *** [CMakeFiles/slam.dir/build.make:90: CMakeFiles/slam.dir/src/SlamNode.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:195: CMakeFiles/slam.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

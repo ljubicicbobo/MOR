@@ -1,0 +1,21 @@
+[0.033s] Invoking command in '/home/bobo/ros2_ws/build/tug_turtlebot4': CMAKE_PREFIX_PATH=/home/bobo/ros2_ws/install/tug_msgs:/home/bobo/ros2_ws/install/tug_turtlebot4:/home/bobo/ros2_ws/install/tug_stage_ros2:/home/bobo/ros2_ws/install/tug_mr2:/home/bobo/ros2_ws/install/ros2cpp_tutorials_service:/home/bobo/ros2_ws/install/ros2cpp_tutorials_publisher_subscriber:/home/bobo/ros2_ws/install/ros2cpp_tutorials_parameter:/home/bobo/ros2_ws/install/ros2cpp_tutorials_action:/home/bobo/ros2_ws/install/Eigen3:/opt/ros/humble LD_LIBRARY_PATH=/home/bobo/ros2_ws/install/tug_msgs/lib:/home/bobo/stg/lib:/home/bobo/ros2_ws/install/ros2cpp_tutorials_service/lib:/home/bobo/ros2_ws/install/ros2cpp_tutorials_action/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/bobo/ros2_ws/build/tug_turtlebot4 -- -j8 -l8
+[0.141s] [35m[1mConsolidate compiler generated dependencies of target slam[0m
+[0.175s] [ 18%] Built target static_transform_publisher
+[0.178s] [ 45%] Built target simple_turtle
+[0.180s] [ 63%] Built target tug_wheel_encoder-system
+[0.208s] [ 72%] [32mBuilding CXX object CMakeFiles/slam.dir/src/SlamNode.cpp.o[0m
+[4.430s] [01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SlamNode.cpp:[m[K In member function ‘[01m[Kvoid tug_turtlebot4::SlamNode::laserScanCallback(const ConstSharedPtr&)[m[K’:
+[4.430s] [01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SlamNode.cpp:185:24:[m[K [01;31m[Kerror: [m[K‘[01m[Klog_y[m[K’ was not declared in this scope; did you mean ‘[01m[Klog_x[m[K’?
+[4.430s]   185 |   static float log_x = [01;31m[Klog_y[m[K = -1;
+[4.430s]       |                        [01;31m[K^~~~~[m[K
+[4.430s]       |                        [32m[Klog_x[m[K
+[4.451s] [01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SlamNode.cpp:216:43:[m[K [01;31m[Kerror: [m[K‘[01m[Ktransform_stamped[m[K’ was not declared in this scope
+[4.451s]   216 |       tf2::doTransform(point, point_odom, [01;31m[Ktransform_stamped[m[K);
+[4.451s]       |                                           [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[4.455s] [01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SlamNode.cpp:186:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ktheta[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[4.455s]   186 |   float [01;35m[Ktheta[m[K = static_cast<float>(yaw);
+[4.455s]       |         [01;35m[K^~~~~[m[K
+[10.099s] gmake[2]: *** [CMakeFiles/slam.dir/build.make:90: CMakeFiles/slam.dir/src/SlamNode.cpp.o] Error 1
+[10.099s] gmake[1]: *** [CMakeFiles/Makefile2:195: CMakeFiles/slam.dir/all] Error 2
+[10.104s] gmake: *** [Makefile:146: all] Error 2
+[10.109s] Invoked command in '/home/bobo/ros2_ws/build/tug_turtlebot4' returned '2': CMAKE_PREFIX_PATH=/home/bobo/ros2_ws/install/tug_msgs:/home/bobo/ros2_ws/install/tug_turtlebot4:/home/bobo/ros2_ws/install/tug_stage_ros2:/home/bobo/ros2_ws/install/tug_mr2:/home/bobo/ros2_ws/install/ros2cpp_tutorials_service:/home/bobo/ros2_ws/install/ros2cpp_tutorials_publisher_subscriber:/home/bobo/ros2_ws/install/ros2cpp_tutorials_parameter:/home/bobo/ros2_ws/install/ros2cpp_tutorials_action:/home/bobo/ros2_ws/install/Eigen3:/opt/ros/humble LD_LIBRARY_PATH=/home/bobo/ros2_ws/install/tug_msgs/lib:/home/bobo/stg/lib:/home/bobo/ros2_ws/install/ros2cpp_tutorials_service/lib:/home/bobo/ros2_ws/install/ros2cpp_tutorials_action/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/bobo/ros2_ws/build/tug_turtlebot4 -- -j8 -l8

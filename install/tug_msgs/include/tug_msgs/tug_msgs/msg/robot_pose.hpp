@@ -7,5 +7,6 @@
 #include "tug_msgs/msg/detail/robot_pose__struct.hpp"
 #include "tug_msgs/msg/detail/robot_pose__builder.hpp"
 #include "tug_msgs/msg/detail/robot_pose__traits.hpp"
+#include "tug_msgs/msg/detail/robot_pose__type_support.hpp"
 
 #endif  // TUG_MSGS__MSG__ROBOT_POSE_HPP_

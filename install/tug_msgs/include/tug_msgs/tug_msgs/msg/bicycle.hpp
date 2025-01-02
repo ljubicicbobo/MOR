@@ -7,5 +7,6 @@
 #include "tug_msgs/msg/detail/bicycle__struct.hpp"
 #include "tug_msgs/msg/detail/bicycle__builder.hpp"
 #include "tug_msgs/msg/detail/bicycle__traits.hpp"
+#include "tug_msgs/msg/detail/bicycle__type_support.hpp"
 
 #endif  // TUG_MSGS__MSG__BICYCLE_HPP_

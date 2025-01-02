@@ -1,0 +1,79 @@
+[0.038s] Invoking command in '/home/bobo/ros2_ws/build/tug_turtlebot4': CMAKE_PREFIX_PATH=/home/bobo/ros2_ws/install/tug_msgs:/home/bobo/ros2_ws/install/tug_turtlebot4:/home/bobo/ros2_ws/install/tug_stage_ros2:/home/bobo/ros2_ws/install/tug_mr2:/home/bobo/ros2_ws/install/ros2cpp_tutorials_service:/home/bobo/ros2_ws/install/ros2cpp_tutorials_publisher_subscriber:/home/bobo/ros2_ws/install/ros2cpp_tutorials_parameter:/home/bobo/ros2_ws/install/ros2cpp_tutorials_action:/home/bobo/ros2_ws/install/Eigen3:/opt/ros/humble LD_LIBRARY_PATH=/home/bobo/ros2_ws/install/tug_msgs/lib:/home/bobo/stg/lib:/home/bobo/ros2_ws/install/ros2cpp_tutorials_service/lib:/home/bobo/ros2_ws/install/ros2cpp_tutorials_action/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/bobo/ros2_ws/build/tug_turtlebot4 -- -j8 -l8
+[0.155s] [35m[1mConsolidate compiler generated dependencies of target slam[0m
+[0.196s] [ 18%] Built target static_transform_publisher
+[0.199s] [ 45%] Built target simple_turtle
+[0.202s] [ 63%] Built target tug_wheel_encoder-system
+[0.223s] [ 72%] [32mBuilding CXX object CMakeFiles/slam.dir/src/SlamNode.cpp.o[0m
+[4.578s] [01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SlamNode.cpp:[m[K In member function ‘[01m[Kvoid tug_turtlebot4::SlamNode::laserScanCallback(const ConstSharedPtr&)[m[K’:
+[4.578s] [01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SlamNode.cpp:193:31:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Publisher<nav_msgs::msg::OccupancyGrid_<std::allocator<void> > >::publish()[m[K’
+[4.578s]   193 |   [01;31m[Koccupancy_grid_pub_->publish()[m[K;
+[4.578s]       |   [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[4.578s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_topics_interface.hpp:29[m[K,
+[4.579s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/generic_publisher.hpp:27[m[K,
+[4.579s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:45[m[K,
+[4.579s]                  from [01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/include/tug_turtlebot4/SlamNode.hpp:6[m[K,
+[4.579s]                  from [01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SlamNode.cpp:1[m[K:
+[4.579s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:251:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class T> std::enable_if_t<(rosidl_generator_traits::is_message<T>::value && std::is_same<T, typename rclcpp::TypeAdapter<MessageT>::ros_message_type>::value)> rclcpp::Publisher<MessageT, AllocatorT>::publish(std::unique_ptr<T, typename std::conditional<std::is_same<typename std::allocator_traits<typename std::allocator_traits<_Allocator>::rebind_traits<typename rclcpp::TypeAdapter<MessageT, void, void>::ros_message_type>::allocator_type>::rebind_alloc<typename rclcpp::TypeAdapter<MessageT, void, void>::ros_message_type>, std::allocator<typename rclcpp::TypeAdapter<MessageT>::ros_message_type> >::value, std::default_delete<typename rclcpp::TypeAdapter<MessageT>::ros_message_type>, rclcpp::allocator::AllocatorDeleter<typename std::allocator_traits<_Allocator>::rebind_traits<typename rclcpp::TypeAdapter<MessageT, void, void>::ros_message_type>::allocator_type> >::type>) [with T = T; MessageT = nav_msgs::msg::OccupancyGrid_<std::allocator<void> >; AllocatorT = std::allocator<void>][m[K’
+[4.579s]   251 |   [01;36m[Kpublish[m[K(std::unique_ptr<T, ROSMessageTypeDeleter> msg)
+[4.579s]       |   [01;36m[K^~~~~~~[m[K
+[4.579s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:251:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.579s] [01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SlamNode.cpp:193:31:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[4.579s]   193 |   [01;36m[Koccupancy_grid_pub_->publish()[m[K;
+[4.579s]       |   [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[4.580s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_topics_interface.hpp:29[m[K,
+[4.580s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/generic_publisher.hpp:27[m[K,
+[4.580s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:45[m[K,
+[4.580s]                  from [01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/include/tug_turtlebot4/SlamNode.hpp:6[m[K,
+[4.580s]                  from [01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SlamNode.cpp:1[m[K:
+[4.580s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:292:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class T> std::enable_if_t<(rosidl_generator_traits::is_message<T>::value && std::is_same<T, typename rclcpp::TypeAdapter<MessageT>::ros_message_type>::value)> rclcpp::Publisher<MessageT, AllocatorT>::publish(const T&) [with T = T; MessageT = nav_msgs::msg::OccupancyGrid_<std::allocator<void> >; AllocatorT = std::allocator<void>][m[K’
+[4.580s]   292 |   [01;36m[Kpublish[m[K(const T & msg)
+[4.580s]       |   [01;36m[K^~~~~~~[m[K
+[4.580s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:292:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.580s] [01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SlamNode.cpp:193:31:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[4.580s]   193 |   [01;36m[Koccupancy_grid_pub_->publish()[m[K;
+[4.581s]       |   [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[4.581s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_topics_interface.hpp:29[m[K,
+[4.581s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/generic_publisher.hpp:27[m[K,
+[4.581s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:45[m[K,
+[4.581s]                  from [01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/include/tug_turtlebot4/SlamNode.hpp:6[m[K,
+[4.581s]                  from [01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SlamNode.cpp:1[m[K:
+[4.581s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:322:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class T> std::enable_if_t<(typename rclcpp::TypeAdapter<MessageT>::is_specialized::value && std::is_same<T, typename rclcpp::TypeAdapter<MessageT>::custom_type>::value)> rclcpp::Publisher<MessageT, AllocatorT>::publish(std::unique_ptr<T, typename std::conditional<std::is_same<typename std::allocator_traits<typename std::allocator_traits<_Allocator>::rebind_traits<typename rclcpp::TypeAdapter<MessageT, void, void>::custom_type>::allocator_type>::rebind_alloc<typename rclcpp::TypeAdapter<MessageT, void, void>::custom_type>, std::allocator<typename rclcpp::TypeAdapter<MessageT>::custom_type> >::value, std::default_delete<typename rclcpp::TypeAdapter<MessageT>::custom_type>, rclcpp::allocator::AllocatorDeleter<typename std::allocator_traits<_Allocator>::rebind_traits<typename rclcpp::TypeAdapter<MessageT, void, void>::custom_type>::allocator_type> >::type>) [with T = T; MessageT = nav_msgs::msg::OccupancyGrid_<std::allocator<void> >; AllocatorT = std::allocator<void>][m[K’
+[4.581s]   322 |   [01;36m[Kpublish[m[K(std::unique_ptr<T, PublishedTypeDeleter> msg)
+[4.581s]       |   [01;36m[K^~~~~~~[m[K
+[4.581s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:322:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.581s] [01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SlamNode.cpp:193:31:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[4.581s]   193 |   [01;36m[Koccupancy_grid_pub_->publish()[m[K;
+[4.582s]       |   [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[4.582s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_topics_interface.hpp:29[m[K,
+[4.582s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/generic_publisher.hpp:27[m[K,
+[4.582s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:45[m[K,
+[4.582s]                  from [01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/include/tug_turtlebot4/SlamNode.hpp:6[m[K,
+[4.582s]                  from [01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SlamNode.cpp:1[m[K:
+[4.582s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:364:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class T> std::enable_if_t<(typename rclcpp::TypeAdapter<MessageT>::is_specialized::value && std::is_same<T, typename rclcpp::TypeAdapter<MessageT>::custom_type>::value)> rclcpp::Publisher<MessageT, AllocatorT>::publish(const T&) [with T = T; MessageT = nav_msgs::msg::OccupancyGrid_<std::allocator<void> >; AllocatorT = std::allocator<void>][m[K’
+[4.582s]   364 |   [01;36m[Kpublish[m[K(const T & msg)
+[4.582s]       |   [01;36m[K^~~~~~~[m[K
+[4.582s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:364:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.582s] [01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SlamNode.cpp:193:31:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[4.582s]   193 |   [01;36m[Koccupancy_grid_pub_->publish()[m[K;
+[4.582s]       |   [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[4.583s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_topics_interface.hpp:29[m[K,
+[4.583s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/generic_publisher.hpp:27[m[K,
+[4.583s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:45[m[K,
+[4.583s]                  from [01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/include/tug_turtlebot4/SlamNode.hpp:6[m[K,
+[4.583s]                  from [01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SlamNode.cpp:1[m[K:
+[4.583s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:383:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid rclcpp::Publisher<MessageT, AllocatorT>::publish(const rcl_serialized_message_t&) [with MessageT = nav_msgs::msg::OccupancyGrid_<std::allocator<void> >; AllocatorT = std::allocator<void>; rcl_serialized_message_t = rcutils_uint8_array_s][m[K’
+[4.583s]   383 |   [01;36m[Kpublish[m[K(const rcl_serialized_message_t & serialized_msg)
+[4.583s]       |   [01;36m[K^~~~~~~[m[K
+[4.583s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:383:3:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[4.583s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:389:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid rclcpp::Publisher<MessageT, AllocatorT>::publish(const rclcpp::SerializedMessage&) [with MessageT = nav_msgs::msg::OccupancyGrid_<std::allocator<void> >; AllocatorT = std::allocator<void>][m[K’
+[4.583s]   389 |   [01;36m[Kpublish[m[K(const SerializedMessage & serialized_msg)
+[4.584s]       |   [01;36m[K^~~~~~~[m[K
+[4.584s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:389:3:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[4.584s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:403:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid rclcpp::Publisher<MessageT, AllocatorT>::publish(rclcpp::LoanedMessage<typename rclcpp::TypeAdapter<MessageT>::ros_message_type, AllocatorT>&&) [with MessageT = nav_msgs::msg::OccupancyGrid_<std::allocator<void> >; AllocatorT = std::allocator<void>; typename rclcpp::TypeAdapter<MessageT>::ros_message_type = nav_msgs::msg::OccupancyGrid_<std::allocator<void> >][m[K’
+[4.584s]   403 |   [01;36m[Kpublish[m[K(rclcpp::LoanedMessage<ROSMessageType, AllocatorT> && loaned_msg)
+[4.584s]       |   [01;36m[K^~~~~~~[m[K
+[4.584s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:403:3:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[10.335s] gmake[2]: *** [CMakeFiles/slam.dir/build.make:90: CMakeFiles/slam.dir/src/SlamNode.cpp.o] Error 1
+[10.335s] gmake[1]: *** [CMakeFiles/Makefile2:195: CMakeFiles/slam.dir/all] Error 2
+[10.336s] gmake: *** [Makefile:146: all] Error 2
+[10.339s] Invoked command in '/home/bobo/ros2_ws/build/tug_turtlebot4' returned '2': CMAKE_PREFIX_PATH=/home/bobo/ros2_ws/install/tug_msgs:/home/bobo/ros2_ws/install/tug_turtlebot4:/home/bobo/ros2_ws/install/tug_stage_ros2:/home/bobo/ros2_ws/install/tug_mr2:/home/bobo/ros2_ws/install/ros2cpp_tutorials_service:/home/bobo/ros2_ws/install/ros2cpp_tutorials_publisher_subscriber:/home/bobo/ros2_ws/install/ros2cpp_tutorials_parameter:/home/bobo/ros2_ws/install/ros2cpp_tutorials_action:/home/bobo/ros2_ws/install/Eigen3:/opt/ros/humble LD_LIBRARY_PATH=/home/bobo/ros2_ws/install/tug_msgs/lib:/home/bobo/stg/lib:/home/bobo/ros2_ws/install/ros2cpp_tutorials_service/lib:/home/bobo/ros2_ws/install/ros2cpp_tutorials_action/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/bobo/ros2_ws/build/tug_turtlebot4 -- -j8 -l8

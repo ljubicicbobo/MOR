@@ -70,18 +70,23 @@ CMakeFiles/tug_msgs__cpp: rosidl_generator_cpp/tug_msgs/msg/bicycle.hpp
 CMakeFiles/tug_msgs__cpp: rosidl_generator_cpp/tug_msgs/msg/detail/bicycle__builder.hpp
 CMakeFiles/tug_msgs__cpp: rosidl_generator_cpp/tug_msgs/msg/detail/bicycle__struct.hpp
 CMakeFiles/tug_msgs__cpp: rosidl_generator_cpp/tug_msgs/msg/detail/bicycle__traits.hpp
+CMakeFiles/tug_msgs__cpp: rosidl_generator_cpp/tug_msgs/msg/detail/bicycle__type_support.hpp
 CMakeFiles/tug_msgs__cpp: rosidl_generator_cpp/tug_msgs/msg/movement.hpp
 CMakeFiles/tug_msgs__cpp: rosidl_generator_cpp/tug_msgs/msg/detail/movement__builder.hpp
 CMakeFiles/tug_msgs__cpp: rosidl_generator_cpp/tug_msgs/msg/detail/movement__struct.hpp
 CMakeFiles/tug_msgs__cpp: rosidl_generator_cpp/tug_msgs/msg/detail/movement__traits.hpp
+CMakeFiles/tug_msgs__cpp: rosidl_generator_cpp/tug_msgs/msg/detail/movement__type_support.hpp
 CMakeFiles/tug_msgs__cpp: rosidl_generator_cpp/tug_msgs/msg/robot_pose.hpp
 CMakeFiles/tug_msgs__cpp: rosidl_generator_cpp/tug_msgs/msg/detail/robot_pose__builder.hpp
 CMakeFiles/tug_msgs__cpp: rosidl_generator_cpp/tug_msgs/msg/detail/robot_pose__struct.hpp
 CMakeFiles/tug_msgs__cpp: rosidl_generator_cpp/tug_msgs/msg/detail/robot_pose__traits.hpp
+CMakeFiles/tug_msgs__cpp: rosidl_generator_cpp/tug_msgs/msg/detail/robot_pose__type_support.hpp
 CMakeFiles/tug_msgs__cpp: rosidl_generator_cpp/tug_msgs/msg/wheel_encoder.hpp
 CMakeFiles/tug_msgs__cpp: rosidl_generator_cpp/tug_msgs/msg/detail/wheel_encoder__builder.hpp
 CMakeFiles/tug_msgs__cpp: rosidl_generator_cpp/tug_msgs/msg/detail/wheel_encoder__struct.hpp
 CMakeFiles/tug_msgs__cpp: rosidl_generator_cpp/tug_msgs/msg/detail/wheel_encoder__traits.hpp
+CMakeFiles/tug_msgs__cpp: rosidl_generator_cpp/tug_msgs/msg/detail/wheel_encoder__type_support.hpp
+CMakeFiles/tug_msgs__cpp: rosidl_generator_cpp/tug_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
 
 rosidl_generator_cpp/tug_msgs/msg/bicycle.hpp: /opt/ros/humble/lib/rosidl_generator_cpp/rosidl_generator_cpp
 rosidl_generator_cpp/tug_msgs/msg/bicycle.hpp: /opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_cpp/__init__.py
@@ -114,6 +119,9 @@ rosidl_generator_cpp/tug_msgs/msg/detail/bicycle__struct.hpp: rosidl_generator_c
 rosidl_generator_cpp/tug_msgs/msg/detail/bicycle__traits.hpp: rosidl_generator_cpp/tug_msgs/msg/bicycle.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/tug_msgs/msg/detail/bicycle__traits.hpp
 
+rosidl_generator_cpp/tug_msgs/msg/detail/bicycle__type_support.hpp: rosidl_generator_cpp/tug_msgs/msg/bicycle.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/tug_msgs/msg/detail/bicycle__type_support.hpp
+
 rosidl_generator_cpp/tug_msgs/msg/movement.hpp: rosidl_generator_cpp/tug_msgs/msg/bicycle.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/tug_msgs/msg/movement.hpp
 
@@ -125,6 +133,9 @@ rosidl_generator_cpp/tug_msgs/msg/detail/movement__struct.hpp: rosidl_generator_
 
 rosidl_generator_cpp/tug_msgs/msg/detail/movement__traits.hpp: rosidl_generator_cpp/tug_msgs/msg/bicycle.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/tug_msgs/msg/detail/movement__traits.hpp
+
+rosidl_generator_cpp/tug_msgs/msg/detail/movement__type_support.hpp: rosidl_generator_cpp/tug_msgs/msg/bicycle.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/tug_msgs/msg/detail/movement__type_support.hpp
 
 rosidl_generator_cpp/tug_msgs/msg/robot_pose.hpp: rosidl_generator_cpp/tug_msgs/msg/bicycle.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/tug_msgs/msg/robot_pose.hpp
@@ -138,6 +149,9 @@ rosidl_generator_cpp/tug_msgs/msg/detail/robot_pose__struct.hpp: rosidl_generato
 rosidl_generator_cpp/tug_msgs/msg/detail/robot_pose__traits.hpp: rosidl_generator_cpp/tug_msgs/msg/bicycle.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/tug_msgs/msg/detail/robot_pose__traits.hpp
 
+rosidl_generator_cpp/tug_msgs/msg/detail/robot_pose__type_support.hpp: rosidl_generator_cpp/tug_msgs/msg/bicycle.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/tug_msgs/msg/detail/robot_pose__type_support.hpp
+
 rosidl_generator_cpp/tug_msgs/msg/wheel_encoder.hpp: rosidl_generator_cpp/tug_msgs/msg/bicycle.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/tug_msgs/msg/wheel_encoder.hpp
 
@@ -150,20 +164,27 @@ rosidl_generator_cpp/tug_msgs/msg/detail/wheel_encoder__struct.hpp: rosidl_gener
 rosidl_generator_cpp/tug_msgs/msg/detail/wheel_encoder__traits.hpp: rosidl_generator_cpp/tug_msgs/msg/bicycle.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/tug_msgs/msg/detail/wheel_encoder__traits.hpp
 
+rosidl_generator_cpp/tug_msgs/msg/detail/wheel_encoder__type_support.hpp: rosidl_generator_cpp/tug_msgs/msg/bicycle.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/tug_msgs/msg/detail/wheel_encoder__type_support.hpp
+
 tug_msgs__cpp: CMakeFiles/tug_msgs__cpp
 tug_msgs__cpp: rosidl_generator_cpp/tug_msgs/msg/bicycle.hpp
 tug_msgs__cpp: rosidl_generator_cpp/tug_msgs/msg/detail/bicycle__builder.hpp
 tug_msgs__cpp: rosidl_generator_cpp/tug_msgs/msg/detail/bicycle__struct.hpp
 tug_msgs__cpp: rosidl_generator_cpp/tug_msgs/msg/detail/bicycle__traits.hpp
+tug_msgs__cpp: rosidl_generator_cpp/tug_msgs/msg/detail/bicycle__type_support.hpp
 tug_msgs__cpp: rosidl_generator_cpp/tug_msgs/msg/detail/movement__builder.hpp
 tug_msgs__cpp: rosidl_generator_cpp/tug_msgs/msg/detail/movement__struct.hpp
 tug_msgs__cpp: rosidl_generator_cpp/tug_msgs/msg/detail/movement__traits.hpp
+tug_msgs__cpp: rosidl_generator_cpp/tug_msgs/msg/detail/movement__type_support.hpp
 tug_msgs__cpp: rosidl_generator_cpp/tug_msgs/msg/detail/robot_pose__builder.hpp
 tug_msgs__cpp: rosidl_generator_cpp/tug_msgs/msg/detail/robot_pose__struct.hpp
 tug_msgs__cpp: rosidl_generator_cpp/tug_msgs/msg/detail/robot_pose__traits.hpp
+tug_msgs__cpp: rosidl_generator_cpp/tug_msgs/msg/detail/robot_pose__type_support.hpp
 tug_msgs__cpp: rosidl_generator_cpp/tug_msgs/msg/detail/wheel_encoder__builder.hpp
 tug_msgs__cpp: rosidl_generator_cpp/tug_msgs/msg/detail/wheel_encoder__struct.hpp
 tug_msgs__cpp: rosidl_generator_cpp/tug_msgs/msg/detail/wheel_encoder__traits.hpp
+tug_msgs__cpp: rosidl_generator_cpp/tug_msgs/msg/detail/wheel_encoder__type_support.hpp
 tug_msgs__cpp: rosidl_generator_cpp/tug_msgs/msg/movement.hpp
 tug_msgs__cpp: rosidl_generator_cpp/tug_msgs/msg/robot_pose.hpp
 tug_msgs__cpp: rosidl_generator_cpp/tug_msgs/msg/wheel_encoder.hpp

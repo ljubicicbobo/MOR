@@ -1,0 +1,30 @@
+[01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SlamNode.cpp:[m[K In member function ‘[01m[Kvoid tug_turtlebot4::SlamNode::laserScanCallback(const ConstSharedPtr&)[m[K’:
+[01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SlamNode.cpp:203:51:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct geometry_msgs::msg::Vector3_<std::allocator<void> >[m[K’ has no member named ‘[01m[Ktheta[m[K’
+  203 |     float x_map = robot_pose.x + x*cos(robot_pose.[01;31m[Ktheta[m[K) - y * sin(robot_pose.theta);
+      |                                                   [01;31m[K^~~~~[m[K
+[01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SlamNode.cpp:203:79:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct geometry_msgs::msg::Vector3_<std::allocator<void> >[m[K’ has no member named ‘[01m[Ktheta[m[K’
+  203 |     float x_map = robot_pose.x + x*cos(robot_pose.theta) - y * sin(robot_pose.[01;31m[Ktheta[m[K);
+      |                                                                               [01;31m[K^~~~~[m[K
+[01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SlamNode.cpp:204:51:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct geometry_msgs::msg::Vector3_<std::allocator<void> >[m[K’ has no member named ‘[01m[Ktheta[m[K’
+  204 |     float y_map = robot_pose.y + x*sin(robot_pose.[01;31m[Ktheta[m[K) + y * cos(robot_pose.theta);
+      |                                                   [01;31m[K^~~~~[m[K
+[01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SlamNode.cpp:204:79:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct geometry_msgs::msg::Vector3_<std::allocator<void> >[m[K’ has no member named ‘[01m[Ktheta[m[K’
+  204 |     float y_map = robot_pose.y + x*sin(robot_pose.theta) + y * cos(robot_pose.[01;31m[Ktheta[m[K);
+      |                                                                               [01;31m[K^~~~~[m[K
+[01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SlamNode.cpp:203:11:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kx_map[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  203 |     float [01;35m[Kx_map[m[K = robot_pose.x + x*cos(robot_pose.theta) - y * sin(robot_pose.theta);
+      |           [01;35m[K^~~~~[m[K
+[01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SlamNode.cpp:204:11:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ky_map[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  204 |     float [01;35m[Ky_map[m[K = robot_pose.y + x*sin(robot_pose.theta) + y * cos(robot_pose.theta);
+      |           [01;35m[K^~~~~[m[K
+[01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SlamNode.cpp:185:10:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ktheta[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  185 |    float [01;35m[Ktheta[m[K = static_cast<float>(yaw);
+      |          [01;35m[K^~~~~[m[K
+[01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SlamNode.cpp:188:14:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ki[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  188 |   static int [01;35m[Ki[m[K = 0;
+      |              [01;35m[K^[m[K
+[01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SlamNode.cpp:[m[K At global scope:
+[01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SlamNode.cpp:188:14:[m[K [01;35m[Kwarning: [m[K‘[01m[Ki[m[K’ defined but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+gmake[2]: *** [CMakeFiles/slam.dir/build.make:90: CMakeFiles/slam.dir/src/SlamNode.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:195: CMakeFiles/slam.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

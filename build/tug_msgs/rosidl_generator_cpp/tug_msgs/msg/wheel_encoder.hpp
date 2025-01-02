@@ -7,5 +7,6 @@
 #include "tug_msgs/msg/detail/wheel_encoder__struct.hpp"
 #include "tug_msgs/msg/detail/wheel_encoder__builder.hpp"
 #include "tug_msgs/msg/detail/wheel_encoder__traits.hpp"
+#include "tug_msgs/msg/detail/wheel_encoder__type_support.hpp"
 
 #endif  // TUG_MSGS__MSG__WHEEL_ENCODER_HPP_
