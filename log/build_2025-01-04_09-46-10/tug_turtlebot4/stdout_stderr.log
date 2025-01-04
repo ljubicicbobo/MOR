@@ -1,0 +1,56 @@
+[35m[1mConsolidate compiler generated dependencies of target slam[0m
+[ 18%] Built target static_transform_publisher
+[ 45%] Built target simple_turtle
+[ 63%] Built target tug_wheel_encoder-system
+[ 72%] [32mBuilding CXX object CMakeFiles/slam.dir/src/SlamNode.cpp.o[0m
+[01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SlamNode.cpp:[m[K In member function ‘[01m[Kvoid tug_turtlebot4::SlamNode::laserScanCallback(const ConstSharedPtr&)[m[K’:
+[01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SlamNode.cpp:166:22:[m[K [01;31m[Kerror: [m[K‘[01m[Ktransform[m[K’ was not declared in this scope; did you mean ‘[01m[Kstd::transform[m[K’?
+  166 |   auto& robot_pose = [01;31m[Ktransform[m[K.transform.translation;
+      |                      [01;31m[K^~~~~~~~~[m[K
+      |                      [32m[Kstd::transform[m[K
+In file included from [01m[K/usr/include/c++/11/algorithm:74[m[K,
+                 from [01m[K/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__struct.hpp:8[m[K,
+                 from [01m[K/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/list_parameters_result.hpp:7[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:35[m[K,
+                 from [01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/include/tug_turtlebot4/SlamNode.hpp:6[m[K,
+                 from [01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SlamNode.cpp:1[m[K:
+[01m[K/usr/include/c++/11/pstl/glue_algorithm_defs.h:162:1:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::transform[m[K’ declared here
+  162 | [01;36m[Ktransform[m[K(_ExecutionPolicy&& __exec, _ForwardIterator1 __first1, _ForwardIterator1 __last1, _ForwardIterator2 __first2,
+      | [01;36m[K^~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:40[m[K,
+                 from [01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/include/tug_turtlebot4/SlamNode.hpp:6[m[K,
+                 from [01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SlamNode.cpp:1[m[K:
+[01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SlamNode.cpp:217:31:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%ld[m[K’ expects argument of type ‘[01m[Klong int[m[K’, but argument 6 has type ‘[01m[Kuint32_t[m[K’ {aka ‘[01m[Kunsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  217 |     RCLCPP_INFO(get_logger(), [01;35m[K"[i - %ld] Cell - X: %ld, Y: %ld"[m[K,i, [32m[Kcell_x[m[K, cell_y);
+      |                               [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K    [32m[K~~~~~~[m[K
+      |                                                                    [32m[K|[m[K
+      |                                                                    [32m[Kuint32_t {aka unsigned int}[m[K
+[01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SlamNode.cpp:217:54:[m[K [01;36m[Knote: [m[Kformat string is defined here
+  217 |     RCLCPP_INFO(get_logger(), "[i - %ld] Cell - X: [01;36m[K%ld[m[K, Y: %ld",i, cell_x, cell_y);
+      |                                                    [01;36m[K~~^[m[K
+      |                                                      [01;36m[K|[m[K
+      |                                                      [01;36m[Klong int[m[K
+      |                                                    [32m[K%d[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:40[m[K,
+                 from [01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/include/tug_turtlebot4/SlamNode.hpp:6[m[K,
+                 from [01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SlamNode.cpp:1[m[K:
+[01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SlamNode.cpp:217:31:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%ld[m[K’ expects argument of type ‘[01m[Klong int[m[K’, but argument 7 has type ‘[01m[Kuint32_t[m[K’ {aka ‘[01m[Kunsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  217 |     RCLCPP_INFO(get_logger(), [01;35m[K"[i - %ld] Cell - X: %ld, Y: %ld"[m[K,i, cell_x, [32m[Kcell_y[m[K);
+      |                               [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K            [32m[K~~~~~~[m[K
+      |                                                                            [32m[K|[m[K
+      |                                                                            [32m[Kuint32_t {aka unsigned int}[m[K
+[01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SlamNode.cpp:217:62:[m[K [01;36m[Knote: [m[Kformat string is defined here
+  217 |     RCLCPP_INFO(get_logger(), "[i - %ld] Cell - X: %ld, Y: [01;36m[K%ld[m[K",i, cell_x, cell_y);
+      |                                                            [01;36m[K~~^[m[K
+      |                                                              [01;36m[K|[m[K
+      |                                                              [01;36m[Klong int[m[K
+      |                                                            [32m[K%d[m[K
+gmake[2]: *** [CMakeFiles/slam.dir/build.make:90: CMakeFiles/slam.dir/src/SlamNode.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:195: CMakeFiles/slam.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

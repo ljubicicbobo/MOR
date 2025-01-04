@@ -1,0 +1,20 @@
+[01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SlamNode.cpp:[m[K In member function ‘[01m[Kvoid tug_turtlebot4::SlamNode::laserScanCallback(const ConstSharedPtr&)[m[K’:
+[01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SlamNode.cpp:143:57:[m[K [01;31m[Kerror: [m[K‘[01m[Kline_drawing[m[K’ was not declared in this scope
+  143 |         std::vector<std::pair<double, double>> points = [01;31m[Kline_drawing[m[K(robot_pose.x, robot_pose.y, x, y);
+      |                                                         [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SlamNode.cpp:146:7:[m[K [01;31m[Kerror: [m[K‘[01m[Koccupancy_grid_map[m[K’ was not declared in this scope; did you mean ‘[01m[Koccupancy_grid_map_[m[K’?
+  146 |       [01;31m[Koccupancy_grid_map[m[K->wordlToCell(points.first, points.second, cell_x, cell_y);
+      |       [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+      |       [32m[Koccupancy_grid_map_[m[K
+[01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SlamNode.cpp:146:46:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass std::vector<std::pair<double, double> >[m[K’ has no member named ‘[01m[Kfirst[m[K’
+  146 |       occupancy_grid_map->wordlToCell(points.[01;31m[Kfirst[m[K, points.second, cell_x, cell_y);
+      |                                              [01;31m[K^~~~~[m[K
+[01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SlamNode.cpp:146:60:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass std::vector<std::pair<double, double> >[m[K’ has no member named ‘[01m[Ksecond[m[K’
+  146 |       occupancy_grid_map->wordlToCell(points.first, points.[01;31m[Ksecond[m[K, cell_x, cell_y);
+      |                                                            [01;31m[K^~~~~~[m[K
+[01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SlamNode.cpp:145:16:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kp[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  145 |     for (auto& [01;35m[Kp[m[K : points) {
+      |                [01;35m[K^[m[K
+gmake[2]: *** [CMakeFiles/slam.dir/build.make:90: CMakeFiles/slam.dir/src/SlamNode.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:195: CMakeFiles/slam.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

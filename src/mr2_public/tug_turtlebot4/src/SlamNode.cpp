@@ -2,7 +2,7 @@
 
 #include <functional>
 #include <memory>
-
+#include <cmath>
 namespace tug_turtlebot4
 {
 
@@ -43,200 +43,92 @@ SlamNode::~SlamNode()
 }
 
 // -----------------------------------------------------------------------------
-void swap(float &a, float &b) {
-  float c;
-  c = a;
-  a = b;
-  b = c;
-}
-  // Drawing Line
-void drawLineH(float x0, float y0, float x1,float y1, OccupancyGridMap* occupancy_grid_map) {
-  if (x0 > x1) {
-    swap(x0, x1);
-    swap(y0, y1);
-  }
-  float dx = x1-x0;
-  float dy = y1-y0;
-
-  float dir = (dy < 0) ? -1 : 1;
-  dy *= dir;
-
-  if (dx != 0) {
-    float y = y0;
-    float p = 2*dy - dx;
-    for (int i =0; i < (dx+1); i++) {
-      // update value (x0+i, y)
-      uint32_t cell_x, cell_y;
-      occupancy_grid_map->worldToCell(x0+i, y, cell_x, cell_y);
-      float value = occupancy_grid_map->getCell(cell_x, cell_y);
-
-      if (value == std::numeric_limits<float>::infinity()) {
-      	RCLCPP_WARN(rclcpp::get_logger("slam_node"), "Cell value is infinite");
-      	return;
-      }
-
-      occupancy_grid_map->updateCell(cell_x, cell_y, -1);
-      //RCLCPP_INFO(rclcpp::get_logger("slam_node"), "H1:Cell x: %d; Cell y: %d", cell_x, cell_y);
-
-      if (p >= 0) {
-        y += dir;
-        p = p - 2*dx;
-      }
-      p = p + 2*dy;
-      if (i == (dx)) {
-        occupancy_grid_map->updateCell(cell_x, cell_y, 1);
-        //RCLCPP_INFO(rclcpp::get_logger("slam_node"), "H1Cell x: %d; Cell y: %d", cell_x, cell_y);
-
-      }
-    }
-  }
-}
-
-void drawLineV(float x0, float y0, float x1,float y1, OccupancyGridMap* occupancy_grid_map) {
-  if (y0 > y1) {
-    swap(x0, x1);
-    swap(y0, y1);
-  }
-  float dx = x1-x0;
-  float dy = y1-y0;
-
-  float dir = (dx < 0) ? -1 : 1;
-  dx *= dir;
-
-  if (dy != 0) {
-    float x = x0;
-    float p = 2*dx - dy;
-    for (int i =0; i < (dy+1); i++) {
-      // update value (x, y0+i); ray traverses
-      uint32_t cell_x, cell_y;
-      occupancy_grid_map->worldToCell(x, y0+i, cell_x, cell_y);
-      float value = occupancy_grid_map->getCell(cell_x, cell_y);
-      if (value == std::numeric_limits<float>::infinity()) {
-      	RCLCPP_WARN(rclcpp::get_logger("slam_node"), "Cell value is infinite");
-      	return;
-      }
-      occupancy_grid_map->updateCell(cell_x, cell_y, -1);
-      //RCLCPP_INFO(rclcpp::get_logger("slam_node"), "Cell x: %d; Cell y: %d", cell_x, cell_y);
-
-      if (p >= 0) {
-        x += dir;
-        p = p - 2*dy;
-      }
-      p = p + 2*dx;
-      if (i == (dy)) {
-        occupancy_grid_map->updateCell(cell_x, cell_y, 1);
-        //RCLCPP_INFO(rclcpp::get_logger("slam_node"), "Cell x: %d; Cell y: %d", cell_x, cell_y);
-
-      }
-    }// ray reaches an end
-
-  }
-}
-
-std::vector<std::pair<int, int>> traceRay(float x0, float y0, float x1, float y1, OccupancyGridMap* occupancy_grid_map) {
-  std::vector<std::pair<int, int>> cells;
-  //RCLCPP_INFO(rclcpp::get_logger("slam_node"), "Range Min: %f", abs(x1-x0));
-
-  if (abs(x1-x0) > abs(y1-y0)) {
-    drawLineH(x0, y0, x1, y1, occupancy_grid_map);
-  } else {
-    drawLineV(x0, y0, x1, y1, occupancy_grid_map);
-  }
-  return cells;
-}
-
 void SlamNode::laserScanCallback(const LaserScan::ConstSharedPtr& msg)
 {
   // TODO: Add map estimation
-  /*
-  RCLCPP_INFO(get_logger(), "Header: %s", msg->header.frame_id.c_str());
-  RCLCPP_INFO(get_logger(), "Angle Min: %f", msg->angle_min);
-  RCLCPP_INFO(get_logger(), "Angle Max: %f", msg->angle_max);
-  RCLCPP_INFO(get_logger(), "Range Min: %f", msg->range_min);
-  RCLCPP_INFO(get_logger(), "Range Max: %f", msg->range_max);
-
-  for (size_t i = 0; i < std::min(size_t(10), msg->ranges.size()); ++i) {
-     RCLCPP_INFO(get_logger(), "Range[%zu]: %f", i, msg->ranges[i]);
-  }
-  */
 
   // Get robot's pose
- // -----------------------------------------------------------------------------
-  geometry_msgs::msg::TransformStamped transform;
+ // ----------------------------------------------------------------------------
+  geometry_msgs::msg::TransformStamped bot_to_odom;
+  geometry_msgs::msg::TransformStamped link_to_bot;
+
   try {
 	rclcpp::Time now = this->get_clock()->now();
-    transform = tf_buffer_->lookupTransform("odom", "tug_turtlebot4", rclcpp::Time(0));
+    link_to_bot = tf_buffer_->lookupTransform("tug_turtlebot4", "rplidar_link", msg->header.stamp);
+    bot_to_odom = tf_buffer_->lookupTransform("odom", "tug_turtlebot4", msg->header.stamp);
   } catch (tf2::TransformException &ex) {
     RCLCPP_WARN(get_logger(), "Could not transform: %s", ex.what());
     return;
   }
-  auto& robot_pose = transform.transform.translation;
-  //RCLCPP_INFO(get_logger(), "x: %f, y: %f", robot_pose.x, robot_pose.y);
-
-  tf2::Quaternion q (
-  	transform.transform.rotation.x,
-    transform.transform.rotation.y,
-    transform.transform.rotation.z,
-    transform.transform.rotation.w
-  );
-
-  double roll, pitch, yaw;
-  tf2::Matrix3x3(q).getRPY(roll, pitch, yaw);
-  static float log_x = -1;
-  static float log_y = -1;
-  float theta = static_cast<float>(yaw);
-
-  static int j = 0;
+  auto& robot_pose = bot_to_odom.transform.translation;
   // Laser Scan ranges
   for (size_t i = 0; i < msg->ranges.size(); i++) {
-    float range = msg->ranges[i];
-    if (range < msg->range_min || range > msg->range_max) {
+    double range = msg->ranges[i];
+    if (range < (msg->range_min) || range > (msg->range_max-4)) {
       continue;
     }
-    float angle = msg->angle_min + i * msg->angle_increment;
-
-	/*
-    // Compute the angle of the ray
-
-    // Transform the laser reading into the map frame
-    float x = range*cos(angle);
-    float y = range*sin(angle);
-
-    float x_map = robot_pose.x + x*cos(theta) - y * sin(theta);
-    float y_map = robot_pose.y + x*sin(theta) + y * cos(theta);
-	*/
+    double angle = msg->angle_min + i * msg->angle_increment;
 
     geometry_msgs::msg::PointStamped point;
-    point.header.frame_id = "laser";
+    point.header.frame_id = msg->header.frame_id;
     point.point.x = range*cos(angle);
     point.point.y = range*sin(angle);
     point.point.z = 0;
 
     geometry_msgs::msg::PointStamped point_odom;
     try {
-      tf2::doTransform(point, point_odom, transform);
+      tf2::doTransform(point, point_odom, link_to_bot);
     } catch (tf2::TransformException &ex) {
       RCLCPP_WARN(get_logger(), "Could not transform: %s", ex.what());
       continue;
     }
 
+	//
+    geometry_msgs::msg::PointStamped point_map;
+    try {
+      tf2::doTransform(point_odom, point_map, bot_to_odom);
+    } catch (tf2::TransformException &ex) {
+      RCLCPP_WARN(get_logger(), "Could not transform: %s", ex.what());
+    }
+
+    double x = point_map.point.x;
+    double y = point_map.point.y;
+
     uint32_t cell_x, cell_y;
-    occupancy_grid_map_->worldToCell(point_odom.point.x, point_odom.point.y, cell_x, cell_y);
-    float value = occupancy_grid_map_->getCell(cell_x, cell_y);
-    if (value == std::numeric_limits<float>::infinity()) {
-      RCLCPP_WARN(get_logger(), "Cell value is infinite");
-      return;
-    }
+    occupancy_grid_map_->worldToCell(x, y, cell_x, cell_y);
+   	occupancy_grid_map_->updateCell(cell_x, cell_y, 1);
+
+
+    //RCLCPP_INFO(get_logger(), "[i - %ld] Cell - X: %ud, Y: %ud",i, cell_x, cell_y);
+    //RCLCPP_INFO(get_logger(), "[i - %ld] X: %f, Y: %f",i, x_rotated, y_rotated);
+
     // Bresenham algorithm
-    if ((log_x != point_odom.point.x || log_y != point_odom.point.y) && (j != 300)) {
-    	RCLCPP_INFO(get_logger(), "Robot Pose - X: %f, Y: %f", robot_pose.x, robot_pose.y);
-    	RCLCPP_INFO(get_logger(), "X: %f, Y: %f", point_odom.point.x, point_odom.point.y);
-        log_x = point_odom.point.x;
-        log_y = point_odom.point.y;
-        j = 0;
+	std::vector<std::pair<double, double>> points;
+
+    double x0 = robot_pose.x;
+    double y0 = robot_pose.y;
+    double x1 = x;
+    double y1 = y;
+
+
+    double dx = x1 - x0;
+    double dy = y1 - y0;
+    double step = (fabs(dx)>fabs(dy)) ? fabs(dx):fabs(dy);
+
+    if (step != 0) {
+      double stepX = dx/step;
+      double stepY = dy/step;
+      for (double i = 0; i < step; i += 0.01) {
+        points.push_back({x0 + i*stepX, y0 + i*stepY});
+      }
     }
-	j++;
-    std::vector<std::pair<int, int>> cells = traceRay( robot_pose.x, robot_pose.y , point_odom.point.x, point_odom.point.y, occupancy_grid_map_.get());
+
+    for (auto& p : points) {
+      double x1 = p.first;
+      double y1 = p.second;
+      occupancy_grid_map_->worldToCell(x1, y1, cell_x, cell_y);
+      occupancy_grid_map_->updateCell(cell_x, cell_y, -1);
+    }
   }
 
 

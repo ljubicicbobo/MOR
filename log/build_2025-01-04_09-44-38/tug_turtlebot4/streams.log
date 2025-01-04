@@ -1,0 +1,88 @@
+[0.036s] Invoking command in '/home/bobo/ros2_ws/build/tug_turtlebot4': CMAKE_PREFIX_PATH=/home/bobo/ros2_ws/install/tug_msgs:/home/bobo/ros2_ws/install/tug_turtlebot4:/home/bobo/ros2_ws/install/tug_stage_ros2:/home/bobo/ros2_ws/install/tug_mr2:/home/bobo/ros2_ws/install/ros2cpp_tutorials_service:/home/bobo/ros2_ws/install/ros2cpp_tutorials_publisher_subscriber:/home/bobo/ros2_ws/install/ros2cpp_tutorials_parameter:/home/bobo/ros2_ws/install/ros2cpp_tutorials_action:/home/bobo/ros2_ws/install/Eigen3:/opt/ros/humble LD_LIBRARY_PATH=/home/bobo/ros2_ws/install/tug_msgs/lib:/home/bobo/stg/lib:/home/bobo/ros2_ws/install/ros2cpp_tutorials_service/lib:/home/bobo/ros2_ws/install/ros2cpp_tutorials_action/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/bobo/ros2_ws/build/tug_turtlebot4 -- -j8 -l8
+[0.141s] [35m[1mConsolidate compiler generated dependencies of target slam[0m
+[0.165s] [ 18%] Built target static_transform_publisher
+[0.176s] [ 63%] Built target tug_wheel_encoder-system
+[0.177s] [ 63%] Built target simple_turtle
+[0.202s] [ 72%] [32mBuilding CXX object CMakeFiles/slam.dir/src/SlamNode.cpp.o[0m
+[5.006s] [01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SlamNode.cpp:[m[K In member function ‘[01m[Kvoid tug_turtlebot4::SlamNode::laserScanCallback(const ConstSharedPtr&)[m[K’:
+[5.006s] [01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SlamNode.cpp:160:20:[m[K [01;31m[Kerror: [m[K‘[01m[KTransformStamped[m[K’ is not a member of ‘[01m[Kgeometry_msgs[m[K’; did you mean ‘[01m[Kgeometry_msgs::msg::TransformStamped[m[K’?
+[5.006s]   160 |     geometry_msgs::[01;31m[KTransformStamped[m[K transform = tf_buffer_->lookupTransform("odom", msg->header.frame_id, msg->header.stamp);
+[5.006s]       |                    [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[5.006s] In file included from [01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/transform_stamped.hpp:7[m[K,
+[5.007s]                  from [01m[K/opt/ros/humble/include/tf2/tf2/buffer_core.h:48[m[K,
+[5.007s]                  from [01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/async_buffer_interface.h:39[m[K,
+[5.007s]                  from [01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer.h:41[m[K,
+[5.007s]                  from [01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/include/tug_turtlebot4/SlamNode.hpp:8[m[K,
+[5.007s]                  from [01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SlamNode.cpp:1[m[K:
+[5.007s] [01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__struct.hpp:156:7:[m[K [01;36m[Knote: [m[K‘[01m[Kgeometry_msgs::msg::TransformStamped[m[K’ declared here
+[5.007s]   156 | using [01;36m[KTransformStamped[m[K =
+[5.007s]       |       [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[5.008s] [01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SlamNode.cpp:161:12:[m[K [01;31m[Kerror: [m[K‘[01m[Ktf[m[K’ does not name a type; did you mean ‘[01m[Ktm[m[K’?
+[5.009s]   161 |   } catch ([01;31m[Ktf[m[K::TransformException &ex) {
+[5.009s]       |            [01;31m[K^~[m[K
+[5.009s]       |            [32m[Ktm[m[K
+[5.009s] [01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SlamNode.cpp:161:35:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K&[m[K’ token
+[5.009s]   161 |   } catch (tf::TransformException [01;31m[K&[m[Kex) {
+[5.009s]       |                                   [01;31m[K^[m[K
+[5.010s] [01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SlamNode.cpp:161:34:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K&[m[K’ token
+[5.010s]   161 |   } catch [34m[K([m[Ktf::TransformException[01;31m[K [m[K[32m[K&[m[Kex) {
+[5.010s]       |           [34m[K~[m[K                      [01;31m[K^[m[K[32m[K~[m[K
+[5.010s]       |                                  [32m[K)[m[K
+[5.010s] [01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SlamNode.cpp:161:35:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K{[m[K’ before ‘[01m[K&[m[K’ token
+[5.010s]   161 |   } catch (tf::TransformException [01;31m[K&[m[Kex) {
+[5.010s]       |                                   [01;31m[K^[m[K
+[5.015s] [01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SlamNode.cpp:161:36:[m[K [01;31m[Kerror: [m[K‘[01m[Kex[m[K’ was not declared in this scope; did you mean ‘[01m[Kexp[m[K’?
+[5.015s]   161 |   } catch (tf::TransformException &[01;31m[Kex[m[K) {
+[5.015s]       |                                    [01;31m[K^~[m[K
+[5.015s]       |                                    [32m[Kexp[m[K
+[5.016s] [01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SlamNode.cpp:166:22:[m[K [01;31m[Kerror: [m[K‘[01m[Ktransform[m[K’ was not declared in this scope; did you mean ‘[01m[Kstd::transform[m[K’?
+[5.016s]   166 |   auto& robot_pose = [01;31m[Ktransform[m[K.transform.translation;
+[5.016s]       |                      [01;31m[K^~~~~~~~~[m[K
+[5.016s]       |                      [32m[Kstd::transform[m[K
+[5.016s] In file included from [01m[K/usr/include/c++/11/algorithm:74[m[K,
+[5.016s]                  from [01m[K/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__struct.hpp:8[m[K,
+[5.016s]                  from [01m[K/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/list_parameters_result.hpp:7[m[K,
+[5.016s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:35[m[K,
+[5.016s]                  from [01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/include/tug_turtlebot4/SlamNode.hpp:6[m[K,
+[5.017s]                  from [01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SlamNode.cpp:1[m[K:
+[5.017s] [01m[K/usr/include/c++/11/pstl/glue_algorithm_defs.h:162:1:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::transform[m[K’ declared here
+[5.017s]   162 | [01;36m[Ktransform[m[K(_ExecutionPolicy&& __exec, _ForwardIterator1 __first1, _ForwardIterator1 __last1, _ForwardIterator2 __first2,
+[5.017s]       | [01;36m[K^~~~~~~~~[m[K
+[5.021s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[5.021s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[5.021s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[5.021s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:40[m[K,
+[5.021s]                  from [01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/include/tug_turtlebot4/SlamNode.hpp:6[m[K,
+[5.022s]                  from [01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SlamNode.cpp:1[m[K:
+[5.022s] [01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SlamNode.cpp:217:31:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%ld[m[K’ expects argument of type ‘[01m[Klong int[m[K’, but argument 6 has type ‘[01m[Kuint32_t[m[K’ {aka ‘[01m[Kunsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[5.022s]   217 |     RCLCPP_INFO(get_logger(), [01;35m[K"[i - %ld] Cell - X: %ld, Y: %ld"[m[K,i, [32m[Kcell_x[m[K, cell_y);
+[5.022s]       |                               [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K    [32m[K~~~~~~[m[K
+[5.022s]       |                                                                    [32m[K|[m[K
+[5.022s]       |                                                                    [32m[Kuint32_t {aka unsigned int}[m[K
+[5.022s] [01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SlamNode.cpp:217:54:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[5.022s]   217 |     RCLCPP_INFO(get_logger(), "[i - %ld] Cell - X: [01;36m[K%ld[m[K, Y: %ld",i, cell_x, cell_y);
+[5.023s]       |                                                    [01;36m[K~~^[m[K
+[5.023s]       |                                                      [01;36m[K|[m[K
+[5.023s]       |                                                      [01;36m[Klong int[m[K
+[5.023s]       |                                                    [32m[K%d[m[K
+[5.023s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[5.023s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[5.023s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[5.023s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:40[m[K,
+[5.023s]                  from [01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/include/tug_turtlebot4/SlamNode.hpp:6[m[K,
+[5.023s]                  from [01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SlamNode.cpp:1[m[K:
+[5.023s] [01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SlamNode.cpp:217:31:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%ld[m[K’ expects argument of type ‘[01m[Klong int[m[K’, but argument 7 has type ‘[01m[Kuint32_t[m[K’ {aka ‘[01m[Kunsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[5.024s]   217 |     RCLCPP_INFO(get_logger(), [01;35m[K"[i - %ld] Cell - X: %ld, Y: %ld"[m[K,i, cell_x, [32m[Kcell_y[m[K);
+[5.024s]       |                               [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K            [32m[K~~~~~~[m[K
+[5.024s]       |                                                                            [32m[K|[m[K
+[5.024s]       |                                                                            [32m[Kuint32_t {aka unsigned int}[m[K
+[5.024s] [01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SlamNode.cpp:217:62:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[5.024s]   217 |     RCLCPP_INFO(get_logger(), "[i - %ld] Cell - X: %ld, Y: [01;36m[K%ld[m[K",i, cell_x, cell_y);
+[5.024s]       |                                                            [01;36m[K~~^[m[K
+[5.024s]       |                                                              [01;36m[K|[m[K
+[5.024s]       |                                                              [01;36m[Klong int[m[K
+[5.024s]       |                                                            [32m[K%d[m[K
+[10.977s] gmake[2]: *** [CMakeFiles/slam.dir/build.make:90: CMakeFiles/slam.dir/src/SlamNode.cpp.o] Error 1
+[10.977s] gmake[1]: *** [CMakeFiles/Makefile2:195: CMakeFiles/slam.dir/all] Error 2
+[10.977s] gmake: *** [Makefile:146: all] Error 2
+[10.981s] Invoked command in '/home/bobo/ros2_ws/build/tug_turtlebot4' returned '2': CMAKE_PREFIX_PATH=/home/bobo/ros2_ws/install/tug_msgs:/home/bobo/ros2_ws/install/tug_turtlebot4:/home/bobo/ros2_ws/install/tug_stage_ros2:/home/bobo/ros2_ws/install/tug_mr2:/home/bobo/ros2_ws/install/ros2cpp_tutorials_service:/home/bobo/ros2_ws/install/ros2cpp_tutorials_publisher_subscriber:/home/bobo/ros2_ws/install/ros2cpp_tutorials_parameter:/home/bobo/ros2_ws/install/ros2cpp_tutorials_action:/home/bobo/ros2_ws/install/Eigen3:/opt/ros/humble LD_LIBRARY_PATH=/home/bobo/ros2_ws/install/tug_msgs/lib:/home/bobo/stg/lib:/home/bobo/ros2_ws/install/ros2cpp_tutorials_service/lib:/home/bobo/ros2_ws/install/ros2cpp_tutorials_action/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/bobo/ros2_ws/build/tug_turtlebot4 -- -j8 -l8

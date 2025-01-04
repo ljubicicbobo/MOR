@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = -I/home/bobo/ros2_ws/eigen-3.4.0 -I/home/bobo/ros2_ws/eigen-3.4.0/unsupported/test/../../test -I/home/bobo/ros2_ws/eigen-3.4.0/unsupported/test/../../unsupported -I/home/bobo/ros2_ws/eigen-3.4.0/unsupported/test/../../Eigen -I/home/bobo/ros2_ws/build/Eigen3/unsupported/test/../../test
 
-CXX_FLAGS =  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Wdouble-promotion -Wshadow -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-check-new -fno-common -fstrict-aliasing -ansi -O3 -DNDEBUG  -DEIGEN_TEST_MAX_SIZE=320 -DEIGEN_FAST_MATH=1 -DEIGEN_TEST_PART_4=1
+CXX_FLAGS =  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Wdouble-promotion -Wshadow -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-check-new -fno-common -fstrict-aliasing -ansi -g  -DEIGEN_TEST_MAX_SIZE=320 -DEIGEN_FAST_MATH=1 -DEIGEN_TEST_PART_4=1
 

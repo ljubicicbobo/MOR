@@ -1,0 +1,21 @@
+[35m[1mConsolidate compiler generated dependencies of target slam[0m
+[ 18%] Built target static_transform_publisher
+[ 36%] Built target tug_wheel_encoder-system
+[ 63%] Built target simple_turtle
+[ 72%] [32mBuilding CXX object CMakeFiles/slam.dir/src/slam.cpp.o[0m
+[ 81%] [32mBuilding CXX object CMakeFiles/slam.dir/src/SlamNode.cpp.o[0m
+[01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SlamNode.cpp:[m[K In member function ‘[01m[Kvoid tug_turtlebot4::SlamNode::laserScanCallback(const ConstSharedPtr&)[m[K’:
+[01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SlamNode.cpp:150:45:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kgeometry_msgs::msg::Transform_<std::allocator<void> >::_translation_type[m[K’ {aka ‘[01m[Kgeometry_msgs::msg::Vector3_<std::allocator<void> >[m[K’} to ‘[01m[Kdouble[m[K’ in initialization
+  150 |   double robot_pose = [01;31m[Kbot_to_odom.transform.translation[m[K;
+      |                       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~[m[K
+      |                                             [01;31m[K|[m[K
+      |                                             [01;31m[Kgeometry_msgs::msg::Transform_<std::allocator<void> >::_translation_type {aka geometry_msgs::msg::Vector3_<std::allocator<void> >}[m[K
+[01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SlamNode.cpp:193:78:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kx[m[K’ in ‘[01m[Krobot_pose[m[K’, which is of non-class type ‘[01m[Kdouble[m[K’
+  193 |         std::vector<std::pair<double, double>> points = draw_line(robot_pose.[01;31m[Kx[m[K, robot_pose.y, x, y);
+      |                                                                              [01;31m[K^[m[K
+[01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SlamNode.cpp:193:92:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Ky[m[K’ in ‘[01m[Krobot_pose[m[K’, which is of non-class type ‘[01m[Kdouble[m[K’
+  193 |         std::vector<std::pair<double, double>> points = draw_line(robot_pose.x, robot_pose.[01;31m[Ky[m[K, x, y);
+      |                                                                                            [01;31m[K^[m[K
+gmake[2]: *** [CMakeFiles/slam.dir/build.make:90: CMakeFiles/slam.dir/src/SlamNode.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:195: CMakeFiles/slam.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

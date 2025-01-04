@@ -3,7 +3,7 @@ set(CTEST_SOURCE_DIRECTORY  "/home/bobo/ros2_ws/eigen-3.4.0")
 set(CTEST_BINARY_DIRECTORY  "/home/bobo/ros2_ws/build/Eigen3")
 set(CTEST_CMAKE_GENERATOR   "Unix Makefiles")
 set(CTEST_BUILD_NAME        "linux-6.8.0-49-generic-_-11.4.0-sse2-64bit")
-set(CTEST_SITE              "bobo-HP-EliteBook-x360-1030-G3")
+set(CTEST_SITE              "bobo-hp-elitebook-x360-1030-g3")
 
 set(MODEL Experimental)
 if(${CTEST_SCRIPT_ARG} MATCHES Nightly)

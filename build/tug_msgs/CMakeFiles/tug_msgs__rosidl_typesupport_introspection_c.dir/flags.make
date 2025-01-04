@@ -6,5 +6,5 @@ C_DEFINES = -DRCUTILS_ENABLE_FAULT_INJECTION -DROSIDL_TYPESUPPORT_INTROSPECTION_
 
 C_INCLUDES = -I/home/bobo/ros2_ws/build/tug_msgs/rosidl_typesupport_introspection_c -I/home/bobo/ros2_ws/build/tug_msgs/rosidl_generator_c -isystem /opt/ros/humble/include/rosidl_runtime_c -isystem /opt/ros/humble/include/rcutils -isystem /opt/ros/humble/include/rosidl_typesupport_interface -isystem /opt/ros/humble/include/rosidl_typesupport_introspection_c
 
-C_FLAGS = -fPIC -Wall -std=gnu11
+C_FLAGS = -g -fPIC -Wall -std=gnu11
 
