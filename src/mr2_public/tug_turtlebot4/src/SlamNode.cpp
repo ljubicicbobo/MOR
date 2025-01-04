@@ -42,6 +42,20 @@ SlamNode::~SlamNode()
 
 }
 
+const double P_OCCUPIED = 0.9;
+const double P_FREE = 0.1;
+
+double logToProb(double x) {
+  return 1.0 / (1.0 + exp(-x));
+}
+
+double probToLog(double x) {
+  if (x==0) {
+    return 0;
+  }
+  return log(x / (1.0 - x));
+}
+
 // -----------------------------------------------------------------------------
 void SlamNode::laserScanCallback(const LaserScan::ConstSharedPtr& msg)
 {
@@ -61,6 +75,7 @@ void SlamNode::laserScanCallback(const LaserScan::ConstSharedPtr& msg)
     return;
   }
   auto& robot_pose = bot_to_odom.transform.translation;
+  static int j=0;
   // Laser Scan ranges
   for (size_t i = 0; i < msg->ranges.size(); i++) {
     double range = msg->ranges[i];
@@ -94,10 +109,23 @@ void SlamNode::laserScanCallback(const LaserScan::ConstSharedPtr& msg)
     double x = point_map.point.x;
     double y = point_map.point.y;
 
+    // update endpoints
     uint32_t cell_x, cell_y;
     occupancy_grid_map_->worldToCell(x, y, cell_x, cell_y);
-   	occupancy_grid_map_->updateCell(cell_x, cell_y, 1);
 
+    double prevLog = probToLog(occupancy_grid_map_->getCell(cell_x, cell_y));
+    double logOddsUpdate;
+    if (isinf(prevLog) || isnan(prevLog)) {
+      logOddsUpdate = 0.5;
+    } else {
+      logOddsUpdate = probToLog((P_OCCUPIED) + prevLog);
+    }
+
+    if (j < 100) {
+      RCLCPP_INFO(get_logger(), "log update black %f", logOddsUpdate);
+      j++;
+    }
+   	occupancy_grid_map_->updateCell(cell_x, cell_y, logOddsUpdate);
 
     //RCLCPP_INFO(get_logger(), "[i - %ld] Cell - X: %ud, Y: %ud",i, cell_x, cell_y);
     //RCLCPP_INFO(get_logger(), "[i - %ld] X: %f, Y: %f",i, x_rotated, y_rotated);
@@ -127,7 +155,13 @@ void SlamNode::laserScanCallback(const LaserScan::ConstSharedPtr& msg)
       double x1 = p.first;
       double y1 = p.second;
       occupancy_grid_map_->worldToCell(x1, y1, cell_x, cell_y);
-      occupancy_grid_map_->updateCell(cell_x, cell_y, -1);
+      double prevLog = probToLog(occupancy_grid_map_->getCell(cell_x, cell_y));
+      if (isinf(prevLog) || isnan(prevLog)) {
+        logOddsUpdate = 0.5;
+      } else {
+        logOddsUpdate = probToLog((P_FREE) + prevLog);
+      }
+      occupancy_grid_map_->updateCell(cell_x, cell_y, logOddsUpdate);
     }
   }
 
