@@ -1,0 +1,40 @@
+[35m[1mConsolidate compiler generated dependencies of target slam[0m
+[ 18%] Built target static_transform_publisher
+[ 45%] Built target simple_turtle
+[ 63%] Built target tug_wheel_encoder-system
+[ 72%] [32mBuilding CXX object CMakeFiles/slam.dir/src/SlamNode.cpp.o[0m
+[01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SlamNode.cpp:396:32:[m[K [01;31m[Kerror: [m[Kunterminated argument list invoking macro "RCLCPP_INFO"
+  396 | } /* namespace tug_turtlebot */
+      |                                [01;31m[K^[m[K
+[01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SlamNode.cpp:[m[K In member function ‘[01m[Kvoid tug_turtlebot4::SlamNode::saveSensorDataToCSV(const string&)[m[K’:
+[01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SlamNode.cpp:331:13:[m[K [01;31m[Kerror: [m[K‘[01m[KRCLCPP_INFO[m[K’ was not declared in this scope
+  331 |             [01;31m[KRCLCPP_INFO[m[K(get_logger(), "%d ", reading.scan.ranges[i];
+      |             [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SlamNode.cpp:331:24:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+  331 |             RCLCPP_INFO[01;31m[K([m[Kget_logger(), "%d ", reading.scan.ranges[i];
+      |                        [01;31m[K^[m[K
+[01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SlamNode.cpp:329:65:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+  329 |         for (size_t i = 0; i < reading.scan.ranges.size(); ++i) [01;36m[K{[m[K
+      |                                                                 [01;36m[K^[m[K
+[01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SlamNode.cpp:331:24:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+  331 |             RCLCPP_INFO[01;31m[K([m[Kget_logger(), "%d ", reading.scan.ranges[i];
+      |                        [01;31m[K^[m[K
+[01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SlamNode.cpp:303:50:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+  303 |     for (const auto& reading : sensor_readings_) [01;36m[K{[m[K
+      |                                                  [01;36m[K^[m[K
+[01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SlamNode.cpp:331:24:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+  331 |             RCLCPP_INFO[01;31m[K([m[Kget_logger(), "%d ", reading.scan.ranges[i];
+      |                        [01;31m[K^[m[K
+[01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SlamNode.cpp:292:65:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+  292 | void SlamNode::saveSensorDataToCSV(const std::string& filename) [01;36m[K{[m[K
+      |                                                                 [01;36m[K^[m[K
+[01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SlamNode.cpp:[m[K At global scope:
+[01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SlamNode.cpp:331:24:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+  331 |             RCLCPP_INFO[01;31m[K([m[Kget_logger(), "%d ", reading.scan.ranges[i];
+      |                        [01;31m[K^[m[K
+[01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SlamNode.cpp:8:1:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+    8 | [01;36m[K{[m[K
+      | [01;36m[K^[m[K
+gmake[2]: *** [CMakeFiles/slam.dir/build.make:90: CMakeFiles/slam.dir/src/SlamNode.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:195: CMakeFiles/slam.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

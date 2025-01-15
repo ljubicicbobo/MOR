@@ -1,0 +1,17 @@
+[0.035s] Invoking command in '/home/bobo/ros2_ws/build/tug_turtlebot4': CMAKE_PREFIX_PATH=/home/bobo/ros2_ws/install/tug_msgs:/home/bobo/ros2_ws/install/tug_turtlebot4:/home/bobo/ros2_ws/install/tug_stage_ros2:/home/bobo/ros2_ws/install/tug_mr2:/home/bobo/ros2_ws/install/ros2cpp_tutorials_service:/home/bobo/ros2_ws/install/ros2cpp_tutorials_publisher_subscriber:/home/bobo/ros2_ws/install/ros2cpp_tutorials_parameter:/home/bobo/ros2_ws/install/ros2cpp_tutorials_action:/home/bobo/ros2_ws/install/Eigen3:/opt/ros/humble LD_LIBRARY_PATH=/home/bobo/ros2_ws/install/tug_msgs/lib:/home/bobo/stg/lib:/home/bobo/ros2_ws/install/ros2cpp_tutorials_service/lib:/home/bobo/ros2_ws/install/ros2cpp_tutorials_action/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/bobo/ros2_ws/build/tug_turtlebot4 -- -j8 -l8
+[0.149s] [35m[1mConsolidate compiler generated dependencies of target slam[0m
+[0.176s] [ 18%] Built target static_transform_publisher
+[0.183s] [ 45%] Built target simple_turtle
+[0.187s] [ 63%] Built target tug_wheel_encoder-system
+[0.224s] [ 72%] [32mBuilding CXX object CMakeFiles/slam.dir/src/SlamNode.cpp.o[0m
+[26.041s] [ 81%] [32m[1mLinking CXX executable slam[0m
+[35.676s] /usr/bin/ld: CMakeFiles/slam.dir/src/SlamNode.cpp.o: in function `tug_turtlebot4::SlamNode::task2()':
+[35.676s] /home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SlamNode.cpp:89: undefined reference to `tug_turtlebot4::SlamNode::loadSensorDataFromCSV(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+[35.677s] /usr/bin/ld: /home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SlamNode.cpp:92: undefined reference to `tug_turtlebot4::SlamNode::optimizeMap()'
+[35.679s] /usr/bin/ld: CMakeFiles/slam.dir/src/SlamNode.cpp.o: in function `tug_turtlebot4::SlamNode::handleSaveSensorData(std::shared_ptr<std_srvs::srv::Trigger_Request_<std::allocator<void> > >, std::shared_ptr<std_srvs::srv::Trigger_Response_<std::allocator<void> > >)':
+[35.679s] /home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SlamNode.cpp:108: undefined reference to `tug_turtlebot4::SlamNode::saveSensorDataToCSV(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+[35.926s] collect2: error: ld returned 1 exit status
+[35.928s] gmake[2]: *** [CMakeFiles/slam.dir/build.make:254: slam] Error 1
+[35.929s] gmake[1]: *** [CMakeFiles/Makefile2:195: CMakeFiles/slam.dir/all] Error 2
+[35.929s] gmake: *** [Makefile:146: all] Error 2
+[35.933s] Invoked command in '/home/bobo/ros2_ws/build/tug_turtlebot4' returned '2': CMAKE_PREFIX_PATH=/home/bobo/ros2_ws/install/tug_msgs:/home/bobo/ros2_ws/install/tug_turtlebot4:/home/bobo/ros2_ws/install/tug_stage_ros2:/home/bobo/ros2_ws/install/tug_mr2:/home/bobo/ros2_ws/install/ros2cpp_tutorials_service:/home/bobo/ros2_ws/install/ros2cpp_tutorials_publisher_subscriber:/home/bobo/ros2_ws/install/ros2cpp_tutorials_parameter:/home/bobo/ros2_ws/install/ros2cpp_tutorials_action:/home/bobo/ros2_ws/install/Eigen3:/opt/ros/humble LD_LIBRARY_PATH=/home/bobo/ros2_ws/install/tug_msgs/lib:/home/bobo/stg/lib:/home/bobo/ros2_ws/install/ros2cpp_tutorials_service/lib:/home/bobo/ros2_ws/install/ros2cpp_tutorials_action/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/bobo/ros2_ws/build/tug_turtlebot4 -- -j8 -l8

@@ -22,6 +22,10 @@ find_package(tug_msgs REQUIRED)
 find_package(ignition-gazebo6 REQUIRED)
 find_package(ignition-plugin1 REQUIRED)
 
+#find service dependencies
+find_package(std_srvs REQUIRED)
+
+
 # add Gazebo library
 add_library(tug_wheel_encoder-system SHARED "src/ign_plugin/WheelEncoder.cpp")
 target_compile_features(tug_wheel_encoder-system PUBLIC cxx_std_17)
@@ -45,6 +49,7 @@ ament_target_dependencies(
     geometry_msgs
     tf2_geometry_msgs
     tug_msgs
+    std_srvs
 )
 
 add_executable(slam "src/slam.cpp" "src/SlamNode.cpp" "src/OccupancyGridMap.cpp")
@@ -59,6 +64,7 @@ ament_target_dependencies(
     nav_msgs
     sensor_msgs
     tf2_geometry_msgs
+    std_srvs
 )
 
 add_executable(static_transform_publisher "src/static_transform_publisher.cpp")
@@ -69,6 +75,7 @@ ament_target_dependencies(
     rclcpp
     tf2_ros
     geometry_msgs
+    std_srvs
 )
 
 # install targets

@@ -113,4 +113,40 @@ float OccupancyGridMap::getCell(uint32_t cell_x, uint32_t cell_y) const
 
 // ----------------------------------
 
+
+std::shared_ptr<nav_msgs::msg::OccupancyGrid> OccupancyGridMap::toOccupancyGrid() const
+{
+    // Create a new OccupancyGrid message
+    auto grid = std::make_shared<nav_msgs::msg::OccupancyGrid>();
+
+    // Copy metadata from the existing occupancy grid
+    grid->header = occupancy_grid_->header;
+    grid->info = occupancy_grid_->info;
+
+    // Populate the grid data by converting the internal float array
+    grid->data.resize(width_ * height_);
+    for (size_t i = 0; i < width_ * height_; ++i) {
+        if (data_[i] > 0.95F) {
+            grid->data[i] = 100;  // Occupied
+        } else if (data_[i] < -0.95F) {
+            grid->data[i] = 0;    // Free
+        } else {
+            grid->data[i] = -1;   // Unknown
+        }
+    }
+
+    return grid;
+}
+
+// ----------------------------------------------------------------------
+uint32_t OccupancyGridMap::getWidth() const {
+    return width_;
+}
+
+uint32_t OccupancyGridMap::getHeight() const {
+    return height_;
+}
+
+
+
 } /* namespace tug_turtlebot4 */

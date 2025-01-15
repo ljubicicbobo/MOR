@@ -1,0 +1,29 @@
+[0.030s] Invoking command in '/home/bobo/ros2_ws/build/tug_turtlebot4': CMAKE_PREFIX_PATH=/home/bobo/ros2_ws/install/tug_msgs:/home/bobo/ros2_ws/install/tug_turtlebot4:/home/bobo/ros2_ws/install/tug_stage_ros2:/home/bobo/ros2_ws/install/tug_mr2:/home/bobo/ros2_ws/install/ros2cpp_tutorials_service:/home/bobo/ros2_ws/install/ros2cpp_tutorials_publisher_subscriber:/home/bobo/ros2_ws/install/ros2cpp_tutorials_parameter:/home/bobo/ros2_ws/install/ros2cpp_tutorials_action:/home/bobo/ros2_ws/install/Eigen3:/opt/ros/humble LD_LIBRARY_PATH=/home/bobo/ros2_ws/install/tug_msgs/lib:/home/bobo/stg/lib:/home/bobo/ros2_ws/install/ros2cpp_tutorials_service/lib:/home/bobo/ros2_ws/install/ros2cpp_tutorials_action/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/bobo/ros2_ws/build/tug_turtlebot4 -- -j8 -l8
+[0.142s] [35m[1mConsolidate compiler generated dependencies of target slam[0m
+[0.176s] [ 18%] Built target static_transform_publisher
+[0.179s] [ 45%] Built target simple_turtle
+[0.179s] [ 63%] Built target tug_wheel_encoder-system
+[0.218s] [ 72%] [32mBuilding CXX object CMakeFiles/slam.dir/src/SlamNode.cpp.o[0m
+[0.220s] [ 81%] [32mBuilding CXX object CMakeFiles/slam.dir/src/slam.cpp.o[0m
+[6.341s] [01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SlamNode.cpp:[m[K In member function ‘[01m[Kvoid tug_turtlebot4::SlamNode::hillClimbOptimization(const std::set<std::pair<unsigned int, unsigned int> >&)[m[K’:
+[6.341s] [01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SlamNode.cpp:131:39:[m[K [01;31m[Kerror: [m[K‘[01m[KcalculateLikelihood[m[K’ was not declared in this scope; did you mean ‘[01m[KcalculateLogLikelihood[m[K’?
+[6.342s]   131 |           double current_likelihood = [01;31m[KcalculateLikelihood[m[K(cell_x, cell_y, current_log_odds);
+[6.342s]       |                                       [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[6.342s]       |                                       [32m[KcalculateLogLikelihood[m[K
+[6.354s] [01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SlamNode.cpp:135:61:[m[K [01;31m[Kerror: [m[K‘[01m[Kflupped_log_odd[m[K’ was not declared in this scope; did you mean ‘[01m[Kflipped_log_odd[m[K’?
+[6.355s]   135 |             occupancy_grid_map_->updateCell(cell_x, cell_y, [01;31m[Kflupped_log_odd[m[K);
+[6.355s]       |                                                             [01;31m[K^~~~~~~~~~~~~~~[m[K
+[6.355s]       |                                                             [32m[Kflipped_log_odd[m[K
+[6.388s] [01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SlamNode.cpp:[m[K In member function ‘[01m[Kvoid tug_turtlebot4::SlamNode::laserScanCallback(const ConstSharedPtr&)[m[K’:
+[6.388s] [01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SlamNode.cpp:299:27:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kstd::set<std::pair<unsigned int, unsigned int> >*[m[K’ to ‘[01m[Kconst std::set<std::pair<unsigned int, unsigned int> >&[m[K’
+[6.388s]   299 |     hillClimbOptimization([01;31m[K&scanned_cells[m[K);
+[6.388s]       |                           [01;31m[K^~~~~~~~~~~~~~[m[K
+[6.388s]       |                           [01;31m[K|[m[K
+[6.388s]       |                           [01;31m[Kstd::set<std::pair<unsigned int, unsigned int> >*[m[K
+[6.388s] [01m[K/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SlamNode.cpp:121:85:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kvoid tug_turtlebot4::SlamNode::hillClimbOptimization(const std::set<std::pair<unsigned int, unsigned int> >&)[m[K’
+[6.389s]   121 | void SlamNode::hillClimbOptimization([01;36m[Kconst std::set<std::pair<uint32_t, uint32_t>>& scanned_cells[m[K) {
+[6.389s]       |                                      [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~[m[K
+[13.267s] gmake[2]: *** [CMakeFiles/slam.dir/build.make:90: CMakeFiles/slam.dir/src/SlamNode.cpp.o] Error 1
+[13.267s] gmake[1]: *** [CMakeFiles/Makefile2:195: CMakeFiles/slam.dir/all] Error 2
+[13.268s] gmake: *** [Makefile:146: all] Error 2
+[13.271s] Invoked command in '/home/bobo/ros2_ws/build/tug_turtlebot4' returned '2': CMAKE_PREFIX_PATH=/home/bobo/ros2_ws/install/tug_msgs:/home/bobo/ros2_ws/install/tug_turtlebot4:/home/bobo/ros2_ws/install/tug_stage_ros2:/home/bobo/ros2_ws/install/tug_mr2:/home/bobo/ros2_ws/install/ros2cpp_tutorials_service:/home/bobo/ros2_ws/install/ros2cpp_tutorials_publisher_subscriber:/home/bobo/ros2_ws/install/ros2cpp_tutorials_parameter:/home/bobo/ros2_ws/install/ros2cpp_tutorials_action:/home/bobo/ros2_ws/install/Eigen3:/opt/ros/humble LD_LIBRARY_PATH=/home/bobo/ros2_ws/install/tug_msgs/lib:/home/bobo/stg/lib:/home/bobo/ros2_ws/install/ros2cpp_tutorials_service/lib:/home/bobo/ros2_ws/install/ros2cpp_tutorials_action/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/bobo/ros2_ws/build/tug_turtlebot4 -- -j8 -l8

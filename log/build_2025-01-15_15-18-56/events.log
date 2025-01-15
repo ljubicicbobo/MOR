@@ -1,0 +1,1296 @@
+[0.000000] (-) TimerEvent: {}
+[0.000157] (Eigen3) JobQueued: {'identifier': 'Eigen3', 'dependencies': OrderedDict()}
+[0.000888] (tug_msgs) JobQueued: {'identifier': 'tug_msgs', 'dependencies': OrderedDict()}
+[0.001103] (tug_mr2) JobQueued: {'identifier': 'tug_mr2', 'dependencies': OrderedDict([('tug_msgs', '/home/bobo/ros2_ws/install/tug_msgs')])}
+[0.001135] (tug_stage_ros2) JobQueued: {'identifier': 'tug_stage_ros2', 'dependencies': OrderedDict([('tug_msgs', '/home/bobo/ros2_ws/install/tug_msgs')])}
+[0.001159] (tug_turtlebot4) JobQueued: {'identifier': 'tug_turtlebot4', 'dependencies': OrderedDict([('tug_msgs', '/home/bobo/ros2_ws/install/tug_msgs')])}
+[0.001199] (tug_msgs) JobStarted: {'identifier': 'tug_msgs'}
+[0.011319] (Eigen3) JobStarted: {'identifier': 'Eigen3'}
+[0.020233] (tug_msgs) JobProgress: {'identifier': 'tug_msgs', 'progress': 'cmake'}
+[0.021953] (tug_msgs) JobProgress: {'identifier': 'tug_msgs', 'progress': 'build'}
+[0.023527] (tug_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/bobo/ros2_ws/build/tug_msgs', '--', '-j8', '-l8'], 'cwd': '/home/bobo/ros2_ws/build/tug_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'bobo'), ('LC_TIME', 'de_AT.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LIBGL_ALWAYS_SOFTWARE', '1'), ('LD_LIBRARY_PATH', '/home/bobo/stg/lib:/home/bobo/ros2_ws/install/tug_msgs/lib:/home/bobo/ros2_ws/install/ros2cpp_tutorials_service/lib:/home/bobo/ros2_ws/install/ros2cpp_tutorials_action/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/bobo'), ('OLDPWD', '/home/bobo'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'de_AT.UTF-8'), ('SYSTEMD_EXEC_PID', '1642'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/bobo/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'bobo'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'bobo'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/home/bobo/stg/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/usr/local/MATLAB/R2024b/bin'), ('SESSION_MANAGER', 'local/bobo-HP-EliteBook-x360-1030-G3:@/tmp/.ICE-unix/1614,unix/bobo-HP-EliteBook-x360-1030-G3:/tmp/.ICE-unix/1614'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'de_AT.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/bc176185_8682_4855_a5ca_5f42bdfed6b1'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'de_AT.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.K2EL02'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.99'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/home/bobo/ros2_ws/install/tug_turtlebot4:/home/bobo/ros2_ws/install/tug_stage_ros2:/home/bobo/ros2_ws/install/tug_mr2:/home/bobo/ros2_ws/install/tug_msgs:/home/bobo/ros2_ws/install/ros2cpp_tutorials_service:/home/bobo/ros2_ws/install/ros2cpp_tutorials_publisher_subscriber:/home/bobo/ros2_ws/install/ros2cpp_tutorials_parameter:/home/bobo/ros2_ws/install/ros2cpp_tutorials_action:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'de_AT.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'de_AT.UTF-8'), ('LC_IDENTIFICATION', 'de_AT.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/bobo/ros2_ws/build/tug_msgs'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/bobo/ros2_ws/install/tug_msgs/local/lib/python3.10/dist-packages:/home/bobo/ros2_ws/install/ros2cpp_tutorials_service/local/lib/python3.10/dist-packages:/home/bobo/ros2_ws/install/ros2cpp_tutorials_action/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'de_AT.UTF-8'), ('LC_PAPER', 'de_AT.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/bobo/ros2_ws/install/tug_turtlebot4:/home/bobo/ros2_ws/install/tug_stage_ros2:/home/bobo/ros2_ws/install/tug_mr2:/home/bobo/ros2_ws/install/tug_msgs:/home/bobo/ros2_ws/install/ros2cpp_tutorials_service:/home/bobo/ros2_ws/install/ros2cpp_tutorials_publisher_subscriber:/home/bobo/ros2_ws/install/ros2cpp_tutorials_parameter:/home/bobo/ros2_ws/install/ros2cpp_tutorials_action:/home/bobo/ros2_ws/install/Eigen3:/opt/ros/humble')]), 'shell': False}
+[0.031878] (Eigen3) JobProgress: {'identifier': 'Eigen3', 'progress': 'cmake'}
+[0.033158] (Eigen3) JobProgress: {'identifier': 'Eigen3', 'progress': 'build'}
+[0.034228] (Eigen3) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/bobo/ros2_ws/build/Eigen3', '--', '-j8', '-l8'], 'cwd': '/home/bobo/ros2_ws/build/Eigen3', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'bobo'), ('LC_TIME', 'de_AT.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LIBGL_ALWAYS_SOFTWARE', '1'), ('LD_LIBRARY_PATH', '/home/bobo/stg/lib:/home/bobo/ros2_ws/install/tug_msgs/lib:/home/bobo/ros2_ws/install/ros2cpp_tutorials_service/lib:/home/bobo/ros2_ws/install/ros2cpp_tutorials_action/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/bobo'), ('OLDPWD', '/home/bobo'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'de_AT.UTF-8'), ('SYSTEMD_EXEC_PID', '1642'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/bobo/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'bobo'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'bobo'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/home/bobo/stg/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/usr/local/MATLAB/R2024b/bin'), ('SESSION_MANAGER', 'local/bobo-HP-EliteBook-x360-1030-G3:@/tmp/.ICE-unix/1614,unix/bobo-HP-EliteBook-x360-1030-G3:/tmp/.ICE-unix/1614'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'de_AT.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/bc176185_8682_4855_a5ca_5f42bdfed6b1'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'de_AT.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.K2EL02'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.99'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/home/bobo/ros2_ws/install/tug_turtlebot4:/home/bobo/ros2_ws/install/tug_stage_ros2:/home/bobo/ros2_ws/install/tug_mr2:/home/bobo/ros2_ws/install/tug_msgs:/home/bobo/ros2_ws/install/ros2cpp_tutorials_service:/home/bobo/ros2_ws/install/ros2cpp_tutorials_publisher_subscriber:/home/bobo/ros2_ws/install/ros2cpp_tutorials_parameter:/home/bobo/ros2_ws/install/ros2cpp_tutorials_action:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'de_AT.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'de_AT.UTF-8'), ('LC_IDENTIFICATION', 'de_AT.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/bobo/ros2_ws/build/Eigen3'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/bobo/ros2_ws/install/tug_msgs/local/lib/python3.10/dist-packages:/home/bobo/ros2_ws/install/ros2cpp_tutorials_service/local/lib/python3.10/dist-packages:/home/bobo/ros2_ws/install/ros2cpp_tutorials_action/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'de_AT.UTF-8'), ('LC_PAPER', 'de_AT.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/bobo/ros2_ws/install/tug_turtlebot4:/home/bobo/ros2_ws/install/tug_stage_ros2:/home/bobo/ros2_ws/install/tug_mr2:/home/bobo/ros2_ws/install/tug_msgs:/home/bobo/ros2_ws/install/ros2cpp_tutorials_service:/home/bobo/ros2_ws/install/ros2cpp_tutorials_publisher_subscriber:/home/bobo/ros2_ws/install/ros2cpp_tutorials_parameter:/home/bobo/ros2_ws/install/ros2cpp_tutorials_action:/home/bobo/ros2_ws/install/Eigen3')]), 'shell': False}
+[0.099586] (-) TimerEvent: {}
+[0.123134] (tug_msgs) StdoutLine: {'line': b'[  1%] Built target tug_msgs__cpp\n'}
+[0.123881] (tug_msgs) StdoutLine: {'line': b'[ 12%] Built target tug_msgs__rosidl_generator_c\n'}
+[0.143443] (tug_msgs) StdoutLine: {'line': b'[ 12%] Built target ament_cmake_python_copy_tug_msgs\n'}
+[0.189131] (tug_msgs) StdoutLine: {'line': b'[ 23%] Built target tug_msgs__rosidl_typesupport_cpp\n'}
+[0.194409] (tug_msgs) StdoutLine: {'line': b'[ 34%] Built target tug_msgs__rosidl_typesupport_introspection_cpp\n'}
+[0.196461] (tug_msgs) StdoutLine: {'line': b'[ 45%] Built target tug_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[0.199689] (-) TimerEvent: {}
+[0.200862] (tug_msgs) StdoutLine: {'line': b'[ 56%] Built target tug_msgs__rosidl_typesupport_c\n'}
+[0.204582] (tug_msgs) StdoutLine: {'line': b'[ 67%] Built target tug_msgs__rosidl_typesupport_introspection_c\n'}
+[0.207471] (tug_msgs) StdoutLine: {'line': b'[ 78%] Built target tug_msgs__rosidl_typesupport_fastrtps_c\n'}
+[0.247186] (tug_msgs) StdoutLine: {'line': b'[ 78%] Built target tug_msgs\n'}
+[0.285253] (tug_msgs) StdoutLine: {'line': b'[ 80%] Built target tug_msgs__py\n'}
+[0.299800] (-) TimerEvent: {}
+[0.327287] (tug_msgs) StdoutLine: {'line': b'[ 89%] Built target tug_msgs__rosidl_generator_py\n'}
+[0.381068] (tug_msgs) StdoutLine: {'line': b'[ 92%] Built target tug_msgs__rosidl_typesupport_c__pyext\n'}
+[0.382555] (tug_msgs) StdoutLine: {'line': b'[ 96%] Built target tug_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[0.385547] (tug_msgs) StdoutLine: {'line': b'[100%] Built target tug_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[0.399944] (-) TimerEvent: {}
+[0.500351] (-) TimerEvent: {}
+[0.600844] (-) TimerEvent: {}
+[0.659841] (Eigen3) CommandEnded: {'returncode': 0}
+[0.668512] (Eigen3) JobProgress: {'identifier': 'Eigen3', 'progress': 'install'}
+[0.680181] (tug_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[0.681429] (tug_msgs) StdoutLine: {'line': b'writing tug_msgs.egg-info/PKG-INFO\n'}
+[0.681834] (tug_msgs) StdoutLine: {'line': b'writing dependency_links to tug_msgs.egg-info/dependency_links.txt\n'}
+[0.682378] (tug_msgs) StdoutLine: {'line': b'writing top-level names to tug_msgs.egg-info/top_level.txt\n'}
+[0.685766] (Eigen3) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/bobo/ros2_ws/build/Eigen3'], 'cwd': '/home/bobo/ros2_ws/build/Eigen3', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'bobo'), ('LC_TIME', 'de_AT.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LIBGL_ALWAYS_SOFTWARE', '1'), ('LD_LIBRARY_PATH', '/home/bobo/stg/lib:/home/bobo/ros2_ws/install/tug_msgs/lib:/home/bobo/ros2_ws/install/ros2cpp_tutorials_service/lib:/home/bobo/ros2_ws/install/ros2cpp_tutorials_action/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/bobo'), ('OLDPWD', '/home/bobo'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'de_AT.UTF-8'), ('SYSTEMD_EXEC_PID', '1642'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/bobo/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'bobo'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'bobo'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/home/bobo/stg/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/usr/local/MATLAB/R2024b/bin'), ('SESSION_MANAGER', 'local/bobo-HP-EliteBook-x360-1030-G3:@/tmp/.ICE-unix/1614,unix/bobo-HP-EliteBook-x360-1030-G3:/tmp/.ICE-unix/1614'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'de_AT.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/bc176185_8682_4855_a5ca_5f42bdfed6b1'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'de_AT.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.K2EL02'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.99'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/home/bobo/ros2_ws/install/tug_turtlebot4:/home/bobo/ros2_ws/install/tug_stage_ros2:/home/bobo/ros2_ws/install/tug_mr2:/home/bobo/ros2_ws/install/tug_msgs:/home/bobo/ros2_ws/install/ros2cpp_tutorials_service:/home/bobo/ros2_ws/install/ros2cpp_tutorials_publisher_subscriber:/home/bobo/ros2_ws/install/ros2cpp_tutorials_parameter:/home/bobo/ros2_ws/install/ros2cpp_tutorials_action:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'de_AT.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'de_AT.UTF-8'), ('LC_IDENTIFICATION', 'de_AT.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/bobo/ros2_ws/build/Eigen3'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/bobo/ros2_ws/install/tug_msgs/local/lib/python3.10/dist-packages:/home/bobo/ros2_ws/install/ros2cpp_tutorials_service/local/lib/python3.10/dist-packages:/home/bobo/ros2_ws/install/ros2cpp_tutorials_action/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'de_AT.UTF-8'), ('LC_PAPER', 'de_AT.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/bobo/ros2_ws/install/tug_turtlebot4:/home/bobo/ros2_ws/install/tug_stage_ros2:/home/bobo/ros2_ws/install/tug_mr2:/home/bobo/ros2_ws/install/tug_msgs:/home/bobo/ros2_ws/install/ros2cpp_tutorials_service:/home/bobo/ros2_ws/install/ros2cpp_tutorials_publisher_subscriber:/home/bobo/ros2_ws/install/ros2cpp_tutorials_parameter:/home/bobo/ros2_ws/install/ros2cpp_tutorials_action:/home/bobo/ros2_ws/install/Eigen3')]), 'shell': False}
+[0.688788] (tug_msgs) StdoutLine: {'line': b"reading manifest file 'tug_msgs.egg-info/SOURCES.txt'\n"}
+[0.689733] (tug_msgs) StdoutLine: {'line': b"writing manifest file 'tug_msgs.egg-info/SOURCES.txt'\n"}
+[0.700995] (-) TimerEvent: {}
+[0.701447] (Eigen3) StdoutLine: {'line': b'-- Install configuration: "debug"\n'}
+[0.701962] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/signature_of_eigen3_matrix_library\n'}
+[0.702345] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/share/pkgconfig/eigen3.pc\n'}
+[0.702644] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen\n'}
+[0.702882] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src\n'}
+[0.703286] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/SparseLU\n'}
+[0.703679] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/SparseLU/SparseLU_gemm_kernel.h\n'}
+[0.704012] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/SparseLU/SparseLU_pruneL.h\n'}
+[0.704241] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/SparseLU/SparseLU_copy_to_ucol.h\n'}
+[0.704570] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/SparseLU/SparseLU_column_dfs.h\n'}
+[0.704855] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/SparseLU/SparseLU_panel_bmod.h\n'}
+[0.705190] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/SparseLU/SparseLU_SupernodalMatrix.h\n'}
+[0.705497] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/SparseLU/SparseLU_pivotL.h\n'}
+[0.705810] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/SparseLU/SparseLU_Utils.h\n'}
+[0.706147] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/SparseLU/SparseLU_Memory.h\n'}
+[0.706471] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/SparseLU/SparseLU_kernel_bmod.h\n'}
+[0.706784] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/SparseLU/SparseLU_Structs.h\n'}
+[0.707205] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/SparseLU/SparseLU_relax_snode.h\n'}
+[0.707555] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/SparseLU/SparseLU_heap_relax_snode.h\n'}
+[0.707780] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/SparseLU/SparseLU_column_bmod.h\n'}
+[0.708016] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/SparseLU/SparseLU_panel_dfs.h\n'}
+[0.708546] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/SparseLU/SparseLUImpl.h\n'}
+[0.708761] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/SparseLU/SparseLU.h\n'}
+[0.709330] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/PardisoSupport\n'}
+[0.709739] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/PardisoSupport/PardisoSupport.h\n'}
+[0.710106] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/UmfPackSupport\n'}
+[0.710410] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/UmfPackSupport/UmfPackSupport.h\n'}
+[0.710732] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/CholmodSupport\n'}
+[0.711261] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/CholmodSupport/CholmodSupport.h\n'}
+[0.711518] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/SparseCholesky\n'}
+[0.711689] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/SparseCholesky/SimplicialCholesky_impl.h\n'}
+[0.711812] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/SparseCholesky/SimplicialCholesky.h\n'}
+[0.711946] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/plugins\n'}
+[0.712309] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/plugins/ReshapedMethods.h\n'}
+[0.712579] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/plugins/BlockMethods.h\n'}
+[0.712699] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/plugins/IndexedViewMethods.h\n'}
+[0.712962] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/plugins/CommonCwiseUnaryOps.h\n'}
+[0.713331] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/plugins/MatrixCwiseBinaryOps.h\n'}
+[0.713676] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/plugins/ArrayCwiseBinaryOps.h\n'}
+[0.713794] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/plugins/CommonCwiseBinaryOps.h\n'}
+[0.714203] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/plugins/MatrixCwiseUnaryOps.h\n'}
+[0.714499] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/plugins/ArrayCwiseUnaryOps.h\n'}
+[0.714953] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Geometry\n'}
+[0.715294] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Geometry/EulerAngles.h\n'}
+[0.715554] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Geometry/Translation.h\n'}
+[0.715666] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Geometry/Scaling.h\n'}
+[0.715776] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Geometry/arch\n'}
+[0.715897] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Geometry/arch/Geometry_SIMD.h\n'}
+[0.716353] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Geometry/AlignedBox.h\n'}
+[0.716698] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Geometry/AngleAxis.h\n'}
+[0.716937] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Geometry/Hyperplane.h\n'}
+[0.717543] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Geometry/Transform.h\n'}
+[0.717792] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Geometry/OrthoMethods.h\n'}
+[0.718331] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Geometry/Homogeneous.h\n'}
+[0.718818] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Geometry/ParametrizedLine.h\n'}
+[0.719401] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Geometry/RotationBase.h\n'}
+[0.719593] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Geometry/Rotation2D.h\n'}
+[0.719773] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Geometry/Quaternion.h\n'}
+[0.720284] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Geometry/Umeyama.h\n'}
+[0.720472] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Cholesky\n'}
+[0.720651] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Cholesky/LDLT.h\n'}
+[0.720828] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Cholesky/LLT.h\n'}
+[0.721053] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Cholesky/LLT_LAPACKE.h\n'}
+[0.721280] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/StlSupport\n'}
+[0.721481] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/StlSupport/StdVector.h\n'}
+[0.721683] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/StlSupport/StdList.h\n'}
+[0.721884] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/StlSupport/details.h\n'}
+[0.722148] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/StlSupport/StdDeque.h\n'}
+[0.722279] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/OrderingMethods\n'}
+[0.722403] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/OrderingMethods/Ordering.h\n'}
+[0.722526] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/OrderingMethods/Eigen_Colamd.h\n'}
+[0.722649] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/OrderingMethods/Amd.h\n'}
+[0.722771] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/SVD\n'}
+[0.722892] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/SVD/SVDBase.h\n'}
+[0.723137] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/SVD/JacobiSVD.h\n'}
+[0.723470] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/SVD/UpperBidiagonalization.h\n'}
+[0.723578] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/SVD/JacobiSVD_LAPACKE.h\n'}
+[0.723683] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/SVD/BDCSVD.h\n'}
+[0.723788] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/QR\n'}
+[0.724096] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/QR/ColPivHouseholderQR_LAPACKE.h\n'}
+[0.724391] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/QR/HouseholderQR.h\n'}
+[0.724866] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/QR/HouseholderQR_LAPACKE.h\n'}
+[0.725448] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/QR/CompleteOrthogonalDecomposition.h\n'}
+[0.725637] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/QR/FullPivHouseholderQR.h\n'}
+[0.725778] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/QR/ColPivHouseholderQR.h\n'}
+[0.725912] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Householder\n'}
+[0.726568] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Householder/BlockHouseholder.h\n'}
+[0.726782] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Householder/HouseholderSequence.h\n'}
+[0.726935] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Householder/Householder.h\n'}
+[0.727105] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/SparseCore\n'}
+[0.727297] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/SparseCore/ConservativeSparseSparseProduct.h\n'}
+[0.727432] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/SparseCore/SparseDenseProduct.h\n'}
+[0.727558] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/SparseCore/SparseCwiseBinaryOp.h\n'}
+[0.727684] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/SparseCore/SparseSolverBase.h\n'}
+[0.727808] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/SparseCore/SparseMatrixBase.h\n'}
+[0.727965] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/SparseCore/SparseDiagonalProduct.h\n'}
+[0.728577] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/SparseCore/SparseColEtree.h\n'}
+[0.728774] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/SparseCore/SparseUtil.h\n'}
+[0.728938] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/SparseCore/AmbiVector.h\n'}
+[0.729370] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/SparseCore/MappedSparseMatrix.h\n'}
+[0.729622] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/SparseCore/CompressedStorage.h\n'}
+[0.729879] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/SparseCore/SparseProduct.h\n'}
+[0.730700] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/SparseCore/SparseTranspose.h\n'}
+[0.731163] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/SparseCore/SparseCompressedBase.h\n'}
+[0.731455] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/SparseCore/SparseMatrix.h\n'}
+[0.731844] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/SparseCore/SparseCwiseUnaryOp.h\n'}
+[0.732409] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/SparseCore/SparseRef.h\n'}
+[0.732905] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/SparseCore/SparseVector.h\n'}
+[0.733711] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/SparseCore/SparseSparseProductWithPruning.h\n'}
+[0.734285] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/SparseCore/SparseRedux.h\n'}
+[0.734727] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/SparseCore/SparseBlock.h\n'}
+[0.735300] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/SparseCore/TriangularSolver.h\n'}
+[0.735707] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/SparseCore/SparseAssign.h\n'}
+[0.736049] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/SparseCore/SparseTriangularView.h\n'}
+[0.736377] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/SparseCore/SparseSelfAdjointView.h\n'}
+[0.736655] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/SparseCore/SparseMap.h\n'}
+[0.736983] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/SparseCore/SparsePermutation.h\n'}
+[0.737231] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/SparseCore/SparseView.h\n'}
+[0.737402] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/SparseCore/SparseDot.h\n'}
+[0.737579] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/SparseCore/SparseFuzzy.h\n'}
+[0.737816] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/MetisSupport\n'}
+[0.738013] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/MetisSupport/MetisSupport.h\n'}
+[0.738182] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Jacobi\n'}
+[0.738348] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Jacobi/Jacobi.h\n'}
+[0.738507] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/SuperLUSupport\n'}
+[0.738670] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/SuperLUSupport/SuperLUSupport.h\n'}
+[0.738885] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/PaStiXSupport\n'}
+[0.739163] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/PaStiXSupport/PaStiXSupport.h\n'}
+[0.739366] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/SPQRSupport\n'}
+[0.740140] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/SPQRSupport/SuiteSparseQRSupport.h\n'}
+[0.740637] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/misc\n'}
+[0.740865] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/misc/lapacke_mangling.h\n'}
+[0.741177] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/misc/Image.h\n'}
+[0.741981] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/misc/lapack.h\n'}
+[0.742907] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/misc/blas.h\n'}
+[0.743232] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/misc/Kernel.h\n'}
+[0.743606] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/misc/lapacke.h\n'}
+[0.743950] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/misc/RealSvd2x2.h\n'}
+[0.744304] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core\n'}
+[0.744493] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/StableNorm.h\n'}
+[0.744663] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/Assign.h\n'}
+[0.744909] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/NoAlias.h\n'}
+[0.745260] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/StlIterators.h\n'}
+[0.745514] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/ProductEvaluators.h\n'}
+[0.745679] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/CoreIterators.h\n'}
+[0.745846] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/ConditionEstimator.h\n'}
+[0.746070] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/CwiseNullaryOp.h\n'}
+[0.746494] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/TriangularMatrix.h\n'}
+[0.746679] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/Visitor.h\n'}
+[0.746955] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/VectorBlock.h\n'}
+[0.747315] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/MathFunctions.h\n'}
+[0.747519] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/Block.h\n'}
+[0.747807] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/Fuzzy.h\n'}
+[0.748050] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/AssignEvaluator.h\n'}
+[0.748391] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/ArrayWrapper.h\n'}
+[0.748638] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/MathFunctionsImpl.h\n'}
+[0.748996] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/Matrix.h\n'}
+[0.749168] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/Select.h\n'}
+[0.749372] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/Replicate.h\n'}
+[0.749638] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/NumTraits.h\n'}
+[0.749842] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/CwiseUnaryOp.h\n'}
+[0.750035] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/CoreEvaluators.h\n'}
+[0.750174] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/products\n'}
+[0.750420] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/products/GeneralMatrixVector.h\n'}
+[0.750580] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/products/SelfadjointProduct.h\n'}
+[0.750711] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/products/Parallelizer.h\n'}
+[0.750856] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/products/TriangularSolverVector.h\n'}
+[0.751410] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrixTriangular.h\n'}
+[0.751579] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/products/SelfadjointRank2Update.h\n'}
+[0.751835] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/products/GeneralMatrixVector_BLAS.h\n'}
+[0.752061] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrix_BLAS.h\n'}
+[0.752309] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrix.h\n'}
+[0.752472] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/products/SelfadjointMatrixMatrix_BLAS.h\n'}
+[0.752639] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/products/GeneralBlockPanelKernel.h\n'}
+[0.752766] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/products/TriangularMatrixVector_BLAS.h\n'}
+[0.753290] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/products/TriangularMatrixMatrix.h\n'}
+[0.753450] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/products/TriangularSolverMatrix.h\n'}
+[0.753576] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/products/SelfadjointMatrixMatrix.h\n'}
+[0.753708] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/products/TriangularSolverMatrix_BLAS.h\n'}
+[0.754196] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrixTriangular_BLAS.h\n'}
+[0.754333] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/products/TriangularMatrixMatrix_BLAS.h\n'}
+[0.754463] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/products/SelfadjointMatrixVector.h\n'}
+[0.754603] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/products/SelfadjointMatrixVector_BLAS.h\n'}
+[0.754761] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/products/TriangularMatrixVector.h\n'}
+[0.754972] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/arch\n'}
+[0.755284] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/arch/ZVector\n'}
+[0.755932] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/arch/ZVector/MathFunctions.h\n'}
+[0.757403] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/arch/ZVector/PacketMath.h\n'}
+[0.757690] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/arch/ZVector/Complex.h\n'}
+[0.757971] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/arch/AltiVec\n'}
+[0.758531] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/arch/AltiVec/MatrixProductCommon.h\n'}
+[0.758757] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/arch/AltiVec/MathFunctions.h\n'}
+[0.758969] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/arch/AltiVec/MatrixProduct.h\n'}
+[0.760651] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/arch/AltiVec/PacketMath.h\n'}
+[0.760939] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/arch/AltiVec/MatrixProductMMA.h\n'}
+[0.761937] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/arch/AltiVec/Complex.h\n'}
+[0.762143] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/arch/NEON\n'}
+[0.762285] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/arch/NEON/MathFunctions.h\n'}
+[0.762491] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/arch/NEON/PacketMath.h\n'}
+[0.762623] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/arch/NEON/GeneralBlockPanelKernel.h\n'}
+[0.762752] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/arch/NEON/TypeCasting.h\n'}
+[0.762877] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/arch/NEON/Complex.h\n'}
+[0.763075] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/arch/HIP\n'}
+[0.763639] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/arch/HIP/hcc\n'}
+[0.763789] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/arch/HIP/hcc/math_constants.h\n'}
+[0.763946] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/arch/MSA\n'}
+[0.765493] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/arch/MSA/MathFunctions.h\n'}
+[0.765712] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/arch/MSA/PacketMath.h\n'}
+[0.766693] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/arch/MSA/Complex.h\n'}
+[0.769984] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/arch/AVX512\n'}
+[0.771286] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/arch/AVX512/MathFunctions.h\n'}
+[0.771445] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/arch/AVX512/PacketMath.h\n'}
+[0.771576] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/arch/AVX512/TypeCasting.h\n'}
+[0.771703] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/arch/AVX512/Complex.h\n'}
+[0.771868] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/arch/GPU\n'}
+[0.772101] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/arch/GPU/MathFunctions.h\n'}
+[0.772233] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/arch/GPU/PacketMath.h\n'}
+[0.772507] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/arch/GPU/TypeCasting.h\n'}
+[0.772767] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/arch/SYCL\n'}
+[0.772979] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/arch/SYCL/SyclMemoryModel.h\n'}
+[0.773779] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/arch/SYCL/MathFunctions.h\n'}
+[0.774172] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/arch/SYCL/PacketMath.h\n'}
+[0.776332] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/arch/SYCL/InteropHeaders.h\n'}
+[0.776586] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/arch/SYCL/TypeCasting.h\n'}
+[0.776883] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/arch/CUDA\n'}
+[0.779370] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/arch/CUDA/Complex.h\n'}
+[0.779665] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/arch/SSE\n'}
+[0.779812] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/arch/SSE/MathFunctions.h\n'}
+[0.779962] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/arch/SSE/PacketMath.h\n'}
+[0.781493] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/arch/SSE/TypeCasting.h\n'}
+[0.781785] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/arch/SSE/Complex.h\n'}
+[0.782493] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/arch/AVX\n'}
+[0.783203] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/arch/AVX/MathFunctions.h\n'}
+[0.783595] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/arch/AVX/PacketMath.h\n'}
+[0.783853] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/arch/AVX/TypeCasting.h\n'}
+[0.784303] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/arch/AVX/Complex.h\n'}
+[0.784463] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/arch/Default\n'}
+[0.784636] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/arch/Default/BFloat16.h\n'}
+[0.784767] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/arch/Default/Half.h\n'}
+[0.784894] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/arch/Default/ConjHelper.h\n'}
+[0.785939] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/arch/Default/GenericPacketMathFunctionsFwd.h\n'}
+[0.786165] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/arch/Default/GenericPacketMathFunctions.h\n'}
+[0.786336] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/arch/Default/TypeCasting.h\n'}
+[0.786652] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/arch/Default/Settings.h\n'}
+[0.787000] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/arch/SVE\n'}
+[0.787500] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/arch/SVE/MathFunctions.h\n'}
+[0.789295] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/arch/SVE/PacketMath.h\n'}
+[0.790116] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/arch/SVE/TypeCasting.h\n'}
+[0.790457] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/BooleanRedux.h\n'}
+[0.790607] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/Dot.h\n'}
+[0.790730] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/MatrixBase.h\n'}
+[0.790847] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/ForceAlignedAccess.h\n'}
+[0.790992] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/util\n'}
+[0.791118] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/util/Meta.h\n'}
+[0.791248] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/util/Constants.h\n'}
+[0.791361] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/util/MKL_support.h\n'}
+[0.791472] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/util/DisableStupidWarnings.h\n'}
+[0.791584] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/util/ReshapedHelper.h\n'}
+[0.791694] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/util/ConfigureVectorization.h\n'}
+[0.791805] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/util/SymbolicIndex.h\n'}
+[0.791930] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/util/IntegralConstant.h\n'}
+[0.792064] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/util/NonMPL2.h\n'}
+[0.792188] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/util/XprHelper.h\n'}
+[0.792301] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/util/ReenableStupidWarnings.h\n'}
+[0.792412] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/util/Macros.h\n'}
+[0.792524] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/util/StaticAssert.h\n'}
+[0.792634] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/util/Memory.h\n'}
+[0.792744] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/util/IndexedViewHelper.h\n'}
+[0.792855] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/util/ForwardDeclarations.h\n'}
+[0.792993] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/util/BlasUtil.h\n'}
+[0.793112] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/DenseCoeffsBase.h\n'}
+[0.793224] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/Transpositions.h\n'}
+[0.793335] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/Assign_MKL.h\n'}
+[0.793445] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/CwiseTernaryOp.h\n'}
+[0.793557] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/Stride.h\n'}
+[0.793670] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/IndexedView.h\n'}
+[0.793781] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/GlobalFunctions.h\n'}
+[0.793892] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/Inverse.h\n'}
+[0.794029] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/BandMatrix.h\n'}
+[0.794144] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/Redux.h\n'}
+[0.794256] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/VectorwiseOp.h\n'}
+[0.794367] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/ArithmeticSequence.h\n'}
+[0.794491] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/Ref.h\n'}
+[0.794602] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/Diagonal.h\n'}
+[0.794712] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/CwiseUnaryView.h\n'}
+[0.794822] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/Array.h\n'}
+[0.794950] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/IO.h\n'}
+[0.795079] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/functors\n'}
+[0.795191] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/functors/TernaryFunctors.h\n'}
+[0.795302] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/functors/StlFunctors.h\n'}
+[0.795413] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/functors/BinaryFunctors.h\n'}
+[0.795543] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/functors/UnaryFunctors.h\n'}
+[0.795655] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/functors/AssignmentFunctors.h\n'}
+[0.795765] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/functors/NullaryFunctors.h\n'}
+[0.795877] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/DiagonalMatrix.h\n'}
+[0.796013] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/CommaInitializer.h\n'}
+[0.796128] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/Random.h\n'}
+[0.796239] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/SelfCwiseBinaryOp.h\n'}
+[0.796350] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/GenericPacketMath.h\n'}
+[0.796460] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/DenseBase.h\n'}
+[0.796571] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/Product.h\n'}
+[0.796691] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/Reshaped.h\n'}
+[0.796803] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/Transpose.h\n'}
+[0.796913] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/PlainObjectBase.h\n'}
+[0.797138] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/PartialReduxEvaluator.h\n'}
+[0.797325] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/Reverse.h\n'}
+[0.797536] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/EigenBase.h\n'}
+[0.797708] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/NestByValue.h\n'}
+[0.797949] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/MapBase.h\n'}
+[0.798159] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/Map.h\n'}
+[0.798342] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/SolveTriangular.h\n'}
+[0.798481] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/Solve.h\n'}
+[0.798668] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/Swap.h\n'}
+[0.798786] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/ArrayBase.h\n'}
+[0.798898] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/SolverBase.h\n'}
+[0.799047] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/CwiseBinaryOp.h\n'}
+[0.799165] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/DenseStorage.h\n'}
+[0.799277] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/PermutationMatrix.h\n'}
+[0.799386] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/GeneralProduct.h\n'}
+[0.799497] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/DiagonalProduct.h\n'}
+[0.799607] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/ReturnByValue.h\n'}
+[0.799717] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Core/SelfAdjointView.h\n'}
+[0.799829] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Eigenvalues\n'}
+[0.799961] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Eigenvalues/EigenSolver.h\n'}
+[0.800089] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Eigenvalues/HessenbergDecomposition.h\n'}
+[0.800204] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Eigenvalues/RealSchur.h\n'}
+[0.800316] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Eigenvalues/GeneralizedEigenSolver.h\n'}
+[0.800426] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Eigenvalues/ComplexSchur_LAPACKE.h\n'}
+[0.800537] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Eigenvalues/GeneralizedSelfAdjointEigenSolver.h\n'}
+[0.800650] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Eigenvalues/SelfAdjointEigenSolver_LAPACKE.h\n'}
+[0.800761] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Eigenvalues/ComplexEigenSolver.h\n'}
+[0.800871] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Eigenvalues/RealSchur_LAPACKE.h\n'}
+[0.801014] (-) TimerEvent: {}
+[0.801190] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Eigenvalues/SelfAdjointEigenSolver.h\n'}
+[0.801394] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h\n'}
+[0.801512] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Eigenvalues/RealQZ.h\n'}
+[0.801626] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Eigenvalues/Tridiagonalization.h\n'}
+[0.801738] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/Eigenvalues/ComplexSchur.h\n'}
+[0.801850] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/LU\n'}
+[0.801984] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/LU/FullPivLU.h\n'}
+[0.802116] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/LU/PartialPivLU_LAPACKE.h\n'}
+[0.802236] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/LU/arch\n'}
+[0.802348] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/LU/arch/InverseSize4.h\n'}
+[0.802457] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/LU/PartialPivLU.h\n'}
+[0.802566] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/LU/InverseImpl.h\n'}
+[0.802674] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/LU/Determinant.h\n'}
+[0.802782] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/SparseQR\n'}
+[0.802888] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/SparseQR/SparseQR.h\n'}
+[0.803033] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/KLUSupport\n'}
+[0.803146] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/KLUSupport/KLUSupport.h\n'}
+[0.803254] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/IterativeLinearSolvers\n'}
+[0.803361] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/IterativeLinearSolvers/SolveWithGuess.h\n'}
+[0.803470] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/IterativeLinearSolvers/BasicPreconditioners.h\n'}
+[0.803577] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/IterativeLinearSolvers/BiCGSTAB.h\n'}
+[0.803685] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/IterativeLinearSolvers/IncompleteLUT.h\n'}
+[0.803793] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/IterativeLinearSolvers/IterativeSolverBase.h\n'}
+[0.803950] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/IterativeLinearSolvers/IncompleteCholesky.h\n'}
+[0.804084] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/IterativeLinearSolvers/ConjugateGradient.h\n'}
+[0.804194] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/src/IterativeLinearSolvers/LeastSquareConjugateGradient.h\n'}
+[0.804307] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/SparseLU\n'}
+[0.804416] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/PardisoSupport\n'}
+[0.804524] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/UmfPackSupport\n'}
+[0.804632] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/CholmodSupport\n'}
+[0.804739] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/QtAlignedMalloc\n'}
+[0.804848] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/SparseCholesky\n'}
+[0.804975] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/Geometry\n'}
+[0.805094] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/Cholesky\n'}
+[0.805202] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/OrderingMethods\n'}
+[0.805402] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/StdList\n'}
+[0.805608] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/SVD\n'}
+[0.805844] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/StdVector\n'}
+[0.806563] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/QR\n'}
+[0.806976] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/Householder\n'}
+[0.807309] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/Dense\n'}
+[0.807504] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/SparseCore\n'}
+[0.807749] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/MetisSupport\n'}
+[0.807974] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/StdDeque\n'}
+[0.808220] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/Jacobi\n'}
+[0.808642] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/SuperLUSupport\n'}
+[0.808854] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/Sparse\n'}
+[0.809098] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/PaStiXSupport\n'}
+[0.809323] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/SPQRSupport\n'}
+[0.809590] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/Core\n'}
+[0.809788] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/Eigenvalues\n'}
+[0.810012] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/LU\n'}
+[0.810223] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/SparseQR\n'}
+[0.810532] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/KLUSupport\n'}
+[0.810805] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/IterativeLinearSolvers\n'}
+[0.811027] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/Eigen/Eigen\n'}
+[0.811264] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/share/eigen3/cmake/Eigen3Targets.cmake\n'}
+[0.811465] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/share/eigen3/cmake/UseEigen3.cmake\n'}
+[0.811661] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/share/eigen3/cmake/Eigen3Config.cmake\n'}
+[0.811844] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/share/eigen3/cmake/Eigen3ConfigVersion.cmake\n'}
+[0.812106] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/AdolcForward\n'}
+[0.812295] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/AlignedVector3\n'}
+[0.812559] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/ArpackSupport\n'}
+[0.812828] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/AutoDiff\n'}
+[0.813140] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/BVH\n'}
+[0.813523] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/EulerAngles\n'}
+[0.813726] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/FFT\n'}
+[0.813899] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/IterativeSolvers\n'}
+[0.814147] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/KroneckerProduct\n'}
+[0.814335] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/LevenbergMarquardt\n'}
+[0.814537] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/MatrixFunctions\n'}
+[0.814650] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/MoreVectorization\n'}
+[0.814761] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/MPRealSupport\n'}
+[0.814872] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/NonLinearOptimization\n'}
+[0.815083] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/NumericalDiff\n'}
+[0.815319] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/OpenGLSupport\n'}
+[0.815530] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/Polynomials\n'}
+[0.815768] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/Skyline\n'}
+[0.816175] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/SparseExtra\n'}
+[0.816588] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/SpecialFunctions\n'}
+[0.816799] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/Splines\n'}
+[0.817065] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/src\n'}
+[0.817278] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/src/AutoDiff\n'}
+[0.817470] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/src/AutoDiff/AutoDiffJacobian.h\n'}
+[0.817658] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/src/AutoDiff/AutoDiffScalar.h\n'}
+[0.817858] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/src/AutoDiff/AutoDiffVector.h\n'}
+[0.818164] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/src/FFT\n'}
+[0.818366] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/src/FFT/ei_fftw_impl.h\n'}
+[0.818560] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/src/FFT/ei_kissfft_impl.h\n'}
+[0.818896] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/src/SparseExtra\n'}
+[0.819144] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/src/SparseExtra/MatrixMarketIterator.h\n'}
+[0.819400] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/src/SparseExtra/BlockSparseMatrix.h\n'}
+[0.819587] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/src/SparseExtra/MarketIO.h\n'}
+[0.819787] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/src/SparseExtra/BlockOfDynamicSparseMatrix.h\n'}
+[0.820165] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/src/SparseExtra/DynamicSparseMatrix.h\n'}
+[0.820388] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/src/SparseExtra/RandomSetter.h\n'}
+[0.820595] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/src/Skyline\n'}
+[0.820944] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/src/Skyline/SkylineMatrixBase.h\n'}
+[0.821243] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/src/Skyline/SkylineStorage.h\n'}
+[0.821370] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/src/Skyline/SkylineProduct.h\n'}
+[0.821495] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/src/Skyline/SkylineInplaceLU.h\n'}
+[0.821616] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/src/Skyline/SkylineMatrix.h\n'}
+[0.821742] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/src/Skyline/SkylineUtil.h\n'}
+[0.821865] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/src/SpecialFunctions\n'}
+[0.822122] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/src/SpecialFunctions/HipVectorCompatibility.h\n'}
+[0.822242] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/src/SpecialFunctions/SpecialFunctionsFunctors.h\n'}
+[0.822354] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/src/SpecialFunctions/BesselFunctionsFunctors.h\n'}
+[0.822465] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/src/SpecialFunctions/BesselFunctionsArrayAPI.h\n'}
+[0.822575] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/src/SpecialFunctions/BesselFunctionsPacketMath.h\n'}
+[0.822684] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/src/SpecialFunctions/SpecialFunctionsImpl.h\n'}
+[0.822794] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/src/SpecialFunctions/arch\n'}
+[0.822903] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/src/SpecialFunctions/arch/NEON\n'}
+[0.823038] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/src/SpecialFunctions/arch/NEON/BesselFunctions.h\n'}
+[0.823149] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/src/SpecialFunctions/arch/NEON/SpecialFunctions.h\n'}
+[0.823258] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/src/SpecialFunctions/arch/AVX512\n'}
+[0.823366] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/src/SpecialFunctions/arch/AVX512/BesselFunctions.h\n'}
+[0.823561] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/src/SpecialFunctions/arch/AVX512/SpecialFunctions.h\n'}
+[0.823703] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/src/SpecialFunctions/arch/GPU\n'}
+[0.823814] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/src/SpecialFunctions/arch/GPU/SpecialFunctions.h\n'}
+[0.823958] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/src/SpecialFunctions/arch/AVX\n'}
+[0.824086] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/src/SpecialFunctions/arch/AVX/BesselFunctions.h\n'}
+[0.824231] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/src/SpecialFunctions/arch/AVX/SpecialFunctions.h\n'}
+[0.824346] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/src/SpecialFunctions/BesselFunctionsImpl.h\n'}
+[0.824458] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/src/SpecialFunctions/SpecialFunctionsPacketMath.h\n'}
+[0.824599] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/src/SpecialFunctions/BesselFunctionsBFloat16.h\n'}
+[0.824778] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/src/SpecialFunctions/SpecialFunctionsHalf.h\n'}
+[0.824898] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/src/SpecialFunctions/BesselFunctionsHalf.h\n'}
+[0.825070] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/src/SpecialFunctions/SpecialFunctionsArrayAPI.h\n'}
+[0.825185] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/src/SpecialFunctions/SpecialFunctionsBFloat16.h\n'}
+[0.825296] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/src/IterativeSolvers\n'}
+[0.825407] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/src/IterativeSolvers/IterationController.h\n'}
+[0.825516] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/src/IterativeSolvers/DGMRES.h\n'}
+[0.825628] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/src/IterativeSolvers/IncompleteLU.h\n'}
+[0.825774] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/src/IterativeSolvers/Scaling.h\n'}
+[0.825885] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/src/IterativeSolvers/IDRS.h\n'}
+[0.826031] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/src/IterativeSolvers/GMRES.h\n'}
+[0.826145] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/src/IterativeSolvers/ConstrainedConjGrad.h\n'}
+[0.826254] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/src/IterativeSolvers/MINRES.h\n'}
+[0.826365] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/src/NonLinearOptimization\n'}
+[0.826475] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/src/NonLinearOptimization/rwupdt.h\n'}
+[0.826584] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/src/NonLinearOptimization/chkder.h\n'}
+[0.826693] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/src/NonLinearOptimization/dogleg.h\n'}
+[0.826802] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/src/NonLinearOptimization/r1updt.h\n'}
+[0.826939] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/src/NonLinearOptimization/HybridNonLinearSolver.h\n'}
+[0.827063] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/src/NonLinearOptimization/r1mpyq.h\n'}
+[0.827173] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/src/NonLinearOptimization/qrsolv.h\n'}
+[0.827284] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/src/NonLinearOptimization/lmpar.h\n'}
+[0.827395] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/src/NonLinearOptimization/covar.h\n'}
+[0.827540] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/src/NonLinearOptimization/LevenbergMarquardt.h\n'}
+[0.827752] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/src/NonLinearOptimization/fdjac1.h\n'}
+[0.827981] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/src/LevenbergMarquardt\n'}
+[0.828111] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/src/LevenbergMarquardt/LMonestep.h\n'}
+[0.828227] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/src/LevenbergMarquardt/LMpar.h\n'}
+[0.828355] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/src/LevenbergMarquardt/LMqrsolv.h\n'}
+[0.828467] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/src/LevenbergMarquardt/LMcovar.h\n'}
+[0.828599] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/src/LevenbergMarquardt/LevenbergMarquardt.h\n'}
+[0.828828] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/src/MatrixFunctions\n'}
+[0.829108] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/src/MatrixFunctions/MatrixPower.h\n'}
+[0.829342] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/src/MatrixFunctions/MatrixFunction.h\n'}
+[0.829601] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/src/MatrixFunctions/MatrixLogarithm.h\n'}
+[0.829826] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/src/MatrixFunctions/MatrixExponential.h\n'}
+[0.830062] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/src/MatrixFunctions/MatrixSquareRoot.h\n'}
+[0.830245] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/src/MatrixFunctions/StemFunction.h\n'}
+[0.830422] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/src/EulerAngles\n'}
+[0.830619] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/src/EulerAngles/EulerAngles.h\n'}
+[0.830817] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/src/EulerAngles/EulerSystem.h\n'}
+[0.831040] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/src/Polynomials\n'}
+[0.831246] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/src/Polynomials/Companion.h\n'}
+[0.831441] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/src/Polynomials/PolynomialSolver.h\n'}
+[0.831656] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/src/Polynomials/PolynomialUtils.h\n'}
+[0.831850] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/src/MoreVectorization\n'}
+[0.832091] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/src/MoreVectorization/MathFunctions.h\n'}
+[0.832325] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/src/KroneckerProduct\n'}
+[0.832521] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/src/KroneckerProduct/KroneckerTensorProduct.h\n'}
+[0.832717] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/src/Splines\n'}
+[0.832907] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/src/Splines/SplineFwd.h\n'}
+[0.833134] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/src/Splines/Spline.h\n'}
+[0.833327] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/src/Splines/SplineFitting.h\n'}
+[0.833519] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/src/Eigenvalues\n'}
+[0.833711] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/src/Eigenvalues/ArpackSelfAdjointEigenSolver.h\n'}
+[0.833950] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/src/BVH\n'}
+[0.834097] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/src/BVH/KdBVH.h\n'}
+[0.834215] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/src/BVH/BVAlgorithms.h\n'}
+[0.834332] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/src/NumericalDiff\n'}
+[0.834445] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/src/NumericalDiff/NumericalDiff.h\n'}
+[0.834558] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/CXX11/Tensor\n'}
+[0.834678] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/CXX11/TensorSymmetry\n'}
+[0.834896] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/CXX11/ThreadPool\n'}
+[0.835045] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/CXX11/src\n'}
+[0.835162] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/CXX11/src/util\n'}
+[0.835273] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/CXX11/src/util/MaxSizeVector.h\n'}
+[0.835382] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/CXX11/src/util/CXX11Meta.h\n'}
+[0.835491] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/CXX11/src/util/CXX11Workarounds.h\n'}
+[0.835599] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/CXX11/src/util/EmulateArray.h\n'}
+[0.835707] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/CXX11/src/Tensor\n'}
+[0.835833] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/CXX11/src/Tensor/Tensor.h\n'}
+[0.835955] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorDimensions.h\n'}
+[0.836097] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorReductionGpu.h\n'}
+[0.836208] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorGpuHipCudaDefines.h\n'}
+[0.836317] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorUInt128.h\n'}
+[0.836425] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorContractionCuda.h\n'}
+[0.836533] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorContractionGpu.h\n'}
+[0.836640] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorGenerator.h\n'}
+[0.836747] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorDeviceSycl.h\n'}
+[0.836855] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorArgMax.h\n'}
+[0.836989] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorContractionThreadPool.h\n'}
+[0.837105] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorDimensionList.h\n'}
+[0.837214] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorStorage.h\n'}
+[0.837322] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorIndexList.h\n'}
+[0.837429] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorDeviceDefault.h\n'}
+[0.837538] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorContractionMapper.h\n'}
+[0.837647] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorIntDiv.h\n'}
+[0.837755] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorMacros.h\n'}
+[0.837863] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorDeviceCuda.h\n'}
+[0.838001] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorVolumePatch.h\n'}
+[0.838119] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorContractionBlocking.h\n'}
+[0.838228] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorExpr.h\n'}
+[0.838337] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorInitializer.h\n'}
+[0.838446] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorForcedEval.h\n'}
+[0.838554] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorDeviceThreadPool.h\n'}
+[0.838682] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorExecutor.h\n'}
+[0.838795] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorIO.h\n'}
+[0.838970] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorConvolution.h\n'}
+[0.839099] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorReductionSycl.h\n'}
+[0.839266] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorMorphing.h\n'}
+[0.839413] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorPadding.h\n'}
+[0.839528] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorDevice.h\n'}
+[0.839641] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorRandom.h\n'}
+[0.839752] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorLayoutSwap.h\n'}
+[0.839864] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorAssign.h\n'}
+[0.840010] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorPatch.h\n'}
+[0.840157] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorFixedSize.h\n'}
+[0.840268] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorReduction.h\n'}
+[0.840380] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorReductionCuda.h\n'}
+[0.840488] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorRef.h\n'}
+[0.840597] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorCostModel.h\n'}
+[0.840705] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorBase.h\n'}
+[0.840813] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorBroadcasting.h\n'}
+[0.840931] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorContraction.h\n'}
+[0.841054] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorChipping.h\n'}
+[0.841163] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorConvolutionSycl.h\n'}
+[0.841271] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorScanSycl.h\n'}
+[0.841379] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorBlock.h\n'}
+[0.841497] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorFFT.h\n'}
+[0.841605] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorReverse.h\n'}
+[0.841728] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorDeviceGpu.h\n'}
+[0.841838] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorForwardDeclarations.h\n'}
+[0.841963] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorInflation.h\n'}
+[0.842083] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorStriding.h\n'}
+[0.842193] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorShuffling.h\n'}
+[0.842302] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorConcatenation.h\n'}
+[0.842411] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorImagePatch.h\n'}
+[0.842520] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorGpuHipCudaUndefines.h\n'}
+[0.842641] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorMeta.h\n'}
+[0.842752] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorConversion.h\n'}
+[0.842862] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorScan.h\n'}
+[0.842991] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorTraits.h\n'}
+[0.843109] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorGlobalFunctions.h\n'}
+[0.843260] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorFunctors.h\n'}
+[0.843386] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorContractionSycl.h\n'}
+[0.843495] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorCustomOp.h\n'}
+[0.843604] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorTrace.h\n'}
+[0.843713] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorEvalTo.h\n'}
+[0.843822] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorEvaluator.h\n'}
+[0.843944] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/CXX11/src/Tensor/TensorMap.h\n'}
+[0.844068] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/CXX11/src/TensorSymmetry\n'}
+[0.844199] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/CXX11/src/TensorSymmetry/StaticSymmetry.h\n'}
+[0.844309] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/CXX11/src/TensorSymmetry/Symmetry.h\n'}
+[0.844418] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/CXX11/src/TensorSymmetry/DynamicSymmetry.h\n'}
+[0.844526] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/CXX11/src/TensorSymmetry/util\n'}
+[0.844646] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/CXX11/src/TensorSymmetry/util/TemplateGroupTheory.h\n'}
+[0.844757] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/CXX11/src/ThreadPool\n'}
+[0.844865] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/CXX11/src/ThreadPool/ThreadYield.h\n'}
+[0.844994] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/CXX11/src/ThreadPool/Barrier.h\n'}
+[0.845111] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/CXX11/src/ThreadPool/ThreadPoolInterface.h\n'}
+[0.845223] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/CXX11/src/ThreadPool/ThreadCancel.h\n'}
+[0.845331] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/CXX11/src/ThreadPool/EventCount.h\n'}
+[0.845439] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/CXX11/src/ThreadPool/NonBlockingThreadPool.h\n'}
+[0.845547] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/CXX11/src/ThreadPool/ThreadEnvironment.h\n'}
+[0.845655] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/CXX11/src/ThreadPool/ThreadLocal.h\n'}
+[0.845763] (Eigen3) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/Eigen3/include/eigen3/unsupported/Eigen/CXX11/src/ThreadPool/RunQueue.h\n'}
+[0.845872] (Eigen3) CommandEnded: {'returncode': 0}
+[0.846387] (tug_msgs) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_tug_msgs_egg\n'}
+[0.846555] (Eigen3) JobEnded: {'identifier': 'Eigen3', 'rc': 0}
+[0.847208] (tug_msgs) CommandEnded: {'returncode': 0}
+[0.847748] (tug_msgs) JobProgress: {'identifier': 'tug_msgs', 'progress': 'install'}
+[0.847798] (tug_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/bobo/ros2_ws/build/tug_msgs'], 'cwd': '/home/bobo/ros2_ws/build/tug_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'bobo'), ('LC_TIME', 'de_AT.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LIBGL_ALWAYS_SOFTWARE', '1'), ('LD_LIBRARY_PATH', '/home/bobo/stg/lib:/home/bobo/ros2_ws/install/tug_msgs/lib:/home/bobo/ros2_ws/install/ros2cpp_tutorials_service/lib:/home/bobo/ros2_ws/install/ros2cpp_tutorials_action/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/bobo'), ('OLDPWD', '/home/bobo'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'de_AT.UTF-8'), ('SYSTEMD_EXEC_PID', '1642'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/bobo/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'bobo'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'bobo'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/home/bobo/stg/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/usr/local/MATLAB/R2024b/bin'), ('SESSION_MANAGER', 'local/bobo-HP-EliteBook-x360-1030-G3:@/tmp/.ICE-unix/1614,unix/bobo-HP-EliteBook-x360-1030-G3:/tmp/.ICE-unix/1614'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'de_AT.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/bc176185_8682_4855_a5ca_5f42bdfed6b1'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'de_AT.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.K2EL02'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.99'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/home/bobo/ros2_ws/install/tug_turtlebot4:/home/bobo/ros2_ws/install/tug_stage_ros2:/home/bobo/ros2_ws/install/tug_mr2:/home/bobo/ros2_ws/install/tug_msgs:/home/bobo/ros2_ws/install/ros2cpp_tutorials_service:/home/bobo/ros2_ws/install/ros2cpp_tutorials_publisher_subscriber:/home/bobo/ros2_ws/install/ros2cpp_tutorials_parameter:/home/bobo/ros2_ws/install/ros2cpp_tutorials_action:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'de_AT.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'de_AT.UTF-8'), ('LC_IDENTIFICATION', 'de_AT.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/bobo/ros2_ws/build/tug_msgs'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/bobo/ros2_ws/install/tug_msgs/local/lib/python3.10/dist-packages:/home/bobo/ros2_ws/install/ros2cpp_tutorials_service/local/lib/python3.10/dist-packages:/home/bobo/ros2_ws/install/ros2cpp_tutorials_action/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'de_AT.UTF-8'), ('LC_PAPER', 'de_AT.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/bobo/ros2_ws/install/tug_turtlebot4:/home/bobo/ros2_ws/install/tug_stage_ros2:/home/bobo/ros2_ws/install/tug_mr2:/home/bobo/ros2_ws/install/tug_msgs:/home/bobo/ros2_ws/install/ros2cpp_tutorials_service:/home/bobo/ros2_ws/install/ros2cpp_tutorials_publisher_subscriber:/home/bobo/ros2_ws/install/ros2cpp_tutorials_parameter:/home/bobo/ros2_ws/install/ros2cpp_tutorials_action:/home/bobo/ros2_ws/install/Eigen3:/opt/ros/humble')]), 'shell': False}
+[0.848402] (tug_msgs) StdoutLine: {'line': b'-- Install configuration: "debug"\n'}
+[0.848556] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/share/ament_index/resource_index/rosidl_interfaces/tug_msgs\n'}
+[0.848680] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/include/tug_msgs/tug_msgs\n'}
+[0.848806] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/include/tug_msgs/tug_msgs/msg\n'}
+[0.848935] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/include/tug_msgs/tug_msgs/msg/detail\n'}
+[0.849067] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/include/tug_msgs/tug_msgs/msg/detail/wheel_encoder__functions.c\n'}
+[0.849180] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/include/tug_msgs/tug_msgs/msg/detail/robot_pose__type_support.h\n'}
+[0.849290] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/include/tug_msgs/tug_msgs/msg/detail/bicycle__functions.h\n'}
+[0.849400] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/include/tug_msgs/tug_msgs/msg/detail/movement__struct.h\n'}
+[0.849510] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/include/tug_msgs/tug_msgs/msg/detail/bicycle__type_support.h\n'}
+[0.849618] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/include/tug_msgs/tug_msgs/msg/detail/robot_pose__functions.h\n'}
+[0.849727] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/include/tug_msgs/tug_msgs/msg/detail/bicycle__functions.c\n'}
+[0.849835] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/include/tug_msgs/tug_msgs/msg/detail/robot_pose__functions.c\n'}
+[0.849956] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/include/tug_msgs/tug_msgs/msg/detail/movement__type_support.h\n'}
+[0.850075] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/include/tug_msgs/tug_msgs/msg/detail/wheel_encoder__type_support.h\n'}
+[0.850185] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/include/tug_msgs/tug_msgs/msg/detail/bicycle__struct.h\n'}
+[0.850293] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/include/tug_msgs/tug_msgs/msg/detail/movement__functions.h\n'}
+[0.850402] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/include/tug_msgs/tug_msgs/msg/detail/wheel_encoder__struct.h\n'}
+[0.850511] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/include/tug_msgs/tug_msgs/msg/detail/robot_pose__struct.h\n'}
+[0.850621] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/include/tug_msgs/tug_msgs/msg/detail/movement__functions.c\n'}
+[0.850743] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/include/tug_msgs/tug_msgs/msg/detail/wheel_encoder__functions.h\n'}
+[0.850857] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/include/tug_msgs/tug_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[0.850985] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/include/tug_msgs/tug_msgs/msg/movement.h\n'}
+[0.851101] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/include/tug_msgs/tug_msgs/msg/wheel_encoder.h\n'}
+[0.851209] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/include/tug_msgs/tug_msgs/msg/robot_pose.h\n'}
+[0.851317] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/include/tug_msgs/tug_msgs/msg/bicycle.h\n'}
+[0.851425] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/share/tug_msgs/environment/library_path.sh\n'}
+[0.851533] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/share/tug_msgs/environment/library_path.dsv\n'}
+[0.851641] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/lib/libtug_msgs__rosidl_generator_c.so\n'}
+[0.851770] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/include/tug_msgs/tug_msgs\n'}
+[0.851891] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/include/tug_msgs/tug_msgs/msg\n'}
+[0.852018] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/include/tug_msgs/tug_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[0.852130] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/include/tug_msgs/tug_msgs/msg/detail\n'}
+[0.852239] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/include/tug_msgs/tug_msgs/msg/detail/wheel_encoder__rosidl_typesupport_fastrtps_c.h\n'}
+[0.852349] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/include/tug_msgs/tug_msgs/msg/detail/movement__rosidl_typesupport_fastrtps_c.h\n'}
+[0.852457] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/include/tug_msgs/tug_msgs/msg/detail/robot_pose__rosidl_typesupport_fastrtps_c.h\n'}
+[0.852566] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/include/tug_msgs/tug_msgs/msg/detail/bicycle__rosidl_typesupport_fastrtps_c.h\n'}
+[0.852678] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/lib/libtug_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[0.852788] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/include/tug_msgs/tug_msgs\n'}
+[0.852898] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/include/tug_msgs/tug_msgs/msg\n'}
+[0.853024] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/include/tug_msgs/tug_msgs/msg/detail\n'}
+[0.853136] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/include/tug_msgs/tug_msgs/msg/detail/robot_pose__rosidl_typesupport_introspection_c.h\n'}
+[0.853246] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/include/tug_msgs/tug_msgs/msg/detail/bicycle__rosidl_typesupport_introspection_c.h\n'}
+[0.853357] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/include/tug_msgs/tug_msgs/msg/detail/wheel_encoder__rosidl_typesupport_introspection_c.h\n'}
+[0.853467] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/include/tug_msgs/tug_msgs/msg/detail/movement__rosidl_typesupport_introspection_c.h\n'}
+[0.853578] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/include/tug_msgs/tug_msgs/msg/detail/movement__type_support.c\n'}
+[0.853687] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/include/tug_msgs/tug_msgs/msg/detail/bicycle__type_support.c\n'}
+[0.853796] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/include/tug_msgs/tug_msgs/msg/detail/robot_pose__type_support.c\n'}
+[0.853906] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/include/tug_msgs/tug_msgs/msg/detail/wheel_encoder__type_support.c\n'}
+[0.854033] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/include/tug_msgs/tug_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[0.854146] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/lib/libtug_msgs__rosidl_typesupport_introspection_c.so\n'}
+[0.854255] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/lib/libtug_msgs__rosidl_typesupport_c.so\n'}
+[0.854365] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/include/tug_msgs/tug_msgs\n'}
+[0.854477] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/include/tug_msgs/tug_msgs/msg\n'}
+[0.854587] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/include/tug_msgs/tug_msgs/msg/detail\n'}
+[0.854706] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/include/tug_msgs/tug_msgs/msg/detail/movement__type_support.hpp\n'}
+[0.854887] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/include/tug_msgs/tug_msgs/msg/detail/robot_pose__traits.hpp\n'}
+[0.855048] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/include/tug_msgs/tug_msgs/msg/detail/movement__traits.hpp\n'}
+[0.855166] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/include/tug_msgs/tug_msgs/msg/detail/movement__builder.hpp\n'}
+[0.855278] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/include/tug_msgs/tug_msgs/msg/detail/robot_pose__type_support.hpp\n'}
+[0.855388] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/include/tug_msgs/tug_msgs/msg/detail/robot_pose__struct.hpp\n'}
+[0.855516] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/include/tug_msgs/tug_msgs/msg/detail/wheel_encoder__type_support.hpp\n'}
+[0.855630] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/include/tug_msgs/tug_msgs/msg/detail/bicycle__type_support.hpp\n'}
+[0.855741] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/include/tug_msgs/tug_msgs/msg/detail/wheel_encoder__struct.hpp\n'}
+[0.855851] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/include/tug_msgs/tug_msgs/msg/detail/bicycle__traits.hpp\n'}
+[0.855982] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/include/tug_msgs/tug_msgs/msg/detail/wheel_encoder__traits.hpp\n'}
+[0.856102] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/include/tug_msgs/tug_msgs/msg/detail/wheel_encoder__builder.hpp\n'}
+[0.856325] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/include/tug_msgs/tug_msgs/msg/detail/bicycle__builder.hpp\n'}
+[0.856452] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/include/tug_msgs/tug_msgs/msg/detail/robot_pose__builder.hpp\n'}
+[0.856570] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/include/tug_msgs/tug_msgs/msg/detail/bicycle__struct.hpp\n'}
+[0.856684] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/include/tug_msgs/tug_msgs/msg/detail/movement__struct.hpp\n'}
+[0.856822] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/include/tug_msgs/tug_msgs/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[0.857016] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/include/tug_msgs/tug_msgs/msg/bicycle.hpp\n'}
+[0.857159] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/include/tug_msgs/tug_msgs/msg/movement.hpp\n'}
+[0.857273] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/include/tug_msgs/tug_msgs/msg/robot_pose.hpp\n'}
+[0.857384] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/include/tug_msgs/tug_msgs/msg/wheel_encoder.hpp\n'}
+[0.857496] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/include/tug_msgs/tug_msgs\n'}
+[0.857606] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/include/tug_msgs/tug_msgs/msg\n'}
+[0.857762] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/include/tug_msgs/tug_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[0.857968] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/include/tug_msgs/tug_msgs/msg/detail\n'}
+[0.858157] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/include/tug_msgs/tug_msgs/msg/detail/movement__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.858278] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/include/tug_msgs/tug_msgs/msg/detail/dds_fastrtps\n'}
+[0.858407] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/include/tug_msgs/tug_msgs/msg/detail/bicycle__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.858518] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/include/tug_msgs/tug_msgs/msg/detail/robot_pose__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.858647] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/include/tug_msgs/tug_msgs/msg/detail/wheel_encoder__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.858850] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/lib/libtug_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[0.859082] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/include/tug_msgs/tug_msgs\n'}
+[0.859279] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/include/tug_msgs/tug_msgs/msg\n'}
+[0.859464] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/include/tug_msgs/tug_msgs/msg/detail\n'}
+[0.859643] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/include/tug_msgs/tug_msgs/msg/detail/wheel_encoder__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.859852] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/include/tug_msgs/tug_msgs/msg/detail/bicycle__type_support.cpp\n'}
+[0.860075] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/include/tug_msgs/tug_msgs/msg/detail/robot_pose__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.860265] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/include/tug_msgs/tug_msgs/msg/detail/robot_pose__type_support.cpp\n'}
+[0.860443] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/include/tug_msgs/tug_msgs/msg/detail/bicycle__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.860624] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/include/tug_msgs/tug_msgs/msg/detail/movement__type_support.cpp\n'}
+[0.860811] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/include/tug_msgs/tug_msgs/msg/detail/wheel_encoder__type_support.cpp\n'}
+[0.861016] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/include/tug_msgs/tug_msgs/msg/detail/movement__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.861209] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/lib/libtug_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[0.861393] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/lib/libtug_msgs__rosidl_typesupport_cpp.so\n'}
+[0.861573] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/share/tug_msgs/environment/pythonpath.sh\n'}
+[0.861784] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/share/tug_msgs/environment/pythonpath.dsv\n'}
+[0.862032] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/local/lib/python3.10/dist-packages/tug_msgs-0.0.0-py3.10.egg-info\n'}
+[0.862315] (tug_msgs) StdoutLine: {'line': b'-- Installing: /home/bobo/ros2_ws/install/tug_msgs/local/lib/python3.10/dist-packages/tug_msgs-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[0.862547] (tug_msgs) StdoutLine: {'line': b'-- Installing: /home/bobo/ros2_ws/install/tug_msgs/local/lib/python3.10/dist-packages/tug_msgs-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[0.862834] (tug_msgs) StdoutLine: {'line': b'-- Installing: /home/bobo/ros2_ws/install/tug_msgs/local/lib/python3.10/dist-packages/tug_msgs-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[0.863079] (tug_msgs) StdoutLine: {'line': b'-- Installing: /home/bobo/ros2_ws/install/tug_msgs/local/lib/python3.10/dist-packages/tug_msgs-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[0.863320] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/local/lib/python3.10/dist-packages/tug_msgs\n'}
+[0.863498] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/local/lib/python3.10/dist-packages/tug_msgs/libtug_msgs__rosidl_generator_py.so\n'}
+[0.863675] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/local/lib/python3.10/dist-packages/tug_msgs/_tug_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[0.863857] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/local/lib/python3.10/dist-packages/tug_msgs/_tug_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[0.864085] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/local/lib/python3.10/dist-packages/tug_msgs/tug_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.864288] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/local/lib/python3.10/dist-packages/tug_msgs/__init__.py\n'}
+[0.864484] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/local/lib/python3.10/dist-packages/tug_msgs/msg\n'}
+[0.864678] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/local/lib/python3.10/dist-packages/tug_msgs/msg/_wheel_encoder.py\n'}
+[0.864874] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/local/lib/python3.10/dist-packages/tug_msgs/msg/_robot_pose_s.c\n'}
+[0.865157] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/local/lib/python3.10/dist-packages/tug_msgs/msg/__init__.py\n'}
+[0.865390] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/local/lib/python3.10/dist-packages/tug_msgs/msg/_movement_s.c\n'}
+[0.865596] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/local/lib/python3.10/dist-packages/tug_msgs/msg/_movement.py\n'}
+[0.865793] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/local/lib/python3.10/dist-packages/tug_msgs/msg/_robot_pose.py\n'}
+[0.866016] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/local/lib/python3.10/dist-packages/tug_msgs/msg/_bicycle.py\n'}
+[0.866231] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/local/lib/python3.10/dist-packages/tug_msgs/msg/_wheel_encoder_s.c\n'}
+[0.866430] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/local/lib/python3.10/dist-packages/tug_msgs/msg/_bicycle_s.c\n'}
+[0.866653] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/local/lib/python3.10/dist-packages/tug_msgs/tug_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.866852] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/local/lib/python3.10/dist-packages/tug_msgs/tug_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.867087] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/local/lib/python3.10/dist-packages/tug_msgs/_tug_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[0.888751] (tug_msgs) StdoutLine: {'line': b"Listing '/home/bobo/ros2_ws/install/tug_msgs/local/lib/python3.10/dist-packages/tug_msgs'...\n"}
+[0.889153] (tug_msgs) StdoutLine: {'line': b"Listing '/home/bobo/ros2_ws/install/tug_msgs/local/lib/python3.10/dist-packages/tug_msgs/msg'...\n"}
+[0.895558] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/local/lib/python3.10/dist-packages/tug_msgs/tug_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.896246] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/local/lib/python3.10/dist-packages/tug_msgs/tug_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.897131] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/local/lib/python3.10/dist-packages/tug_msgs/tug_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.897733] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/lib/libtug_msgs__rosidl_generator_py.so\n'}
+[0.898368] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/share/tug_msgs/msg/Bicycle.idl\n'}
+[0.898783] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/share/tug_msgs/msg/Movement.idl\n'}
+[0.899150] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/share/tug_msgs/msg/RobotPose.idl\n'}
+[0.899411] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/share/tug_msgs/msg/WheelEncoder.idl\n'}
+[0.899706] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/share/tug_msgs/msg/Bicycle.msg\n'}
+[0.900013] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/share/tug_msgs/msg/Movement.msg\n'}
+[0.900262] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/share/tug_msgs/msg/RobotPose.msg\n'}
+[0.900503] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/share/tug_msgs/msg/WheelEncoder.msg\n'}
+[0.900732] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/share/ament_index/resource_index/package_run_dependencies/tug_msgs\n'}
+[0.900981] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/share/ament_index/resource_index/parent_prefix_path/tug_msgs\n'}
+[0.901226] (-) TimerEvent: {}
+[0.901460] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/share/tug_msgs/environment/ament_prefix_path.sh\n'}
+[0.901737] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/share/tug_msgs/environment/ament_prefix_path.dsv\n'}
+[0.902101] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/share/tug_msgs/environment/path.sh\n'}
+[0.902301] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/share/tug_msgs/environment/path.dsv\n'}
+[0.902519] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/share/tug_msgs/local_setup.bash\n'}
+[0.902755] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/share/tug_msgs/local_setup.sh\n'}
+[0.903069] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/share/tug_msgs/local_setup.zsh\n'}
+[0.903331] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/share/tug_msgs/local_setup.dsv\n'}
+[0.903612] (tug_msgs) StdoutLine: {'line': b'-- Installing: /home/bobo/ros2_ws/install/tug_msgs/share/tug_msgs/package.dsv\n'}
+[0.903982] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/share/ament_index/resource_index/packages/tug_msgs\n'}
+[0.904213] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/share/tug_msgs/cmake/export_tug_msgs__rosidl_generator_cExport.cmake\n'}
+[0.904481] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/share/tug_msgs/cmake/export_tug_msgs__rosidl_generator_cExport-debug.cmake\n'}
+[0.904730] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/share/tug_msgs/cmake/export_tug_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[0.905103] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/share/tug_msgs/cmake/export_tug_msgs__rosidl_typesupport_fastrtps_cExport-debug.cmake\n'}
+[0.905330] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/share/tug_msgs/cmake/tug_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[0.905548] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/share/tug_msgs/cmake/tug_msgs__rosidl_typesupport_introspection_cExport-debug.cmake\n'}
+[0.905810] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/share/tug_msgs/cmake/tug_msgs__rosidl_typesupport_cExport.cmake\n'}
+[0.906099] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/share/tug_msgs/cmake/tug_msgs__rosidl_typesupport_cExport-debug.cmake\n'}
+[0.906252] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/share/tug_msgs/cmake/export_tug_msgs__rosidl_generator_cppExport.cmake\n'}
+[0.906440] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/share/tug_msgs/cmake/export_tug_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[0.906592] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/share/tug_msgs/cmake/export_tug_msgs__rosidl_typesupport_fastrtps_cppExport-debug.cmake\n'}
+[0.906776] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/share/tug_msgs/cmake/tug_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[0.907038] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/share/tug_msgs/cmake/tug_msgs__rosidl_typesupport_introspection_cppExport-debug.cmake\n'}
+[0.907324] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/share/tug_msgs/cmake/tug_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[0.907533] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/share/tug_msgs/cmake/tug_msgs__rosidl_typesupport_cppExport-debug.cmake\n'}
+[0.907740] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/share/tug_msgs/cmake/export_tug_msgs__rosidl_generator_pyExport.cmake\n'}
+[0.908006] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/share/tug_msgs/cmake/export_tug_msgs__rosidl_generator_pyExport-debug.cmake\n'}
+[0.908323] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/share/tug_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[0.908519] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/share/tug_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[0.908765] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/share/tug_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[0.909073] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/share/tug_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[0.909252] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/share/tug_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[0.909421] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/share/tug_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[0.909649] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/share/tug_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[0.910081] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/share/tug_msgs/cmake/tug_msgsConfig.cmake\n'}
+[0.910214] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/share/tug_msgs/cmake/tug_msgsConfig-version.cmake\n'}
+[0.910329] (tug_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_msgs/share/tug_msgs/package.xml\n'}
+[0.911878] (tug_msgs) CommandEnded: {'returncode': 0}
+[0.944017] (tug_msgs) JobEnded: {'identifier': 'tug_msgs', 'rc': 0}
+[0.945557] (tug_mr2) JobStarted: {'identifier': 'tug_mr2'}
+[0.952993] (tug_stage_ros2) JobStarted: {'identifier': 'tug_stage_ros2'}
+[0.960729] (tug_turtlebot4) JobStarted: {'identifier': 'tug_turtlebot4'}
+[0.976033] (tug_mr2) JobProgress: {'identifier': 'tug_mr2', 'progress': 'cmake'}
+[0.977262] (tug_mr2) JobProgress: {'identifier': 'tug_mr2', 'progress': 'build'}
+[0.978798] (tug_mr2) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/bobo/ros2_ws/build/tug_mr2', '--', '-j8', '-l8'], 'cwd': '/home/bobo/ros2_ws/build/tug_mr2', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'bobo'), ('LC_TIME', 'de_AT.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LIBGL_ALWAYS_SOFTWARE', '1'), ('LD_LIBRARY_PATH', '/home/bobo/ros2_ws/install/tug_msgs/lib:/home/bobo/stg/lib:/home/bobo/ros2_ws/install/ros2cpp_tutorials_service/lib:/home/bobo/ros2_ws/install/ros2cpp_tutorials_action/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/bobo'), ('OLDPWD', '/home/bobo'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'de_AT.UTF-8'), ('SYSTEMD_EXEC_PID', '1642'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/bobo/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'bobo'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'bobo'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/home/bobo/stg/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/usr/local/MATLAB/R2024b/bin'), ('SESSION_MANAGER', 'local/bobo-HP-EliteBook-x360-1030-G3:@/tmp/.ICE-unix/1614,unix/bobo-HP-EliteBook-x360-1030-G3:/tmp/.ICE-unix/1614'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'de_AT.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/bc176185_8682_4855_a5ca_5f42bdfed6b1'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'de_AT.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.K2EL02'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.99'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/home/bobo/ros2_ws/install/tug_turtlebot4:/home/bobo/ros2_ws/install/tug_stage_ros2:/home/bobo/ros2_ws/install/tug_mr2:/home/bobo/ros2_ws/install/tug_msgs:/home/bobo/ros2_ws/install/ros2cpp_tutorials_service:/home/bobo/ros2_ws/install/ros2cpp_tutorials_publisher_subscriber:/home/bobo/ros2_ws/install/ros2cpp_tutorials_parameter:/home/bobo/ros2_ws/install/ros2cpp_tutorials_action:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'de_AT.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'de_AT.UTF-8'), ('LC_IDENTIFICATION', 'de_AT.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/bobo/ros2_ws/build/tug_mr2'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/bobo/ros2_ws/install/tug_msgs/local/lib/python3.10/dist-packages:/home/bobo/ros2_ws/install/ros2cpp_tutorials_service/local/lib/python3.10/dist-packages:/home/bobo/ros2_ws/install/ros2cpp_tutorials_action/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'de_AT.UTF-8'), ('LC_PAPER', 'de_AT.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/bobo/ros2_ws/install/tug_msgs:/home/bobo/ros2_ws/install/tug_turtlebot4:/home/bobo/ros2_ws/install/tug_stage_ros2:/home/bobo/ros2_ws/install/tug_mr2:/home/bobo/ros2_ws/install/ros2cpp_tutorials_service:/home/bobo/ros2_ws/install/ros2cpp_tutorials_publisher_subscriber:/home/bobo/ros2_ws/install/ros2cpp_tutorials_parameter:/home/bobo/ros2_ws/install/ros2cpp_tutorials_action:/home/bobo/ros2_ws/install/Eigen3:/opt/ros/humble')]), 'shell': False}
+[0.982192] (tug_stage_ros2) JobProgress: {'identifier': 'tug_stage_ros2', 'progress': 'cmake'}
+[0.983273] (tug_stage_ros2) JobProgress: {'identifier': 'tug_stage_ros2', 'progress': 'build'}
+[0.985009] (tug_stage_ros2) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/bobo/ros2_ws/build/tug_stage_ros2', '--', '-j8', '-l8'], 'cwd': '/home/bobo/ros2_ws/build/tug_stage_ros2', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'bobo'), ('LC_TIME', 'de_AT.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LIBGL_ALWAYS_SOFTWARE', '1'), ('LD_LIBRARY_PATH', '/home/bobo/ros2_ws/install/tug_msgs/lib:/home/bobo/stg/lib:/home/bobo/ros2_ws/install/ros2cpp_tutorials_service/lib:/home/bobo/ros2_ws/install/ros2cpp_tutorials_action/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/bobo'), ('OLDPWD', '/home/bobo'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'de_AT.UTF-8'), ('SYSTEMD_EXEC_PID', '1642'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/bobo/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'bobo'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'bobo'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/home/bobo/stg/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/usr/local/MATLAB/R2024b/bin'), ('SESSION_MANAGER', 'local/bobo-HP-EliteBook-x360-1030-G3:@/tmp/.ICE-unix/1614,unix/bobo-HP-EliteBook-x360-1030-G3:/tmp/.ICE-unix/1614'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'de_AT.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/bc176185_8682_4855_a5ca_5f42bdfed6b1'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'de_AT.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.K2EL02'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.99'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/home/bobo/ros2_ws/install/tug_turtlebot4:/home/bobo/ros2_ws/install/tug_stage_ros2:/home/bobo/ros2_ws/install/tug_mr2:/home/bobo/ros2_ws/install/tug_msgs:/home/bobo/ros2_ws/install/ros2cpp_tutorials_service:/home/bobo/ros2_ws/install/ros2cpp_tutorials_publisher_subscriber:/home/bobo/ros2_ws/install/ros2cpp_tutorials_parameter:/home/bobo/ros2_ws/install/ros2cpp_tutorials_action:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'de_AT.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'de_AT.UTF-8'), ('LC_IDENTIFICATION', 'de_AT.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/bobo/ros2_ws/build/tug_stage_ros2'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/bobo/ros2_ws/install/tug_msgs/local/lib/python3.10/dist-packages:/home/bobo/ros2_ws/install/ros2cpp_tutorials_service/local/lib/python3.10/dist-packages:/home/bobo/ros2_ws/install/ros2cpp_tutorials_action/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'de_AT.UTF-8'), ('LC_PAPER', 'de_AT.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/bobo/ros2_ws/install/tug_msgs:/home/bobo/ros2_ws/install/tug_turtlebot4:/home/bobo/ros2_ws/install/tug_stage_ros2:/home/bobo/ros2_ws/install/tug_mr2:/home/bobo/ros2_ws/install/ros2cpp_tutorials_service:/home/bobo/ros2_ws/install/ros2cpp_tutorials_publisher_subscriber:/home/bobo/ros2_ws/install/ros2cpp_tutorials_parameter:/home/bobo/ros2_ws/install/ros2cpp_tutorials_action:/home/bobo/ros2_ws/install/Eigen3:/opt/ros/humble')]), 'shell': False}
+[0.990558] (tug_turtlebot4) JobProgress: {'identifier': 'tug_turtlebot4', 'progress': 'cmake'}
+[0.991228] (tug_turtlebot4) JobProgress: {'identifier': 'tug_turtlebot4', 'progress': 'build'}
+[0.993372] (tug_turtlebot4) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/bobo/ros2_ws/build/tug_turtlebot4', '--', '-j8', '-l8'], 'cwd': '/home/bobo/ros2_ws/build/tug_turtlebot4', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'bobo'), ('LC_TIME', 'de_AT.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LIBGL_ALWAYS_SOFTWARE', '1'), ('LD_LIBRARY_PATH', '/home/bobo/ros2_ws/install/tug_msgs/lib:/home/bobo/stg/lib:/home/bobo/ros2_ws/install/ros2cpp_tutorials_service/lib:/home/bobo/ros2_ws/install/ros2cpp_tutorials_action/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/bobo'), ('OLDPWD', '/home/bobo'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'de_AT.UTF-8'), ('SYSTEMD_EXEC_PID', '1642'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/bobo/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'bobo'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'bobo'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/home/bobo/stg/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/usr/local/MATLAB/R2024b/bin'), ('SESSION_MANAGER', 'local/bobo-HP-EliteBook-x360-1030-G3:@/tmp/.ICE-unix/1614,unix/bobo-HP-EliteBook-x360-1030-G3:/tmp/.ICE-unix/1614'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'de_AT.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/bc176185_8682_4855_a5ca_5f42bdfed6b1'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'de_AT.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.K2EL02'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.99'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/home/bobo/ros2_ws/install/tug_turtlebot4:/home/bobo/ros2_ws/install/tug_stage_ros2:/home/bobo/ros2_ws/install/tug_mr2:/home/bobo/ros2_ws/install/tug_msgs:/home/bobo/ros2_ws/install/ros2cpp_tutorials_service:/home/bobo/ros2_ws/install/ros2cpp_tutorials_publisher_subscriber:/home/bobo/ros2_ws/install/ros2cpp_tutorials_parameter:/home/bobo/ros2_ws/install/ros2cpp_tutorials_action:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'de_AT.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'de_AT.UTF-8'), ('LC_IDENTIFICATION', 'de_AT.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/bobo/ros2_ws/build/tug_turtlebot4'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/bobo/ros2_ws/install/tug_msgs/local/lib/python3.10/dist-packages:/home/bobo/ros2_ws/install/ros2cpp_tutorials_service/local/lib/python3.10/dist-packages:/home/bobo/ros2_ws/install/ros2cpp_tutorials_action/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'de_AT.UTF-8'), ('LC_PAPER', 'de_AT.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/bobo/ros2_ws/install/tug_msgs:/home/bobo/ros2_ws/install/tug_turtlebot4:/home/bobo/ros2_ws/install/tug_stage_ros2:/home/bobo/ros2_ws/install/tug_mr2:/home/bobo/ros2_ws/install/ros2cpp_tutorials_service:/home/bobo/ros2_ws/install/ros2cpp_tutorials_publisher_subscriber:/home/bobo/ros2_ws/install/ros2cpp_tutorials_parameter:/home/bobo/ros2_ws/install/ros2cpp_tutorials_action:/home/bobo/ros2_ws/install/Eigen3:/opt/ros/humble')]), 'shell': False}
+[1.001382] (-) TimerEvent: {}
+[1.101862] (-) TimerEvent: {}
+[1.105624] (tug_mr2) StdoutLine: {'line': b'[ 50%] Built target tug_transform\n'}
+[1.110119] (tug_turtlebot4) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target slam\x1b[0m\n'}
+[1.113148] (tug_mr2) StdoutLine: {'line': b'[100%] Built target tug_kinematic\n'}
+[1.115874] (tug_stage_ros2) StdoutLine: {'line': b'[100%] Built target tug_stage_ros2\n'}
+[1.136784] (tug_turtlebot4) StdoutLine: {'line': b'[ 18%] Built target static_transform_publisher\n'}
+[1.142485] (tug_mr2) CommandEnded: {'returncode': 0}
+[1.143255] (tug_turtlebot4) StdoutLine: {'line': b'[ 45%] Built target simple_turtle\n'}
+[1.144363] (tug_mr2) JobProgress: {'identifier': 'tug_mr2', 'progress': 'install'}
+[1.146001] (tug_mr2) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/bobo/ros2_ws/build/tug_mr2'], 'cwd': '/home/bobo/ros2_ws/build/tug_mr2', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'bobo'), ('LC_TIME', 'de_AT.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LIBGL_ALWAYS_SOFTWARE', '1'), ('LD_LIBRARY_PATH', '/home/bobo/ros2_ws/install/tug_msgs/lib:/home/bobo/stg/lib:/home/bobo/ros2_ws/install/ros2cpp_tutorials_service/lib:/home/bobo/ros2_ws/install/ros2cpp_tutorials_action/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/bobo'), ('OLDPWD', '/home/bobo'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'de_AT.UTF-8'), ('SYSTEMD_EXEC_PID', '1642'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/bobo/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'bobo'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'bobo'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/home/bobo/stg/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/usr/local/MATLAB/R2024b/bin'), ('SESSION_MANAGER', 'local/bobo-HP-EliteBook-x360-1030-G3:@/tmp/.ICE-unix/1614,unix/bobo-HP-EliteBook-x360-1030-G3:/tmp/.ICE-unix/1614'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'de_AT.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/bc176185_8682_4855_a5ca_5f42bdfed6b1'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'de_AT.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.K2EL02'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.99'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/home/bobo/ros2_ws/install/tug_turtlebot4:/home/bobo/ros2_ws/install/tug_stage_ros2:/home/bobo/ros2_ws/install/tug_mr2:/home/bobo/ros2_ws/install/tug_msgs:/home/bobo/ros2_ws/install/ros2cpp_tutorials_service:/home/bobo/ros2_ws/install/ros2cpp_tutorials_publisher_subscriber:/home/bobo/ros2_ws/install/ros2cpp_tutorials_parameter:/home/bobo/ros2_ws/install/ros2cpp_tutorials_action:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'de_AT.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'de_AT.UTF-8'), ('LC_IDENTIFICATION', 'de_AT.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/bobo/ros2_ws/build/tug_mr2'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/bobo/ros2_ws/install/tug_msgs/local/lib/python3.10/dist-packages:/home/bobo/ros2_ws/install/ros2cpp_tutorials_service/local/lib/python3.10/dist-packages:/home/bobo/ros2_ws/install/ros2cpp_tutorials_action/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'de_AT.UTF-8'), ('LC_PAPER', 'de_AT.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/bobo/ros2_ws/install/tug_msgs:/home/bobo/ros2_ws/install/tug_turtlebot4:/home/bobo/ros2_ws/install/tug_stage_ros2:/home/bobo/ros2_ws/install/tug_mr2:/home/bobo/ros2_ws/install/ros2cpp_tutorials_service:/home/bobo/ros2_ws/install/ros2cpp_tutorials_publisher_subscriber:/home/bobo/ros2_ws/install/ros2cpp_tutorials_parameter:/home/bobo/ros2_ws/install/ros2cpp_tutorials_action:/home/bobo/ros2_ws/install/Eigen3:/opt/ros/humble')]), 'shell': False}
+[1.148228] (tug_turtlebot4) StdoutLine: {'line': b'[ 63%] Built target tug_wheel_encoder-system\n'}
+[1.148669] (tug_stage_ros2) CommandEnded: {'returncode': 0}
+[1.150576] (tug_stage_ros2) JobProgress: {'identifier': 'tug_stage_ros2', 'progress': 'install'}
+[1.151033] (tug_stage_ros2) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/bobo/ros2_ws/build/tug_stage_ros2'], 'cwd': '/home/bobo/ros2_ws/build/tug_stage_ros2', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'bobo'), ('LC_TIME', 'de_AT.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LIBGL_ALWAYS_SOFTWARE', '1'), ('LD_LIBRARY_PATH', '/home/bobo/ros2_ws/install/tug_msgs/lib:/home/bobo/stg/lib:/home/bobo/ros2_ws/install/ros2cpp_tutorials_service/lib:/home/bobo/ros2_ws/install/ros2cpp_tutorials_action/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/bobo'), ('OLDPWD', '/home/bobo'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'de_AT.UTF-8'), ('SYSTEMD_EXEC_PID', '1642'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/bobo/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'bobo'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'bobo'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/home/bobo/stg/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/usr/local/MATLAB/R2024b/bin'), ('SESSION_MANAGER', 'local/bobo-HP-EliteBook-x360-1030-G3:@/tmp/.ICE-unix/1614,unix/bobo-HP-EliteBook-x360-1030-G3:/tmp/.ICE-unix/1614'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'de_AT.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/bc176185_8682_4855_a5ca_5f42bdfed6b1'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'de_AT.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.K2EL02'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.99'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/home/bobo/ros2_ws/install/tug_turtlebot4:/home/bobo/ros2_ws/install/tug_stage_ros2:/home/bobo/ros2_ws/install/tug_mr2:/home/bobo/ros2_ws/install/tug_msgs:/home/bobo/ros2_ws/install/ros2cpp_tutorials_service:/home/bobo/ros2_ws/install/ros2cpp_tutorials_publisher_subscriber:/home/bobo/ros2_ws/install/ros2cpp_tutorials_parameter:/home/bobo/ros2_ws/install/ros2cpp_tutorials_action:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'de_AT.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'de_AT.UTF-8'), ('LC_IDENTIFICATION', 'de_AT.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/bobo/ros2_ws/build/tug_stage_ros2'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/bobo/ros2_ws/install/tug_msgs/local/lib/python3.10/dist-packages:/home/bobo/ros2_ws/install/ros2cpp_tutorials_service/local/lib/python3.10/dist-packages:/home/bobo/ros2_ws/install/ros2cpp_tutorials_action/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'de_AT.UTF-8'), ('LC_PAPER', 'de_AT.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/bobo/ros2_ws/install/tug_msgs:/home/bobo/ros2_ws/install/tug_turtlebot4:/home/bobo/ros2_ws/install/tug_stage_ros2:/home/bobo/ros2_ws/install/tug_mr2:/home/bobo/ros2_ws/install/ros2cpp_tutorials_service:/home/bobo/ros2_ws/install/ros2cpp_tutorials_publisher_subscriber:/home/bobo/ros2_ws/install/ros2cpp_tutorials_parameter:/home/bobo/ros2_ws/install/ros2cpp_tutorials_action:/home/bobo/ros2_ws/install/Eigen3:/opt/ros/humble')]), 'shell': False}
+[1.162717] (tug_mr2) StdoutLine: {'line': b'-- Install configuration: "debug"\n'}
+[1.163373] (tug_mr2) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_mr2/lib/tug_mr2/tug_kinematic\n'}
+[1.164451] (tug_mr2) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_mr2/lib/tug_mr2/tug_transform\n'}
+[1.165074] (tug_mr2) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_mr2/share/tug_mr2/launch\n'}
+[1.165542] (tug_mr2) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_mr2/share/tug_mr2/launch/kinematic_launch.xml\n'}
+[1.165821] (tug_mr2) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_mr2/share/tug_mr2/launch/transform_launch.xml\n'}
+[1.166249] (tug_mr2) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_mr2/share/ament_index/resource_index/package_run_dependencies/tug_mr2\n'}
+[1.166560] (tug_mr2) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_mr2/share/ament_index/resource_index/parent_prefix_path/tug_mr2\n'}
+[1.166941] (tug_mr2) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_mr2/share/tug_mr2/environment/ament_prefix_path.sh\n'}
+[1.167249] (tug_mr2) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_mr2/share/tug_mr2/environment/ament_prefix_path.dsv\n'}
+[1.167777] (tug_mr2) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_mr2/share/tug_mr2/environment/path.sh\n'}
+[1.168271] (tug_mr2) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_mr2/share/tug_mr2/environment/path.dsv\n'}
+[1.168634] (tug_mr2) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_mr2/share/tug_mr2/local_setup.bash\n'}
+[1.168995] (tug_mr2) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_mr2/share/tug_mr2/local_setup.sh\n'}
+[1.169403] (tug_mr2) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_mr2/share/tug_mr2/local_setup.zsh\n'}
+[1.169898] (tug_stage_ros2) StdoutLine: {'line': b'-- Install configuration: "debug"\n'}
+[1.170580] (tug_mr2) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_mr2/share/tug_mr2/local_setup.dsv\n'}
+[1.171549] (tug_mr2) StdoutLine: {'line': b'-- Installing: /home/bobo/ros2_ws/install/tug_mr2/share/tug_mr2/package.dsv\n'}
+[1.173213] (tug_mr2) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_mr2/share/ament_index/resource_index/packages/tug_mr2\n'}
+[1.174202] (tug_mr2) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_mr2/share/tug_mr2/cmake/tug_mr2Config.cmake\n'}
+[1.174848] (tug_mr2) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_mr2/share/tug_mr2/cmake/tug_mr2Config-version.cmake\n'}
+[1.175298] (tug_mr2) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_mr2/share/tug_mr2/package.xml\n'}
+[1.175576] (tug_stage_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_stage_ros2/lib/tug_stage_ros2/tug_stage_ros2\n'}
+[1.176069] (tug_stage_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_stage_ros2/share/tug_stage_ros2/launch\n'}
+[1.176244] (tug_stage_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_stage_ros2/share/tug_stage_ros2/launch/kinematic_launch.xml\n'}
+[1.176685] (tug_stage_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_stage_ros2/share/tug_stage_ros2/launch/transform_launch.xml\n'}
+[1.176984] (tug_stage_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_stage_ros2/share/tug_stage_ros2/rviz\n'}
+[1.177213] (tug_stage_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_stage_ros2/share/tug_stage_ros2/rviz/transform.rviz\n'}
+[1.177373] (tug_stage_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_stage_ros2/share/tug_stage_ros2/rviz/kinematic.rviz\n'}
+[1.177530] (tug_stage_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_stage_ros2/share/tug_stage_ros2/worlds\n'}
+[1.177726] (tug_stage_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_stage_ros2/share/tug_stage_ros2/worlds/kinematic.pgm\n'}
+[1.177837] (tug_stage_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_stage_ros2/share/tug_stage_ros2/worlds/transform.pgm\n'}
+[1.178024] (tug_stage_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_stage_ros2/share/tug_stage_ros2/worlds/kinematic.world\n'}
+[1.178389] (tug_stage_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_stage_ros2/share/tug_stage_ros2/worlds/transform.world\n'}
+[1.178559] (tug_stage_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_stage_ros2/share/ament_index/resource_index/package_run_dependencies/tug_stage_ros2\n'}
+[1.178762] (tug_stage_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_stage_ros2/share/ament_index/resource_index/parent_prefix_path/tug_stage_ros2\n'}
+[1.178897] (tug_stage_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_stage_ros2/share/tug_stage_ros2/environment/ament_prefix_path.sh\n'}
+[1.179122] (tug_stage_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_stage_ros2/share/tug_stage_ros2/environment/ament_prefix_path.dsv\n'}
+[1.179277] (tug_stage_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_stage_ros2/share/tug_stage_ros2/environment/path.sh\n'}
+[1.179403] (tug_stage_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_stage_ros2/share/tug_stage_ros2/environment/path.dsv\n'}
+[1.179646] (tug_stage_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_stage_ros2/share/tug_stage_ros2/local_setup.bash\n'}
+[1.181351] (tug_stage_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_stage_ros2/share/tug_stage_ros2/local_setup.sh\n'}
+[1.181718] (tug_stage_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_stage_ros2/share/tug_stage_ros2/local_setup.zsh\n'}
+[1.181875] (tug_stage_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_stage_ros2/share/tug_stage_ros2/local_setup.dsv\n'}
+[1.182754] (tug_stage_ros2) StdoutLine: {'line': b'-- Installing: /home/bobo/ros2_ws/install/tug_stage_ros2/share/tug_stage_ros2/package.dsv\n'}
+[1.183078] (tug_mr2) CommandEnded: {'returncode': 0}
+[1.183772] (tug_stage_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_stage_ros2/share/ament_index/resource_index/packages/tug_stage_ros2\n'}
+[1.184192] (tug_stage_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_stage_ros2/share/tug_stage_ros2/cmake/tug_stage_ros2Config.cmake\n'}
+[1.184459] (tug_stage_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_stage_ros2/share/tug_stage_ros2/cmake/tug_stage_ros2Config-version.cmake\n'}
+[1.184584] (tug_stage_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/bobo/ros2_ws/install/tug_stage_ros2/share/tug_stage_ros2/package.xml\n'}
+[1.184712] (tug_turtlebot4) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object CMakeFiles/slam.dir/src/SlamNode.cpp.o\x1b[0m\n'}
+[1.202095] (-) TimerEvent: {}
+[1.202767] (tug_mr2) JobEnded: {'identifier': 'tug_mr2', 'rc': 0}
+[1.205235] (tug_stage_ros2) CommandEnded: {'returncode': 0}
+[1.230477] (tug_stage_ros2) JobEnded: {'identifier': 'tug_stage_ros2', 'rc': 0}
+[1.302247] (-) TimerEvent: {}
+[1.402681] (-) TimerEvent: {}
+[1.503192] (-) TimerEvent: {}
+[1.603653] (-) TimerEvent: {}
+[1.704258] (-) TimerEvent: {}
+[1.804808] (-) TimerEvent: {}
+[1.905416] (-) TimerEvent: {}
+[2.006037] (-) TimerEvent: {}
+[2.106532] (-) TimerEvent: {}
+[2.207038] (-) TimerEvent: {}
+[2.307543] (-) TimerEvent: {}
+[2.407945] (-) TimerEvent: {}
+[2.508462] (-) TimerEvent: {}
+[2.609012] (-) TimerEvent: {}
+[2.709521] (-) TimerEvent: {}
+[2.810043] (-) TimerEvent: {}
+[2.910517] (-) TimerEvent: {}
+[3.011034] (-) TimerEvent: {}
+[3.111577] (-) TimerEvent: {}
+[3.212070] (-) TimerEvent: {}
+[3.312570] (-) TimerEvent: {}
+[3.413042] (-) TimerEvent: {}
+[3.513551] (-) TimerEvent: {}
+[3.614123] (-) TimerEvent: {}
+[3.714664] (-) TimerEvent: {}
+[3.815245] (-) TimerEvent: {}
+[3.915775] (-) TimerEvent: {}
+[4.016361] (-) TimerEvent: {}
+[4.116852] (-) TimerEvent: {}
+[4.217279] (-) TimerEvent: {}
+[4.317642] (-) TimerEvent: {}
+[4.418100] (-) TimerEvent: {}
+[4.518569] (-) TimerEvent: {}
+[4.619116] (-) TimerEvent: {}
+[4.719621] (-) TimerEvent: {}
+[4.820128] (-) TimerEvent: {}
+[4.920724] (-) TimerEvent: {}
+[5.021314] (-) TimerEvent: {}
+[5.121827] (-) TimerEvent: {}
+[5.222426] (-) TimerEvent: {}
+[5.323029] (-) TimerEvent: {}
+[5.423720] (-) TimerEvent: {}
+[5.524362] (-) TimerEvent: {}
+[5.624896] (-) TimerEvent: {}
+[5.725544] (-) TimerEvent: {}
+[5.826148] (-) TimerEvent: {}
+[5.926745] (-) TimerEvent: {}
+[6.027343] (-) TimerEvent: {}
+[6.127810] (-) TimerEvent: {}
+[6.228286] (-) TimerEvent: {}
+[6.328714] (-) TimerEvent: {}
+[6.429137] (-) TimerEvent: {}
+[6.529628] (-) TimerEvent: {}
+[6.630042] (-) TimerEvent: {}
+[6.730507] (-) TimerEvent: {}
+[6.831292] (-) TimerEvent: {}
+[6.931766] (-) TimerEvent: {}
+[7.032180] (-) TimerEvent: {}
+[7.132660] (-) TimerEvent: {}
+[7.233028] (-) TimerEvent: {}
+[7.333475] (-) TimerEvent: {}
+[7.434009] (-) TimerEvent: {}
+[7.534492] (-) TimerEvent: {}
+[7.635037] (-) TimerEvent: {}
+[7.735505] (-) TimerEvent: {}
+[7.836016] (-) TimerEvent: {}
+[7.936540] (-) TimerEvent: {}
+[8.037149] (-) TimerEvent: {}
+[8.137684] (-) TimerEvent: {}
+[8.238217] (-) TimerEvent: {}
+[8.338612] (-) TimerEvent: {}
+[8.439066] (-) TimerEvent: {}
+[8.539487] (-) TimerEvent: {}
+[8.639898] (-) TimerEvent: {}
+[8.740547] (-) TimerEvent: {}
+[8.841021] (-) TimerEvent: {}
+[8.941516] (-) TimerEvent: {}
+[9.042011] (-) TimerEvent: {}
+[9.142413] (-) TimerEvent: {}
+[9.242787] (-) TimerEvent: {}
+[9.343360] (-) TimerEvent: {}
+[9.443861] (-) TimerEvent: {}
+[9.544434] (-) TimerEvent: {}
+[9.644875] (-) TimerEvent: {}
+[9.745484] (-) TimerEvent: {}
+[9.845953] (-) TimerEvent: {}
+[9.946485] (-) TimerEvent: {}
+[10.046944] (-) TimerEvent: {}
+[10.147442] (-) TimerEvent: {}
+[10.247880] (-) TimerEvent: {}
+[10.348276] (-) TimerEvent: {}
+[10.448578] (-) TimerEvent: {}
+[10.548962] (-) TimerEvent: {}
+[10.649331] (-) TimerEvent: {}
+[10.749686] (-) TimerEvent: {}
+[10.849996] (-) TimerEvent: {}
+[10.950354] (-) TimerEvent: {}
+[11.050721] (-) TimerEvent: {}
+[11.151101] (-) TimerEvent: {}
+[11.251485] (-) TimerEvent: {}
+[11.351935] (-) TimerEvent: {}
+[11.452341] (-) TimerEvent: {}
+[11.555024] (-) TimerEvent: {}
+[11.655460] (-) TimerEvent: {}
+[11.756174] (-) TimerEvent: {}
+[11.858357] (-) TimerEvent: {}
+[11.958832] (-) TimerEvent: {}
+[12.059269] (-) TimerEvent: {}
+[12.159771] (-) TimerEvent: {}
+[12.260267] (-) TimerEvent: {}
+[12.360706] (-) TimerEvent: {}
+[12.461299] (-) TimerEvent: {}
+[12.561832] (-) TimerEvent: {}
+[12.662297] (-) TimerEvent: {}
+[12.762818] (-) TimerEvent: {}
+[12.863329] (-) TimerEvent: {}
+[12.963796] (-) TimerEvent: {}
+[13.064278] (-) TimerEvent: {}
+[13.164723] (-) TimerEvent: {}
+[13.265212] (-) TimerEvent: {}
+[13.365717] (-) TimerEvent: {}
+[13.466318] (-) TimerEvent: {}
+[13.566846] (-) TimerEvent: {}
+[13.667307] (-) TimerEvent: {}
+[13.767757] (-) TimerEvent: {}
+[13.868279] (-) TimerEvent: {}
+[13.968750] (-) TimerEvent: {}
+[14.069306] (-) TimerEvent: {}
+[14.169884] (-) TimerEvent: {}
+[14.270491] (-) TimerEvent: {}
+[14.371006] (-) TimerEvent: {}
+[14.471635] (-) TimerEvent: {}
+[14.572080] (-) TimerEvent: {}
+[14.672550] (-) TimerEvent: {}
+[14.773073] (-) TimerEvent: {}
+[14.873607] (-) TimerEvent: {}
+[14.974026] (-) TimerEvent: {}
+[15.074482] (-) TimerEvent: {}
+[15.174872] (-) TimerEvent: {}
+[15.275293] (-) TimerEvent: {}
+[15.375705] (-) TimerEvent: {}
+[15.476131] (-) TimerEvent: {}
+[15.576457] (-) TimerEvent: {}
+[15.676846] (-) TimerEvent: {}
+[15.777244] (-) TimerEvent: {}
+[15.877634] (-) TimerEvent: {}
+[15.978065] (-) TimerEvent: {}
+[16.078532] (-) TimerEvent: {}
+[16.179080] (-) TimerEvent: {}
+[16.279549] (-) TimerEvent: {}
+[16.380150] (-) TimerEvent: {}
+[16.480753] (-) TimerEvent: {}
+[16.581244] (-) TimerEvent: {}
+[16.681650] (-) TimerEvent: {}
+[16.782054] (-) TimerEvent: {}
+[16.882557] (-) TimerEvent: {}
+[16.983079] (-) TimerEvent: {}
+[17.083657] (-) TimerEvent: {}
+[17.184082] (-) TimerEvent: {}
+[17.284487] (-) TimerEvent: {}
+[17.384833] (-) TimerEvent: {}
+[17.485307] (-) TimerEvent: {}
+[17.585701] (-) TimerEvent: {}
+[17.686118] (-) TimerEvent: {}
+[17.786706] (-) TimerEvent: {}
+[17.887348] (-) TimerEvent: {}
+[17.987794] (-) TimerEvent: {}
+[18.088248] (-) TimerEvent: {}
+[18.188657] (-) TimerEvent: {}
+[18.289065] (-) TimerEvent: {}
+[18.389427] (-) TimerEvent: {}
+[18.489762] (-) TimerEvent: {}
+[18.590148] (-) TimerEvent: {}
+[18.690503] (-) TimerEvent: {}
+[18.790959] (-) TimerEvent: {}
+[18.891531] (-) TimerEvent: {}
+[18.992010] (-) TimerEvent: {}
+[19.092480] (-) TimerEvent: {}
+[19.192886] (-) TimerEvent: {}
+[19.293340] (-) TimerEvent: {}
+[19.393743] (-) TimerEvent: {}
+[19.494205] (-) TimerEvent: {}
+[19.594671] (-) TimerEvent: {}
+[19.695105] (-) TimerEvent: {}
+[19.795573] (-) TimerEvent: {}
+[19.896069] (-) TimerEvent: {}
+[19.996547] (-) TimerEvent: {}
+[20.096991] (-) TimerEvent: {}
+[20.197441] (-) TimerEvent: {}
+[20.297906] (-) TimerEvent: {}
+[20.398510] (-) TimerEvent: {}
+[20.498984] (-) TimerEvent: {}
+[20.599420] (-) TimerEvent: {}
+[20.699803] (-) TimerEvent: {}
+[20.800184] (-) TimerEvent: {}
+[20.900677] (-) TimerEvent: {}
+[21.001081] (-) TimerEvent: {}
+[21.101505] (-) TimerEvent: {}
+[21.201970] (-) TimerEvent: {}
+[21.302464] (-) TimerEvent: {}
+[21.402979] (-) TimerEvent: {}
+[21.503480] (-) TimerEvent: {}
+[21.604005] (-) TimerEvent: {}
+[21.704456] (-) TimerEvent: {}
+[21.804902] (-) TimerEvent: {}
+[21.905459] (-) TimerEvent: {}
+[22.005884] (-) TimerEvent: {}
+[22.106326] (-) TimerEvent: {}
+[22.206646] (-) TimerEvent: {}
+[22.307093] (-) TimerEvent: {}
+[22.407528] (-) TimerEvent: {}
+[22.507987] (-) TimerEvent: {}
+[22.608454] (-) TimerEvent: {}
+[22.708933] (-) TimerEvent: {}
+[22.809436] (-) TimerEvent: {}
+[22.909881] (-) TimerEvent: {}
+[23.010434] (-) TimerEvent: {}
+[23.110882] (-) TimerEvent: {}
+[23.211285] (-) TimerEvent: {}
+[23.311663] (-) TimerEvent: {}
+[23.412035] (-) TimerEvent: {}
+[23.512458] (-) TimerEvent: {}
+[23.612895] (-) TimerEvent: {}
+[23.713376] (-) TimerEvent: {}
+[23.813894] (-) TimerEvent: {}
+[23.914404] (-) TimerEvent: {}
+[24.014862] (-) TimerEvent: {}
+[24.115315] (-) TimerEvent: {}
+[24.215722] (-) TimerEvent: {}
+[24.316137] (-) TimerEvent: {}
+[24.416600] (-) TimerEvent: {}
+[24.517189] (-) TimerEvent: {}
+[24.617613] (-) TimerEvent: {}
+[24.718097] (-) TimerEvent: {}
+[24.818490] (-) TimerEvent: {}
+[24.918979] (-) TimerEvent: {}
+[25.019434] (-) TimerEvent: {}
+[25.119854] (-) TimerEvent: {}
+[25.220416] (-) TimerEvent: {}
+[25.320854] (-) TimerEvent: {}
+[25.421389] (-) TimerEvent: {}
+[25.521861] (-) TimerEvent: {}
+[25.622269] (-) TimerEvent: {}
+[25.722754] (-) TimerEvent: {}
+[25.823125] (-) TimerEvent: {}
+[25.923671] (-) TimerEvent: {}
+[26.024111] (-) TimerEvent: {}
+[26.124590] (-) TimerEvent: {}
+[26.225059] (-) TimerEvent: {}
+[26.325504] (-) TimerEvent: {}
+[26.426098] (-) TimerEvent: {}
+[26.526696] (-) TimerEvent: {}
+[26.627274] (-) TimerEvent: {}
+[26.727830] (-) TimerEvent: {}
+[26.828271] (-) TimerEvent: {}
+[26.928654] (-) TimerEvent: {}
+[27.001351] (tug_turtlebot4) StdoutLine: {'line': b'[ 81%] \x1b[32m\x1b[1mLinking CXX executable slam\x1b[0m\n'}
+[27.028779] (-) TimerEvent: {}
+[27.129145] (-) TimerEvent: {}
+[27.229570] (-) TimerEvent: {}
+[27.330111] (-) TimerEvent: {}
+[27.430654] (-) TimerEvent: {}
+[27.531073] (-) TimerEvent: {}
+[27.631572] (-) TimerEvent: {}
+[27.732031] (-) TimerEvent: {}
+[27.832480] (-) TimerEvent: {}
+[27.932909] (-) TimerEvent: {}
+[28.033485] (-) TimerEvent: {}
+[28.134117] (-) TimerEvent: {}
+[28.234657] (-) TimerEvent: {}
+[28.335171] (-) TimerEvent: {}
+[28.435654] (-) TimerEvent: {}
+[28.536142] (-) TimerEvent: {}
+[28.636609] (-) TimerEvent: {}
+[28.737039] (-) TimerEvent: {}
+[28.837472] (-) TimerEvent: {}
+[28.937962] (-) TimerEvent: {}
+[29.038458] (-) TimerEvent: {}
+[29.138882] (-) TimerEvent: {}
+[29.239285] (-) TimerEvent: {}
+[29.339645] (-) TimerEvent: {}
+[29.440055] (-) TimerEvent: {}
+[29.540502] (-) TimerEvent: {}
+[29.640942] (-) TimerEvent: {}
+[29.741338] (-) TimerEvent: {}
+[29.841777] (-) TimerEvent: {}
+[29.942194] (-) TimerEvent: {}
+[30.042612] (-) TimerEvent: {}
+[30.143034] (-) TimerEvent: {}
+[30.243422] (-) TimerEvent: {}
+[30.343813] (-) TimerEvent: {}
+[30.444227] (-) TimerEvent: {}
+[30.544576] (-) TimerEvent: {}
+[30.645012] (-) TimerEvent: {}
+[30.745409] (-) TimerEvent: {}
+[30.845761] (-) TimerEvent: {}
+[30.946152] (-) TimerEvent: {}
+[31.046540] (-) TimerEvent: {}
+[31.146957] (-) TimerEvent: {}
+[31.247354] (-) TimerEvent: {}
+[31.347725] (-) TimerEvent: {}
+[31.448118] (-) TimerEvent: {}
+[31.548587] (-) TimerEvent: {}
+[31.649063] (-) TimerEvent: {}
+[31.749512] (-) TimerEvent: {}
+[31.849971] (-) TimerEvent: {}
+[31.950383] (-) TimerEvent: {}
+[32.050792] (-) TimerEvent: {}
+[32.151246] (-) TimerEvent: {}
+[32.251730] (-) TimerEvent: {}
+[32.352171] (-) TimerEvent: {}
+[32.452568] (-) TimerEvent: {}
+[32.553003] (-) TimerEvent: {}
+[32.653418] (-) TimerEvent: {}
+[32.753818] (-) TimerEvent: {}
+[32.854276] (-) TimerEvent: {}
+[32.954678] (-) TimerEvent: {}
+[33.055114] (-) TimerEvent: {}
+[33.155527] (-) TimerEvent: {}
+[33.255983] (-) TimerEvent: {}
+[33.356402] (-) TimerEvent: {}
+[33.456829] (-) TimerEvent: {}
+[33.557276] (-) TimerEvent: {}
+[33.657800] (-) TimerEvent: {}
+[33.758256] (-) TimerEvent: {}
+[33.858688] (-) TimerEvent: {}
+[33.959097] (-) TimerEvent: {}
+[34.059550] (-) TimerEvent: {}
+[34.160108] (-) TimerEvent: {}
+[34.260560] (-) TimerEvent: {}
+[34.361033] (-) TimerEvent: {}
+[34.461585] (-) TimerEvent: {}
+[34.562065] (-) TimerEvent: {}
+[34.662498] (-) TimerEvent: {}
+[34.762932] (-) TimerEvent: {}
+[34.863346] (-) TimerEvent: {}
+[34.963746] (-) TimerEvent: {}
+[35.064222] (-) TimerEvent: {}
+[35.164647] (-) TimerEvent: {}
+[35.265164] (-) TimerEvent: {}
+[35.365609] (-) TimerEvent: {}
+[35.466100] (-) TimerEvent: {}
+[35.566595] (-) TimerEvent: {}
+[35.667084] (-) TimerEvent: {}
+[35.767588] (-) TimerEvent: {}
+[35.868022] (-) TimerEvent: {}
+[35.968449] (-) TimerEvent: {}
+[36.068980] (-) TimerEvent: {}
+[36.169561] (-) TimerEvent: {}
+[36.270045] (-) TimerEvent: {}
+[36.370452] (-) TimerEvent: {}
+[36.470953] (-) TimerEvent: {}
+[36.571313] (-) TimerEvent: {}
+[36.636455] (tug_turtlebot4) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/slam.dir/src/SlamNode.cpp.o: in function `tug_turtlebot4::SlamNode::task2()':\n"}
+[36.636718] (tug_turtlebot4) StderrLine: {'line': b"/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SlamNode.cpp:89: undefined reference to `tug_turtlebot4::SlamNode::loadSensorDataFromCSV(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'\n"}
+[36.638022] (tug_turtlebot4) StderrLine: {'line': b"/usr/bin/ld: /home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SlamNode.cpp:92: undefined reference to `tug_turtlebot4::SlamNode::optimizeMap()'\n"}
+[36.639486] (tug_turtlebot4) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/slam.dir/src/SlamNode.cpp.o: in function `tug_turtlebot4::SlamNode::handleSaveSensorData(std::shared_ptr<std_srvs::srv::Trigger_Request_<std::allocator<void> > >, std::shared_ptr<std_srvs::srv::Trigger_Response_<std::allocator<void> > >)':\n"}
+[36.639678] (tug_turtlebot4) StderrLine: {'line': b"/home/bobo/ros2_ws/src/mr2_public/tug_turtlebot4/src/SlamNode.cpp:108: undefined reference to `tug_turtlebot4::SlamNode::saveSensorDataToCSV(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'\n"}
+[36.671437] (-) TimerEvent: {}
+[36.771776] (-) TimerEvent: {}
+[36.872132] (-) TimerEvent: {}
+[36.886481] (tug_turtlebot4) StderrLine: {'line': b'collect2: error: ld returned 1 exit status\n'}
+[36.889148] (tug_turtlebot4) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/slam.dir/build.make:254: slam] Error 1\n'}
+[36.889481] (tug_turtlebot4) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:195: CMakeFiles/slam.dir/all] Error 2\n'}
+[36.889830] (tug_turtlebot4) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[36.893525] (tug_turtlebot4) CommandEnded: {'returncode': 2}
+[36.905300] (tug_turtlebot4) JobEnded: {'identifier': 'tug_turtlebot4', 'rc': 2}
+[36.917465] (-) EventReactorShutdown: {}

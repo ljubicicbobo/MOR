@@ -5,6 +5,19 @@ if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic)
 endif()
 
+
+set(EIGEN3_INCLUDE_DIR "/home/bobo/ros2_ws/eigen-3.4.0")
+set(geometry_msgs_INCLUDE_DIRS "/opt/ros/humble/include/nav_msgs")
+set(nav_msgs_INCLUDE_DIRS "/opt/ros/humble/include/sensor_msgs")
+# Add the Eigen directory to the include path
+include_directories(${EIGEN3_INCLUDE_DIR})
+include_directories(
+        ${geometry_msgs_INCLUDE_DIRS}
+        ${nav_msgs_INCLUDE_DIRS}
+        ${sensor_msgs_INCLUDE_DIRS}
+        ${tug_msgs_INCLUDE_DIRS}
+)
+
 # find dependencies
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
