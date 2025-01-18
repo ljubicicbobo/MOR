@@ -7,11 +7,11 @@ CXX_DEFINES = -Deigen_lapack_EXPORTS
 
 CXX_INCLUDES = -I/home/bobo/ros2_ws/eigen-3.4.0 -I/home/bobo/ros2_ws/eigen-3.4.0/lapack/../blas
 
-CXX_FLAGS =  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Wdouble-promotion -Wshadow -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-check-new -fno-common -fstrict-aliasing -ansi -g -fPIC
+CXX_FLAGS =  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Wdouble-promotion -Wshadow -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-check-new -fno-common -fstrict-aliasing -ansi -O3 -DNDEBUG -fPIC
 
 Fortran_DEFINES = -Deigen_lapack_EXPORTS
 
 Fortran_INCLUDES = -I/home/bobo/ros2_ws/eigen-3.4.0 -I/home/bobo/ros2_ws/eigen-3.4.0/lapack/../blas
 
-Fortran_FLAGS = -g -fPIC
+Fortran_FLAGS = -O3 -DNDEBUG -O3 -fPIC
 

@@ -115,12 +115,6 @@ simple_turtle: /home/bobo/ros2_ws/install/tug_msgs/lib/libtug_msgs__rosidl_types
 simple_turtle: /home/bobo/ros2_ws/install/tug_msgs/lib/libtug_msgs__rosidl_typesupport_introspection_cpp.so
 simple_turtle: /home/bobo/ros2_ws/install/tug_msgs/lib/libtug_msgs__rosidl_typesupport_cpp.so
 simple_turtle: /home/bobo/ros2_ws/install/tug_msgs/lib/libtug_msgs__rosidl_generator_py.so
-simple_turtle: /opt/ros/humble/lib/libstd_srvs__rosidl_typesupport_fastrtps_c.so
-simple_turtle: /opt/ros/humble/lib/libstd_srvs__rosidl_typesupport_introspection_c.so
-simple_turtle: /opt/ros/humble/lib/libstd_srvs__rosidl_typesupport_fastrtps_cpp.so
-simple_turtle: /opt/ros/humble/lib/libstd_srvs__rosidl_typesupport_introspection_cpp.so
-simple_turtle: /opt/ros/humble/lib/libstd_srvs__rosidl_typesupport_cpp.so
-simple_turtle: /opt/ros/humble/lib/libstd_srvs__rosidl_generator_py.so
 simple_turtle: /opt/ros/humble/lib/libtf2_ros.so
 simple_turtle: /opt/ros/humble/lib/libtf2.so
 simple_turtle: /opt/ros/humble/lib/libmessage_filters.so
@@ -209,8 +203,6 @@ simple_turtle: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_c.s
 simple_turtle: /opt/ros/humble/lib/libstd_msgs__rosidl_generator_c.so
 simple_turtle: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_c.so
 simple_turtle: /usr/lib/x86_64-linux-gnu/liborocos-kdl.so
-simple_turtle: /home/bobo/ros2_ws/install/tug_msgs/lib/libtug_msgs__rosidl_typesupport_c.so
-simple_turtle: /home/bobo/ros2_ws/install/tug_msgs/lib/libtug_msgs__rosidl_generator_c.so
 simple_turtle: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_c.so
 simple_turtle: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_cpp.so
 simple_turtle: /opt/ros/humble/lib/libfastcdr.so.1.0.24
@@ -218,8 +210,8 @@ simple_turtle: /opt/ros/humble/lib/librmw.so
 simple_turtle: /opt/ros/humble/lib/librosidl_typesupport_introspection_cpp.so
 simple_turtle: /opt/ros/humble/lib/librosidl_typesupport_introspection_c.so
 simple_turtle: /opt/ros/humble/lib/librosidl_typesupport_cpp.so
-simple_turtle: /opt/ros/humble/lib/libstd_srvs__rosidl_typesupport_c.so
-simple_turtle: /opt/ros/humble/lib/libstd_srvs__rosidl_generator_c.so
+simple_turtle: /home/bobo/ros2_ws/install/tug_msgs/lib/libtug_msgs__rosidl_typesupport_c.so
+simple_turtle: /home/bobo/ros2_ws/install/tug_msgs/lib/libtug_msgs__rosidl_generator_c.so
 simple_turtle: /opt/ros/humble/lib/librosidl_typesupport_c.so
 simple_turtle: /opt/ros/humble/lib/librcpputils.so
 simple_turtle: /opt/ros/humble/lib/librosidl_runtime_c.so

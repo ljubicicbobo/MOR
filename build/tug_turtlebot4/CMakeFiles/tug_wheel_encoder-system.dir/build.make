@@ -92,7 +92,7 @@ tug_wheel_encoder__system_EXTERNAL_OBJECTS =
 
 libtug_wheel_encoder-system.so: CMakeFiles/tug_wheel_encoder-system.dir/src/ign_plugin/WheelEncoder.cpp.o
 libtug_wheel_encoder-system.so: CMakeFiles/tug_wheel_encoder-system.dir/build.make
-libtug_wheel_encoder-system.so: /usr/lib/x86_64-linux-gnu/libignition-gazebo6.so.6.16.0
+libtug_wheel_encoder-system.so: /usr/lib/x86_64-linux-gnu/libignition-gazebo6.so.6.17.0
 libtug_wheel_encoder-system.so: /opt/ros/humble/lib/librclcpp.so
 libtug_wheel_encoder-system.so: /home/bobo/ros2_ws/install/tug_msgs/lib/libtug_msgs__rosidl_typesupport_fastrtps_c.so
 libtug_wheel_encoder-system.so: /home/bobo/ros2_ws/install/tug_msgs/lib/libtug_msgs__rosidl_typesupport_introspection_c.so

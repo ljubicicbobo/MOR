@@ -255,8 +255,8 @@
     <material>Gazebo/DarkGrey</material>
     <mu1>0.01</mu1>
     <mu2>0.01</mu2>
-    <!-- <kp>1000000.0</kp>
-    <kd>1.0</kd> -->
+    <kp>1000000.0</kp>
+    <kd>1.0</kd>
   </gazebo>
   <joint name="imu_joint" type="fixed">
     <origin xyz="0.050613 0.043673 0.0844"/>
@@ -841,6 +841,7 @@
     <plugin filename="libignition-gazebo-pose-publisher-system.so" name="ignition::gazebo::systems::PosePublisher">
       <publish_link_pose>false</publish_link_pose>
       <publish_nested_model_pose>true</publish_nested_model_pose>
+      <update_frequency>50</update_frequency>
       <use_pose_vector_msg>true</use_pose_vector_msg>
     </plugin>
 
@@ -848,7 +849,7 @@
       <topic>/model/tug_turtlebot4/joint_states</topic>
     </plugin>
 
-    <plugin filename="libignition-gazebo6-diff-drive-system.so" name="ignition::gazebo::v6::systems::DiffDrive">
+    <plugin filename="libignition-gazebo6-diff-drive-system.so" name="ignition::gazebo::systems::DiffDrive">
       <!-- Wheel information -->
       <left_joint>left_wheel_joint</left_joint>
       <right_joint>right_wheel_joint</right_joint>
@@ -901,7 +902,7 @@
     <sensor name="rplidar" type="gpu_lidar">
       <topic>/model/tug_turtlebot4/scan</topic>
       <gz_frame_id>rplidar_link</gz_frame_id>
-      <update_rate>62.0</update_rate>
+      <update_rate>50</update_rate>
       <visualize>1</visualize>
       <always_on>true</always_on>
       <lidar>

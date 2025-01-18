@@ -4,8 +4,7 @@
 #include <memory>
 
 #include "rclcpp/node.hpp"
-#include <vector>
-#include <cmath>
+
 #include "nav_msgs/msg/occupancy_grid.hpp"
 
 namespace tug_turtlebot4
@@ -54,15 +53,8 @@ class OccupancyGridMap
       uint32_t& cell_x,
       uint32_t& cell_y
     ) const;
-
     void updateCell(uint32_t cell_x, uint32_t cell_y, float value);
     float getCell(uint32_t cell_x, uint32_t cell_y) const;
-
-    std::shared_ptr<nav_msgs::msg::OccupancyGrid> toOccupancyGrid() const;
-
-    uint32_t getWidth() const;
-    uint32_t getHeight() const;
-
 }; /* class OccupancyGridMap */
 
 } /* namespace tug_turtlebot4 */

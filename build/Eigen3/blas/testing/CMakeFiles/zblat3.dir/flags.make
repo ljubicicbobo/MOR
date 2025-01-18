@@ -6,5 +6,5 @@ Fortran_DEFINES =
 
 Fortran_INCLUDES = -I/home/bobo/ros2_ws/eigen-3.4.0
 
-Fortran_FLAGS = -g
+Fortran_FLAGS = -O3 -DNDEBUG -O3
 

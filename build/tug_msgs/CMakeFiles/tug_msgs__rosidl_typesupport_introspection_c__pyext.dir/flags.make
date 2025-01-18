@@ -6,5 +6,5 @@ C_DEFINES = -DRCUTILS_ENABLE_FAULT_INJECTION -DROS_PACKAGE_NAME=\"tug_msgs\" -Dt
 
 C_INCLUDES = -I/home/bobo/ros2_ws/build/tug_msgs/rosidl_generator_c -I/home/bobo/ros2_ws/build/tug_msgs/rosidl_generator_py -I/usr/include/python3.10 -I/opt/ros/humble/include/rmw -I/home/bobo/ros2_ws/build/tug_msgs/rosidl_typesupport_introspection_c -isystem /opt/ros/humble/include/rosidl_runtime_c -isystem /opt/ros/humble/include/rosidl_typesupport_c -isystem /opt/ros/humble/include/rosidl_typesupport_interface -isystem /opt/ros/humble/include/rcutils -isystem /opt/ros/humble/include/rosidl_typesupport_introspection_c
 
-C_FLAGS = -g -fPIC -Wall -Wextra
+C_FLAGS = -fPIC -Wall -Wextra
 

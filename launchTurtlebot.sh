@@ -9,7 +9,8 @@ fi
 # Open the first command in a new tab
 gnome-terminal --tab --title="Turtlebot Launch" -- bash -c "
 echo 'Launching turtlebot_launch.xml with RViz...';
-ros2 launch tug_turtlebot4 slam_launch.xml"
+ros2 launch tug_turtlebot4 nav_launch.xml"
+
 
 # Open the third command in a new tab
 gnome-terminal --tab --title="Teleop Twist Keyboard" -- bash -c "

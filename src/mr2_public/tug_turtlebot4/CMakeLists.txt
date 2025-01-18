@@ -22,10 +22,6 @@ find_package(tug_msgs REQUIRED)
 find_package(ignition-gazebo6 REQUIRED)
 find_package(ignition-plugin1 REQUIRED)
 
-#find service dependencies
-find_package(std_srvs REQUIRED)
-
-
 # add Gazebo library
 add_library(tug_wheel_encoder-system SHARED "src/ign_plugin/WheelEncoder.cpp")
 target_compile_features(tug_wheel_encoder-system PUBLIC cxx_std_17)
@@ -38,6 +34,16 @@ target_link_libraries(
 ament_target_dependencies(tug_wheel_encoder-system rclcpp tug_msgs)
 
 # add nodes
+add_executable(nav "src/nav.cpp" "src/NavNode.cpp")
+target_compile_features(nav PUBLIC cxx_std_17)
+target_include_directories(nav PUBLIC "include/")
+ament_target_dependencies(
+  nav
+    rclcpp
+    geometry_msgs
+    sensor_msgs
+)
+
 add_executable(simple_turtle "src/simple_turtle.cpp" "src/SimpleTurtleNode.cpp")
 target_compile_features(simple_turtle PUBLIC cxx_std_17)
 target_include_directories(simple_turtle PUBLIC "include/")
@@ -49,7 +55,6 @@ ament_target_dependencies(
     geometry_msgs
     tf2_geometry_msgs
     tug_msgs
-    std_srvs
 )
 
 add_executable(slam "src/slam.cpp" "src/SlamNode.cpp" "src/OccupancyGridMap.cpp")
@@ -64,7 +69,6 @@ ament_target_dependencies(
     nav_msgs
     sensor_msgs
     tf2_geometry_msgs
-    std_srvs
 )
 
 add_executable(static_transform_publisher "src/static_transform_publisher.cpp")
@@ -75,13 +79,13 @@ ament_target_dependencies(
     rclcpp
     tf2_ros
     geometry_msgs
-    std_srvs
 )
 
 # install targets
 install(
   TARGETS
     tug_wheel_encoder-system
+    nav
     simple_turtle
     slam
     static_transform_publisher

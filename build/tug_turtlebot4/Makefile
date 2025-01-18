@@ -211,6 +211,19 @@ tug_wheel_encoder-system/fast:
 .PHONY : tug_wheel_encoder-system/fast
 
 #=============================================================================
+# Target rules for targets named nav
+
+# Build rule for target.
+nav: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 nav
+.PHONY : nav
+
+# fast build rule for target.
+nav/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nav.dir/build.make CMakeFiles/nav.dir/build
+.PHONY : nav/fast
+
+#=============================================================================
 # Target rules for targets named simple_turtle
 
 # Build rule for target.
@@ -248,6 +261,30 @@ static_transform_publisher: cmake_check_build_system
 static_transform_publisher/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/static_transform_publisher.dir/build.make CMakeFiles/static_transform_publisher.dir/build
 .PHONY : static_transform_publisher/fast
+
+src/NavNode.o: src/NavNode.cpp.o
+.PHONY : src/NavNode.o
+
+# target to build an object file
+src/NavNode.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nav.dir/build.make CMakeFiles/nav.dir/src/NavNode.cpp.o
+.PHONY : src/NavNode.cpp.o
+
+src/NavNode.i: src/NavNode.cpp.i
+.PHONY : src/NavNode.i
+
+# target to preprocess a source file
+src/NavNode.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nav.dir/build.make CMakeFiles/nav.dir/src/NavNode.cpp.i
+.PHONY : src/NavNode.cpp.i
+
+src/NavNode.s: src/NavNode.cpp.s
+.PHONY : src/NavNode.s
+
+# target to generate assembly for a file
+src/NavNode.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nav.dir/build.make CMakeFiles/nav.dir/src/NavNode.cpp.s
+.PHONY : src/NavNode.cpp.s
 
 src/OccupancyGridMap.o: src/OccupancyGridMap.cpp.o
 .PHONY : src/OccupancyGridMap.o
@@ -345,6 +382,30 @@ src/ign_plugin/WheelEncoder.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tug_wheel_encoder-system.dir/build.make CMakeFiles/tug_wheel_encoder-system.dir/src/ign_plugin/WheelEncoder.cpp.s
 .PHONY : src/ign_plugin/WheelEncoder.cpp.s
 
+src/nav.o: src/nav.cpp.o
+.PHONY : src/nav.o
+
+# target to build an object file
+src/nav.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nav.dir/build.make CMakeFiles/nav.dir/src/nav.cpp.o
+.PHONY : src/nav.cpp.o
+
+src/nav.i: src/nav.cpp.i
+.PHONY : src/nav.i
+
+# target to preprocess a source file
+src/nav.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nav.dir/build.make CMakeFiles/nav.dir/src/nav.cpp.i
+.PHONY : src/nav.cpp.i
+
+src/nav.s: src/nav.cpp.s
+.PHONY : src/nav.s
+
+# target to generate assembly for a file
+src/nav.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nav.dir/build.make CMakeFiles/nav.dir/src/nav.cpp.s
+.PHONY : src/nav.cpp.s
+
 src/simple_turtle.o: src/simple_turtle.cpp.o
 .PHONY : src/simple_turtle.o
 
@@ -432,10 +493,14 @@ help:
 	@echo "... test"
 	@echo "... tug_turtlebot4_uninstall"
 	@echo "... uninstall"
+	@echo "... nav"
 	@echo "... simple_turtle"
 	@echo "... slam"
 	@echo "... static_transform_publisher"
 	@echo "... tug_wheel_encoder-system"
+	@echo "... src/NavNode.o"
+	@echo "... src/NavNode.i"
+	@echo "... src/NavNode.s"
 	@echo "... src/OccupancyGridMap.o"
 	@echo "... src/OccupancyGridMap.i"
 	@echo "... src/OccupancyGridMap.s"
@@ -448,6 +513,9 @@ help:
 	@echo "... src/ign_plugin/WheelEncoder.o"
 	@echo "... src/ign_plugin/WheelEncoder.i"
 	@echo "... src/ign_plugin/WheelEncoder.s"
+	@echo "... src/nav.o"
+	@echo "... src/nav.i"
+	@echo "... src/nav.s"
 	@echo "... src/simple_turtle.o"
 	@echo "... src/simple_turtle.i"
 	@echo "... src/simple_turtle.s"
