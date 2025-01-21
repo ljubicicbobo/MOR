@@ -39,6 +39,10 @@ NavNode::NavNode()
 NavNode::~NavNode()
 {}
 
+// TODO
+// TREBA POPRAVITI TRAZENI SECTOR DOBIVA POGRESNU VRIJEDNOSTI u TARGET_SECTOR
+// ILI je pogresan update histograma polja koja bi trebala biti 1 su 0;
+
 static double goal_x_ = 9999;
 static double goal_y_ = 9999;
 const int num_sectors_ = 72;
